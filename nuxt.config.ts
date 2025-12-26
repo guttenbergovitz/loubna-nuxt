@@ -10,6 +10,17 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/test-utils'
-  ]
+    '@nuxt/test-utils',
+    '@nuxtjs/i18n'
+  ],
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
+      { code: 'nb', language: 'nb-NO', name: 'Norwegian', file: 'nb.json' }
+    ],
+    defaultLocale: 'en',
+    langDir: 'locales/',
+    strategy: 'prefix'
+  },
+  css: ['@/assets/css/main.css']
 })
