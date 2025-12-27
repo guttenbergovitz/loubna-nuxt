@@ -28,12 +28,12 @@
   gap: var(--space-md);
   max-width: var(--container-7xl);
   margin-inline: auto;
-  padding: var(--space-md) var(--space-lg);
+  padding: var(--space-sm) var(--space-lg);
 }
 
 @media (min-width: 1024px) {
   .site-header__toolbar {
-    padding: var(--space-md) var(--space-xl);
+    padding: var(--space-sm) var(--space-xl);
   }
 }
 
@@ -57,7 +57,7 @@
 .site-header__logo {
   display: block;
   height: auto;
-  max-height: 60px;
+  max-height: 40px;
   width: auto;
   object-fit: contain;
 }
