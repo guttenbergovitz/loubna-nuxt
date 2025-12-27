@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { YouTube } from 'youtube-vue3'
+import { YoutubeVue3 } from 'youtube-vue3'
 
 const props = defineProps<{
   videoId: string
@@ -9,10 +9,8 @@ const props = defineProps<{
 
 <template>
   <div class="youtube-video">
-    <YouTube
+    <YoutubeVue3
       :videoid="props.videoId"
-      :width="'100%'"
-      :height="'100%'"
       ref="youtube"
     />
   </div>
