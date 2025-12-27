@@ -5,15 +5,21 @@ import { createZodPlugin } from '@formkit/zod'
 const { t } = useI18n()
 const submitted = ref(false)
 
-const simpleContactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Invalid email address'),
-  message: z.string().min(10, 'Message must be at least 10 characters')
-})
+const simpleContactSchema = computed(() => z.object({
+  name: z.string().min(2, t('contact.form.validation.nameMin')),
+  email: z.string().email(t('contact.form.validation.emailInvalid')),
+  message: z.string().min(10, t('contact.form.validation.messageMin'))
+}))
 
-const zodPlugin = createZodPlugin(simpleContactSchema)
+type SimpleContactFormData = {
+  name: string
+  email: string
+  message: string
+}
 
-const handleSubmit = async (data: z.infer<typeof simpleContactSchema>) => {
+const zodPlugin = computed(() => createZodPlugin(simpleContactSchema.value))
+
+const handleSubmit = async (data: SimpleContactFormData) => {
   // TODO: Handle form submission (e.g., send to API)
   console.log('Simple contact form submitted:', data)
   submitted.value = true

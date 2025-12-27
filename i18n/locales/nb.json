@@ -243,7 +243,13 @@
         }
       },
       "submit": "Send",
-      "success": "Takk for din henvendelse. Vi kontakter deg innen 48 timer for å avtale en samtale..."
+      "success": "Takk for din henvendelse. Vi kontakter deg innen 48 timer for å avtale en samtale...",
+      "validation": {
+        "nameMin": "Navnet må være minst 2 tegn",
+        "emailInvalid": "Ugyldig e-postadresse",
+        "phoneMin": "Telefonnummeret må være minst 8 sifre",
+        "required": "Dette feltet er påkrevd"
+      }
     }
   },
   "contact": {
@@ -266,7 +272,13 @@
         }
       },
       "submit": "Send melding",
-      "success": "Takk for meldingen din. Vi kommer tilbake til deg snart!"
+      "success": "Takk for meldingen din. Vi kommer tilbake til deg snart!",
+      "validation": {
+        "nameMin": "Navnet må være minst 2 tegn",
+        "emailInvalid": "Ugyldig e-postadresse",
+        "messageMin": "Meldingen må være minst 10 tegn",
+        "required": "Dette feltet er påkrevd"
+      }
     }
   },
   "footer": {

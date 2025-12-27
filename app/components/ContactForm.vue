@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { createZodPlugin } from '@formkit/zod'
-import { contactFormSchema, type ContactFormData } from '~/schemas/contactForm'
+import { createContactFormSchema, type ContactFormData } from '~/schemas/contactForm'
 
 const { t } = useI18n()
 const submitted = ref(false)
 
-const zodPlugin = createZodPlugin(contactFormSchema)
+const validationMessages = computed(() => ({
+  nameMin: t('bookCall.form.validation.nameMin'),
+  emailInvalid: t('bookCall.form.validation.emailInvalid'),
+  phoneMin: t('bookCall.form.validation.phoneMin'),
+  required: t('bookCall.form.validation.required')
+}))
+
+const contactFormSchema = computed(() => createContactFormSchema(validationMessages.value))
+const zodPlugin = computed(() => createZodPlugin(contactFormSchema.value))
 
 const lookingForOptions = computed(() => [
   { label: t('bookCall.form.fields.lookingFor.options.businessGift'), value: 'businessGift' },

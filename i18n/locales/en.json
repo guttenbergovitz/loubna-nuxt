@@ -244,7 +244,13 @@
         }
       },
       "submit": "Send",
-      "success": "Thank you for your submission. We will contact you within 48 hours to schedule a call..."
+      "success": "Thank you for your submission. We will contact you within 48 hours to schedule a call...",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "phoneMin": "Phone number must be at least 8 digits",
+        "required": "This field is required"
+      }
     }
   },
   "contact": {
@@ -267,7 +273,13 @@
         }
       },
       "submit": "Send Message",
-      "success": "Thank you for your message. We'll get back to you soon!"
+      "success": "Thank you for your message. We'll get back to you soon!",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "messageMin": "Message must be at least 10 characters",
+        "required": "This field is required"
+      }
     }
   },
   "footer": {
