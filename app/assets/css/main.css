@@ -19,6 +19,7 @@
 
 /* Components Layer - BEM components */
 @import './components/site-header.css';
+@import './components/site-footer.css';
 @import './components/main-navigation.css';
 @import './components/language-switcher.css';
 

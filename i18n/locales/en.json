@@ -284,6 +284,10 @@
   },
   "footer": {
     "tagline": "🇳🇴 Handcrafted in Norway.",
+    "navigation": "Navigation",
+    "connect": "Connect",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
     "email": "info{'@'}loubnaphoto.no",
     "phone": "+47 967 25 275",
     "social": {
