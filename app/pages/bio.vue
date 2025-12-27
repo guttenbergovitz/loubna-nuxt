@@ -44,43 +44,47 @@ const education = computed(() => {
   <main class="bio">
     <!-- Highlights Section -->
     <section class="bio__highlights" aria-label="Professional Highlights">
-      <h1 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h1>
-      <Timeline :value="highlights" align="alternate" class="bio__timeline">
-        <template #content="slotProps">
-          <article class="bio__event">
-            <h3 class="bio__event-title">{{ slotProps.item.title }}</h3>
-            <p v-if="slotProps.item.role" class="bio__event-role">{{ slotProps.item.role }}</p>
-            <p v-if="slotProps.item.organization" class="bio__event-organization">{{ slotProps.item.organization }}</p>
-            <p v-if="slotProps.item.location" class="bio__event-location">{{ slotProps.item.location }}</p>
-            <p class="bio__event-description">{{ slotProps.item.description }}</p>
-          </article>
-        </template>
-        <template #opposite="slotProps">
-          <time class="bio__event-date" :datetime="slotProps.item.date">
-            {{ slotProps.item.date }}
-          </time>
-        </template>
-      </Timeline>
+      <div class="o-container">
+        <h1 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h1>
+        <Timeline :value="highlights" align="alternate" class="bio__timeline">
+          <template #content="slotProps">
+            <article class="bio__event">
+              <h3 class="bio__event-title">{{ slotProps.item.title }}</h3>
+              <p v-if="slotProps.item.role" class="bio__event-role">{{ slotProps.item.role }}</p>
+              <p v-if="slotProps.item.organization" class="bio__event-organization">{{ slotProps.item.organization }}</p>
+              <p v-if="slotProps.item.location" class="bio__event-location">{{ slotProps.item.location }}</p>
+              <p class="bio__event-description">{{ slotProps.item.description }}</p>
+            </article>
+          </template>
+          <template #opposite="slotProps">
+            <time class="bio__event-date" :datetime="slotProps.item.date">
+              {{ slotProps.item.date }}
+            </time>
+          </template>
+        </Timeline>
+      </div>
     </section>
 
     <!-- Education Section -->
     <section class="bio__education" aria-label="Education">
-      <h1 class="bio__education-title">{{ $t('bio.educationTitle') }}</h1>
-      <Timeline :value="education" align="alternate" class="bio__timeline">
-        <template #content="slotProps">
-          <article class="bio__event">
-            <h3 class="bio__event-title">{{ slotProps.item.title }}</h3>
-            <p v-if="slotProps.item.field" class="bio__event-field">{{ slotProps.item.field }}</p>
-            <p v-if="slotProps.item.location" class="bio__event-location">{{ slotProps.item.location }}</p>
-            <p class="bio__event-degree">{{ slotProps.item.degree }}</p>
-          </article>
-        </template>
-        <template #opposite="slotProps">
-          <time class="bio__event-date" :datetime="slotProps.item.date">
-            {{ slotProps.item.date }}
-          </time>
-        </template>
-      </Timeline>
+      <div class="o-container">
+        <h1 class="bio__education-title">{{ $t('bio.educationTitle') }}</h1>
+        <Timeline :value="education" align="alternate" class="bio__timeline">
+          <template #content="slotProps">
+            <article class="bio__event">
+              <h3 class="bio__event-title">{{ slotProps.item.title }}</h3>
+              <p v-if="slotProps.item.field" class="bio__event-field">{{ slotProps.item.field }}</p>
+              <p v-if="slotProps.item.location" class="bio__event-location">{{ slotProps.item.location }}</p>
+              <p class="bio__event-degree">{{ slotProps.item.degree }}</p>
+            </article>
+          </template>
+          <template #opposite="slotProps">
+            <time class="bio__event-date" :datetime="slotProps.item.date">
+              {{ slotProps.item.date }}
+            </time>
+          </template>
+        </Timeline>
+      </div>
     </section>
   </main>
 </template>

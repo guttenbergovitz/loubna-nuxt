@@ -11,29 +11,37 @@ defineI18nRoute({
   <main class="workshop">
     <!-- Header Section -->
     <header class="workshop__header">
-      <h1 class="workshop__title">{{ $t('workshop.title') }}</h1>
+      <div class="o-container o-container--4xl">
+        <h1 class="workshop__title">{{ $t('workshop.title') }}</h1>
+      </div>
     </header>
 
     <!-- Intro Section -->
     <section class="workshop__intro">
-      <p class="workshop__intro-question">{{ $t('workshop.intro.question') }}</p>
-      <p class="workshop__intro-alternative">{{ $t('workshop.intro.alternative') }}</p>
+      <div class="o-container o-container--3xl">
+        <p class="workshop__intro-question">{{ $t('workshop.intro.question') }}</p>
+        <p class="workshop__intro-alternative">{{ $t('workshop.intro.alternative') }}</p>
+      </div>
     </section>
 
     <!-- Video Section -->
     <section class="workshop__video" aria-label="Workshop video">
-      <p class="workshop__video-intro">{{ $t('workshop.video.intro') }}</p>
-      <YouTubeVideo
-        class="workshop__video-player"
-        :video-id="$t('workshop.video.youtubeId')"
-        :title="$t('workshop.title')"
-      />
+      <div class="o-container o-container--4xl">
+        <p class="workshop__video-intro">{{ $t('workshop.video.intro') }}</p>
+        <YouTubeVideo
+          class="workshop__video-player"
+          :video-id="$t('workshop.video.youtubeId')"
+          :title="$t('workshop.title')"
+        />
+      </div>
     </section>
 
     <!-- What's On Section -->
     <section class="workshop__whats-on">
-      <h2 class="workshop__whats-on-heading">{{ $t('workshop.whatsOn.heading') }}</h2>
-      <p class="workshop__whats-on-activity">{{ $t('workshop.whatsOn.activity') }}</p>
+      <div class="o-container o-container--3xl">
+        <h2 class="workshop__whats-on-heading">{{ $t('workshop.whatsOn.heading') }}</h2>
+        <p class="workshop__whats-on-activity">{{ $t('workshop.whatsOn.activity') }}</p>
+      </div>
     </section>
   </main>
 </template>
