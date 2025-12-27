@@ -1,19 +1,21 @@
-
 <script lang="ts" setup>
-  const { locale, locales } = useI18n()
-  const switchLocalePath = useSwitchLocalePath()
-
-  const availableLocales = computed(() => {
-    return locales.value.filter(i => i.code !== locale.value)
-  })
+const { locale, locales } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
 </script>
 
 <template>
-    <NuxtLink v-for="l in availableLocales" :key="l.code" :to="switchLocalePath(l.code)">
-    {{ l.name }}
-  </NuxtLink>
+  <div class="language-switcher" role="navigation" aria-label="Language selector">
+    <NuxtLink
+      v-for="l in locales"
+      :key="l.code"
+      :to="switchLocalePath(l.code)"
+      :class="[
+        'language-switcher__button',
+        { 'language-switcher__button--active': l.code === locale }
+      ]"
+      :aria-current="l.code === locale ? 'true' : undefined"
+    >
+      {{ l.code }}
+    </NuxtLink>
+  </div>
 </template>
-
-<style>
-
-</style>

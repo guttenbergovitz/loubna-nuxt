@@ -1,6 +1,11 @@
 <template>
-  <nav>
-    <NuxtLink v-for="item in navItems" :key="item.route" :to="localePath(item.route)">
+  <nav class="main-navigation" aria-label="Main navigation">
+    <NuxtLink
+      v-for="item in navItems"
+      :key="item.route"
+      :to="localePath(item.route)"
+      class="main-navigation__link"
+    >
       {{ $t(`${item.key}.name`) }}
     </NuxtLink>
   </nav>

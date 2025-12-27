@@ -18,7 +18,9 @@
 @import './objects/grid.css';
 
 /* Components Layer - BEM components */
-/* Component imports will be added here as they are created */
+@import './components/site-header.css';
+@import './components/main-navigation.css';
+@import './components/language-switcher.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';

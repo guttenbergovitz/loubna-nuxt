@@ -1,0 +1,45 @@
+/* ============================================
+   Language Switcher Component
+   ============================================ */
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.language-switcher__button {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border: var(--border-width-thin) solid var(--color-border-primary);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.language-switcher__button:hover {
+  color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  background-color: var(--color-background-tertiary);
+}
+
+.language-switcher__button:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 2px;
+}
+
+.language-switcher__button--active {
+  color: var(--color-text-inverse);
+  background-color: var(--color-background-dark);
+  border-color: var(--color-background-dark);
+}
+
+.language-switcher__button--active:hover {
+  background-color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+}
