@@ -2,6 +2,117 @@
    Home Page Styles
    ============================================ */
 
+/* Intro Section - Modernist asymmetric style */
+.home__intro {
+  padding: var(--space-fluid-xl) 0 var(--space-fluid-lg);
+  position: relative;
+}
+
+.home__intro-statement {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.02em;
+}
+
+.home__intro-footnote {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  margin-top: 0;
+  font-style: italic;
+}
+
+/* Question Section - Bold asymmetric typography */
+.home__question {
+  padding: var(--space-fluid-xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home__question-text {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.3;
+  margin-bottom: var(--space-md);
+  max-width: 30ch;
+  position: relative;
+  z-index: 2;
+}
+
+.home__question-text em {
+  font-style: italic;
+  font-weight: var(--font-weight-medium);
+}
+
+.home__question-highlight {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 2;
+}
+
+.home__question-highlight strong {
+  font-weight: var(--font-weight-bold);
+}
+
+.home__question-mark {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(15rem, 30vw, 25rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  opacity: 0.03;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Solution Section - Vertical emphasis */
+.home__solution {
+  padding: var(--space-fluid-xl) 0;
+  position: relative;
+  text-align: center;
+}
+
+.home__solution-or {
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+  opacity: 0.7;
+}
+
+.home__solution-heading {
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
+  line-height: 1.3;
+  margin-bottom: var(--space-sm);
+  font-weight: var(--font-weight-regular);
+}
+
+.home__solution-heading strong {
+  font-weight: var(--font-weight-bold);
+  display: block;
+}
+
+.home__solution-subtext {
+  font-size: clamp(1.25rem, 3vw, 2.25rem);
+  font-style: italic;
+  margin-bottom: var(--space-xs);
+  opacity: 0.8;
+}
+
+.home__solution-handcrafted {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-top: var(--space-md);
+}
+
 /* Options Section */
 .home__options {
   padding: var(--space-fluid-2xl) 0;
