@@ -52,16 +52,25 @@ const secondaryGalleryImages = [
     <section class="home__options" aria-label="Photography options">
       <div class="o-container">
         <article class="home__option">
+          <div class="home__option-icon">
+            <Icon name="mdi:image-multiple-outline" />
+          </div>
           <h3 class="home__option-title">{{ $t('home.options.stock.title') }}</h3>
           <RichText class="home__option-description" :content="$t('home.options.stock.description')" />
         </article>
 
         <article class="home__option">
+          <div class="home__option-icon">
+            <Icon name="mdi:camera-enhance-outline" />
+          </div>
           <h3 class="home__option-title">{{ $t('home.options.studio.title') }}</h3>
           <RichText class="home__option-description" :content="$t('home.options.studio.description')" />
         </article>
 
         <article class="home__option">
+          <div class="home__option-icon">
+            <Icon name="mdi:compass-outline" />
+          </div>
           <h3 class="home__option-title">{{ $t('home.options.scout.title') }}</h3>
           <RichText class="home__option-description" :content="$t('home.options.scout.description')" />
         </article>

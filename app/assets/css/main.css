@@ -24,5 +24,8 @@
 @import './components/language-switcher.css';
 @import './components/photo-gallery.css';
 
+/* Pages Layer - Page-specific styles */
+@import './pages/home.css';
+
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';
