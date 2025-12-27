@@ -208,5 +208,17 @@
     "name": "Contact",
     "title": "Get in Touch",
     "intro": "I am Loubna, a passionate photographer based in Oslo, Norway. With a keen eye for detail and a love for capturing moments, I specialize in portrait and landscape photography. Through my lens, I strive to tell stories and evoke emotions that last a lifetime."
+  },
+  "footer": {
+    "tagline": "🇳🇴 Handcrafted in Norway.",
+    "email": "info@loubnaphoto.no",
+    "phone": "+47 967 25 275",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "x": "X",
+      "linkedin": "LinkedIn"
+    }
   }
 }
