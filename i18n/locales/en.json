@@ -78,6 +78,22 @@
       "footnote": "*only when it hooks me."
     }
   },
+  "workshop": {
+    "name": "Workshop",
+    "title": "Photo Workshops",
+    "intro": {
+      "question": "Do you work in the cultural sector and need a fresh, exciting workshop for your program?",
+      "alternative": "Or just bored and want to try something new, fun, and hands-on?"
+    },
+    "video": {
+      "intro": "Watch this video – in just 1 minute, you'll see what you gain by joining our workshop family!",
+      "youtubeId": "6tsqc690s9k"
+    },
+    "whatsOn": {
+      "heading": "What's On",
+      "activity": "Building a gigantic camera. Camera Obscura."
+    }
+  },
   "contact": {
     "name": "Contact",
     "title": "Get in Touch",

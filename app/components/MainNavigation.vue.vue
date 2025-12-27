@@ -10,6 +10,7 @@
 const navItems = [
   { route: 'index', key: 'home' },
   { route: 'about', key: 'about' },
+  { route: 'workshop', key: 'workshop' },
   { route: 'contact', key: 'contact' }
 ]
 
