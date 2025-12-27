@@ -1,7 +1,65 @@
 {
   "home": {
     "name": "Hjem",
-    "slogan": "Er hjemmet ditt et dårlig bilde?"
+    "hero": {
+      "heading": "Is Your Home Picture - Poor?"
+    },
+    "intro": {
+      "statement": "Interiøret ditt er viktig.*",
+      "footnote": "* Akkurat som de 101 andre tingene på lista di..."
+    },
+    "howToGet": {
+      "line1": "Så,",
+      "line2": "hvordan får",
+      "line3": "du",
+      "line4": "de",
+      "line5": "riktige bildene",
+      "question": "?"
+    },
+    "options": {
+      "stock": {
+        "title": "Kjøpe et tilfeldig bilde fra bilde banken?",
+        "description": "Hvis du er komfortabel med sterkt brukte stock bilder og å holde styr på lisensen, er det ikke noe problem... Men hvis interiøret ditt er unikt, trenger det en personlig touch."
+      },
+      "studio": {
+        "title": "Hyre et fotostudio?",
+        "description": "Mange fotografer henger seg på trender og bruker mye digital redigering og AI. Trender skifter raskt, og plutselig ser interiøret ditt smakløst ut."
+      },
+      "scout": {
+        "title": "Bli en kunst speider?",
+        "description": "Dette krever tid og innsats for å fordype seg i kunstbransjen. Høres ikke særlig produktivt ut, ikke sant?"
+      }
+    },
+    "alternative": {
+      "or": "eller ...",
+      "youCanOwn": "Du kan eie",
+      "photography": "fotografi",
+      "thatIsReally": "som virkelig er",
+      "handcrafted": "håndlaget."
+    },
+    "whatMakesDifferent": "OK... Men hva skiller deg ut?",
+    "features": {
+      "local": {
+        "title": "Lokal.",
+        "description": "Jeg tar bilder her i nabolaget. Bare ta kontakt når du trenger meg."
+      },
+      "madeToOrder": {
+        "title": "Laget på bestilling.",
+        "description": "Pek på ditt favorittsted på kartet, så drar jeg og tar et bilde. Liker du det? Supert! Hvis ikke – helt greit... Men jeg tror du blir glad for at du ga meg en sjanse."
+      },
+      "noAI": {
+        "title": "Ingen Photoshop & ingen AI.",
+        "description": "Hvert fotografi er håndverk."
+      },
+      "certified": {
+        "title": "Kvalitetssikret.",
+        "description": "Fotografiene er trykket i et begrenset og sertifisert opplag, i henhold til museale standarder. Dette er ikke bare bilder – de er samleobjekter."
+      }
+    },
+    "cta": {
+      "heading": "Ta kontakt for en gratis foto konsultasjon.",
+      "button": "Jeg vil ha det!"
+    }
   },
   "about": {
     "name": "Om",

@@ -1,7 +1,66 @@
 {
   "home": {
     "name": "Home",
-    "slogan": "Is Your Home Picture—Poor?"
+    "hero": {
+      "heading": "Is Your Home Picture—Poor?"
+    },
+    "intro": {
+      "statement": "Your interior is important.*",
+      "footnote": "*Like 101 other things on your to - do list..."
+    },
+    "howToGet": {
+      "line1": "So,",
+      "line2": "how",
+      "line3": "do you",
+      "line4": "get",
+      "line5": "the",
+      "line6": "right pictures",
+      "question": "?"
+    },
+    "options": {
+      "stock": {
+        "title": "Buy a Random Pic on The Stock?",
+        "description": "If you're okay with heavily used snapshots and managing the license, it's no problem... However, if your interior is unique, it needs a personal touch."
+      },
+      "studio": {
+        "title": "Hire a Photographic Studio?",
+        "description": "Popular photographers follow trends, relying heavily on digital editing and AI. Trends change quickly, making your interior look tacky."
+      },
+      "scout": {
+        "title": "Become an Art Scout?",
+        "description": "This needs time and effort to immerse yourself in the art biz. Doesn't sound very productive, does it?"
+      }
+    },
+    "alternative": {
+      "or": "or...",
+      "youCanOwn": "You Can Own",
+      "photography": "Photography",
+      "thatIsReally": "that is really",
+      "handcrafted": "Handcrafted."
+    },
+    "whatMakesDifferent": "\"OK... But What Makes You Different?\"",
+    "features": {
+      "local": {
+        "title": "Local",
+        "description": "I am taking pictures right here in our neighbourhood. You can easily reach me whenever you need."
+      },
+      "madeToOrder": {
+        "title": "Made—to—Order",
+        "description": "Point to your favourite spot on the map, and I'll go take a picture. Like it? Great! If not, no worries... But I think you'll be glad you gave me a shot."
+      },
+      "noAI": {
+        "title": "No AI, No Photoshop",
+        "description": "Each photograph is a piece of craftsmanship."
+      },
+      "certified": {
+        "title": "Certified Quality",
+        "description": "Photographs are printed in limited editions, following museum standards. These aren't just pictures – they're collector's items."
+      }
+    },
+    "cta": {
+      "heading": "Contact me for a free photo consultation.",
+      "button": "I want that!"
+    }
   },
   "about": {
     "name": "About",
