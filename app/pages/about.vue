@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import RichText from '~/components/RichText.vue';
+
 defineI18nRoute({
   paths: {
     en: '/about',
@@ -10,6 +12,6 @@ defineI18nRoute({
 <template>
   <div>
     <h1>{{ $t('about.title') }}</h1>
-    <p>{{ $t('about.content') }}</p>
+    <RichText :content="$t('about.content')" />
   </div>
 </template>
