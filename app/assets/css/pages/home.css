@@ -170,11 +170,15 @@
 }
 
 .home__option-title {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
   margin-bottom: var(--space-md);
   line-height: var(--line-height-tight);
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home__option-description {

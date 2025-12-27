@@ -31,8 +31,8 @@
      ============================================ */
 
   /* Font Families */
-  --font-family-base: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  --font-family-heading: 'Roboto Serif', 'Helvetica', 'Arial', sans-serif;
+  --font-family-base: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-heading: 'Playfair Display', Georgia, serif;
 
   /* Base Font Size */
   --font-size-base: 100%; /* 16px in most browsers */
