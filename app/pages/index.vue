@@ -1,24 +1,18 @@
 <script setup lang="ts">
-// Example gallery images - replace with actual images from /public/images/gallery/home-gallery/
+// Gallery images
 const homeGalleryImages = [
-  { src: 'https://picsum.photos/400/600?random=1', alt: 'Gallery image 1' },
-  { src: 'https://picsum.photos/400/500?random=2', alt: 'Gallery image 2' },
-  { src: 'https://picsum.photos/400/700?random=3', alt: 'Gallery image 3' },
-  { src: 'https://picsum.photos/400/550?random=4', alt: 'Gallery image 4' },
-  { src: 'https://picsum.photos/400/650?random=5', alt: 'Gallery image 5' },
-  { src: 'https://picsum.photos/400/600?random=6', alt: 'Gallery image 6' },
-  { src: 'https://picsum.photos/400/500?random=7', alt: 'Gallery image 7' },
-  { src: 'https://picsum.photos/400/700?random=8', alt: 'Gallery image 8' },
-  { src: 'https://picsum.photos/400/550?random=9', alt: 'Gallery image 9' }
+  { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg2.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg3.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg4.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg5.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg6.jpg', alt: 'Photography by Loubna Photo' }
 ]
 
 const secondaryGalleryImages = [
-  { src: 'https://picsum.photos/400/600?random=10', alt: 'Gallery image 10' },
-  { src: 'https://picsum.photos/400/500?random=11', alt: 'Gallery image 11' },
-  { src: 'https://picsum.photos/400/700?random=12', alt: 'Gallery image 12' },
-  { src: 'https://picsum.photos/400/550?random=13', alt: 'Gallery image 13' },
-  { src: 'https://picsum.photos/400/650?random=14', alt: 'Gallery image 14' },
-  { src: 'https://picsum.photos/400/600?random=15', alt: 'Gallery image 15' }
+  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Photography by Loubna Photo' }
 ]
 </script>
 
