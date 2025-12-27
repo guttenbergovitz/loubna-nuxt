@@ -36,17 +36,21 @@
   gap: var(--space-sm);
 }
 
-.site-footer__logo {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-inverse);
-  text-decoration: none;
+.site-footer__logo-link {
+  display: block;
   transition: var(--transition-fast);
+  line-height: 0;
 }
 
-.site-footer__logo:hover {
-  color: var(--color-cream);
+.site-footer__logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer__logo {
+  display: block;
+  height: auto;
+  max-height: 60px;
+  width: auto;
 }
 
 .site-footer__tagline {

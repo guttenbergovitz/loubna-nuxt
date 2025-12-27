@@ -51,8 +51,14 @@ const socialLinks = [
       <div class="site-footer__content">
         <!-- Brand Section -->
         <div class="site-footer__brand">
-          <NuxtLink :to="localePath('index')" class="site-footer__logo">
-            Loubna Photo
+          <NuxtLink :to="localePath('index')" class="site-footer__logo-link">
+            <NuxtImg
+              src="/images/logo-main.webp"
+              alt="Loubna Photo"
+              class="site-footer__logo"
+              width="180"
+              height="60"
+            />
           </NuxtLink>
           <p class="site-footer__tagline">
             {{ $t('footer.tagline') }}

@@ -3,12 +3,21 @@
    ============================================ */
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: var(--z-index-sticky);
-  background-color: var(--color-background-primary);
-  border-bottom: var(--border-width-thin) solid var(--color-border-secondary);
-  box-shadow: var(--shadow-sm);
+  background-color: transparent;
+  border-bottom: var(--border-width-thin) solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-header--scrolled {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
 }
 
 .site-header__toolbar {
@@ -28,24 +37,27 @@
 }
 
 /* Logo */
-.site-header__logo {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-  text-decoration: none;
+.site-header__logo-link {
+  display: block;
   transition: var(--transition-fast);
-  white-space: nowrap;
+  line-height: 0;
 }
 
-.site-header__logo:hover {
-  color: var(--color-text-secondary);
+.site-header__logo-link:hover {
+  opacity: 0.8;
 }
 
-.site-header__logo:focus-visible {
-  outline: 2px solid var(--color-text-primary);
+.site-header__logo-link:focus-visible {
+  outline: 2px solid var(--color-cream);
   outline-offset: 4px;
   border-radius: var(--border-radius-sm);
+}
+
+.site-header__logo {
+  display: block;
+  height: auto;
+  max-height: 60px;
+  width: auto;
 }
 
 /* PrimeVue Toolbar slots styling */
