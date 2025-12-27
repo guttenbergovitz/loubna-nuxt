@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@primevue/nuxt-module'
   ],
   i18n: {
     locales: [
