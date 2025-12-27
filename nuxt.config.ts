@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
     '@primevue/nuxt-module',
-    '@formkit/nuxt'
+    '@formkit/nuxt',
+    'nuxt-easy-lightbox'
   ],
   primevue: {
     options: {

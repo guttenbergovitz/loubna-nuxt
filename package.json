@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
-    "@primevue/nuxt-module": "^4.5.4"
+    "@primevue/nuxt-module": "^4.5.4",
+    "nuxt-easy-lightbox": "^1.1.0"
   }
 }

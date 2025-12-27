@@ -22,6 +22,7 @@
 @import './components/site-footer.css';
 @import './components/main-navigation.css';
 @import './components/language-switcher.css';
+@import './components/photo-gallery.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';
