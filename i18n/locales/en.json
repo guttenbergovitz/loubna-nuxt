@@ -94,6 +94,116 @@
       "activity": "Building a gigantic camera. Camera Obscura."
     }
   },
+  "bio": {
+    "name": "Bio",
+    "title": "Highlights",
+    "highlightsTitle": "Highlights",
+    "educationTitle": "Education",
+    "highlights": [
+      {
+        "date": "01-03-2006",
+        "title": "Loubna Photo",
+        "role": "Photographer",
+        "description": "Freelancer working worldwide."
+      },
+      {
+        "date": "01-07-2015",
+        "title": "Photo Workshops for Sandnes Municipality",
+        "role": "Photo Instructor",
+        "location": "Varatun Gård, Sandnes, Norway.",
+        "description": "Three-year collaboration focused on conducting workshops on building Camera Obscura, Pinhole Cameras, and darkroom techniques at Varatun Gård."
+      },
+      {
+        "date": "12-01-2015",
+        "title": "Follow the Sun.",
+        "location": "Cafe Sting, Stavanger, Norway.",
+        "description": "Solo Photo Exhibition sponsored by Stavanger Municipality."
+      },
+      {
+        "date": "15-06-2013",
+        "title": "Enjoy the Ride!",
+        "location": "Solo traveling photography exhibition, Poland.",
+        "description": "Major shows at Kana Theater in Stettin and the VI International Fair Show in Poznań."
+      },
+      {
+        "date": "12-04-2013",
+        "title": "My Place.",
+        "role": "Video Installation",
+        "location": "Festival of Art 'poMorze Sztuki proForma', Poland.",
+        "description": "Work created for an art festival and exhibited during a touring show in Szczecin, Gdańsk and Zielona Góra."
+      },
+      {
+        "date": "16-03-2012",
+        "title": "n.i.t.c.",
+        "role": "Project in Urban Space",
+        "location": "Festival of Art 'poMorze Sztuki przeZtwory'.  Poland.",
+        "description": "Work exhibited during a touring show in Szczecin and Gdańsk."
+      },
+      {
+        "date": "10-10-2010",
+        "title": "Magnetism.",
+        "role": "Video Sculpture",
+        "location": "Festival of New Art  lAbiRynT (Frankfurt); Trans:motion - Group Exhibition (Szczecin)",
+        "description": "Project exhibited  during a touring show in Frankfurt and Szczecin."
+      },
+      {
+        "date": "28-10-2011",
+        "title": "Itsaso.",
+        "location": "The Gate Jazz Cafe, Stettin, Poland",
+        "description": "Solo Photo Exhibition"
+      },
+      {
+        "date": "01-08-2011",
+        "title": "Originator and Coordinator",
+        "organization": "Trans:motion Project",
+        "description": "A six-month Polish-German collaboration project, where artists from both countries were invited to create works focused on the identity of place. Szczecin, Poland; Berlin, Germany"
+      },
+      {
+        "date": "01-01-2011",
+        "title": "President and Co-founder",
+        "organization": "Cultural Association Aloha Szczecin!",
+        "description": "Over three years, the association hosted lots of cultural and sports events, along with workshops that got kids and teenagers involved."
+      },
+      {
+        "date": "19-03-2009",
+        "title": "home_less",
+        "role": "Video installation in Urban Space.",
+        "description": "Project created as an artistic debut for the 5th International Festival of Visual Arts \"inSpiracje: Space\", Szczecin, Poland."
+      },
+      {
+        "date": "01-03-2008",
+        "title": "Project menager",
+        "organization": "5th Internasional Festival of Visual Arts inSpiracje",
+        "description": "My task was to manage the work related to exhibitions and to oversee the visits of 63 artists from around the world, who presented their work both in galleries and in public urban spaces."
+      },
+      {
+        "date": "01-01-2007",
+        "title": "Gallery Curatorial Assistant",
+        "organization": "Municipal Art Gallery",
+        "description": "I organized and coordinated exhibitions and shows with invited artists such as Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska and Marek Targoński."
+      }
+    ],
+    "education": [
+      {
+        "date": "08-06-2013",
+        "title": "University of the Arts Poznan Faculty of Multimedia Communications",
+        "field": "Art Of Image Registration with major in Photography",
+        "degree": "Bachelor"
+      },
+      {
+        "date": "30-06-2008",
+        "title": "European Academy of Photography",
+        "location": "Warsaw, Poland",
+        "degree": "Craft Certificate"
+      },
+      {
+        "date": "07-06-2004",
+        "title": "Agricultural University  in Stettin",
+        "field": "Faculty of Human Nutrition Physiology",
+        "degree": "Master Engineer"
+      }
+    ]
+  },
   "contact": {
     "name": "Contact",
     "title": "Get in Touch",
