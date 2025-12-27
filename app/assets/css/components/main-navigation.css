@@ -18,9 +18,9 @@
 .main-navigation__link {
   display: inline-block;
   padding: var(--space-xs) var(--space-sm);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
-  color: var(--color-text-primary);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: var(--transition-fast);
   border-radius: var(--border-radius-sm);
@@ -28,11 +28,11 @@
 }
 
 .main-navigation__link:hover {
-  color: var(--color-text-secondary);
+  color: var(--color-cream);
 }
 
 .main-navigation__link:focus-visible {
-  outline: 2px solid var(--color-text-primary);
+  outline: 2px solid var(--color-cream);
   outline-offset: 2px;
 }
 
@@ -48,7 +48,7 @@
   left: var(--space-sm);
   right: var(--space-sm);
   height: 2px;
-  background-color: var(--color-text-primary);
+  background-color: var(--color-cream);
 }
 
 /* Responsive */
@@ -60,7 +60,7 @@
   }
 
   .main-navigation__link {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     padding: var(--space-2xs) var(--space-xs);
   }
 }

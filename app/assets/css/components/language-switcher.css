@@ -10,11 +10,11 @@
 
 .language-switcher__button {
   padding: var(--space-xs) var(--space-sm);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-medium);
-  color: var(--color-text-secondary);
+  color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
-  border: var(--border-width-thin) solid var(--color-border-primary);
+  border: var(--border-width-thin) solid rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius-md);
   cursor: pointer;
   transition: var(--transition-fast);
@@ -23,23 +23,23 @@
 }
 
 .language-switcher__button:hover {
-  color: var(--color-text-primary);
-  border-color: var(--color-text-primary);
-  background-color: var(--color-background-tertiary);
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .language-switcher__button:focus-visible {
-  outline: 2px solid var(--color-text-primary);
+  outline: 2px solid var(--color-cream);
   outline-offset: 2px;
 }
 
 .language-switcher__button--active {
-  color: var(--color-text-inverse);
-  background-color: var(--color-background-dark);
-  border-color: var(--color-background-dark);
+  color: var(--color-background-dark);
+  background-color: var(--color-cream);
+  border-color: var(--color-cream);
 }
 
 .language-switcher__button--active:hover {
-  background-color: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.95);
 }

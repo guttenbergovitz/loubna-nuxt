@@ -8,16 +8,17 @@
   left: 0;
   right: 0;
   z-index: var(--z-index-sticky);
-  background-color: transparent;
-  border-bottom: var(--border-width-thin) solid transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: var(--border-width-thin) solid rgba(255, 255, 255, 0.1);
   transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .site-header--scrolled {
-  background-color: rgba(0, 0, 0, 0.75);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.85);
+  border-bottom-color: rgba(255, 255, 255, 0.15);
   box-shadow: var(--shadow-md);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 
 .site-header__toolbar {
