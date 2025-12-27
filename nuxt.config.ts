@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
-    '@primevue/nuxt-module'
+    '@primevue/nuxt-module',
+    '@formkit/nuxt'
   ],
   i18n: {
     locales: [

@@ -8,8 +8,14 @@ defineI18nRoute({
 </script>
 
 <template>
-  <div>
-    <h1>{{ $t('contact.title') }}</h1>
-    <p>{{ $t('contact.intro') }}</p>
-  </div>
+  <main class="contact">
+    <header class="contact__header">
+      <h1 class="contact__title">{{ $t('contact.title') }}</h1>
+      <p class="contact__intro">{{ $t('contact.intro') }}</p>
+    </header>
+
+    <section class="contact__form-section" aria-label="Contact form">
+      <ContactForm />
+    </section>
+  </main>
 </template>
