@@ -203,10 +203,83 @@
       }
     ]
   },
+  "bookCall": {
+    "name": "Bestill en samtale",
+    "title": "La oss skape noe vakkert sammen",
+    "intro": "Klar til å forvandle rommet ditt med håndlaget fotografi? Bestill en gratis konsultasjonssamtale og la oss diskutere hvordan vi kan realisere visjonen din. Ingen forpliktelser, bare en samtale om dine unike behov.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Navn",
+          "placeholder": "Ditt navn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "din{'@'}email.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "+47 123 45 678"
+        },
+        "lookingFor": {
+          "label": "Leter du etter …",
+          "placeholder": "Velg et alternativ",
+          "options": {
+            "businessGift": "Firmagave?",
+            "fineArtPrint": "Fine art-print for interiør?",
+            "customPhotography": "Spesialtilpasset fotografi til interiørelementer?"
+          }
+        },
+        "photographyStyle": {
+          "label": "Hvilken type fotografi liker du?",
+          "placeholder": "Velg en stil",
+          "options": {
+            "landscape": "Landskap",
+            "architecture": "Arkitektur",
+            "nature": "Naturtemaer",
+            "impressions": "Stemninger",
+            "other": "Annet"
+          }
+        }
+      },
+      "submit": "Send",
+      "success": "Takk for din henvendelse. Vi kontakter deg innen 48 timer for å avtale en samtale...",
+      "validation": {
+        "nameMin": "Navnet må være minst 2 tegn",
+        "emailInvalid": "Ugyldig e-postadresse",
+        "phoneMin": "Telefonnummeret må være minst 8 sifre",
+        "required": "Dette feltet er påkrevd"
+      }
+    }
+  },
   "contact": {
     "name": "Kontakt",
     "title": "Ta kontakt",
-    "intro": "Jeg er Loubna, en lidenskapelig fotograf basert i Oslo, Norge. Med et skarpt øye for detaljer og en kjærlighet for å fange øyeblikk, spesialiserer jeg meg på portrett- og landskapsfotografering. Gjennom linsen min streber jeg etter å fortelle historier og fremkalle følelser som varer livet ut."
+    "intro": "Jeg er Loubna, en lidenskapelig fotograf basert i Oslo, Norge. Med et skarpt øye for detaljer og en kjærlighet for å fange øyeblikk, spesialiserer jeg meg på portrett- og landskapsfotografering. Gjennom linsen min streber jeg etter å fortelle historier og fremkalle følelser som varer livet ut.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Navn",
+          "placeholder": "Ditt navn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "din{'@'}email.com"
+        },
+        "message": {
+          "label": "Melding",
+          "placeholder": "Fortell oss om prosjektet ditt eller forespørselen..."
+        }
+      },
+      "submit": "Send melding",
+      "success": "Takk for meldingen din. Vi kommer tilbake til deg snart!",
+      "validation": {
+        "nameMin": "Navnet må være minst 2 tegn",
+        "emailInvalid": "Ugyldig e-postadresse",
+        "messageMin": "Meldingen må være minst 10 tegn",
+        "required": "Dette feltet er påkrevd"
+      }
+    }
   },
   "footer": {
     "tagline": "🇳🇴 Håndlaget i Norge.",

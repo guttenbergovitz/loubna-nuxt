@@ -204,10 +204,83 @@
       }
     ]
   },
+  "bookCall": {
+    "name": "Book a Call",
+    "title": "Let's Create Something Beautiful Together",
+    "intro": "Ready to transform your space with handcrafted photography? Book a free consultation call and let's discuss how we can bring your vision to life. No obligations, just a conversation about your unique needs.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your{'@'}email.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "+47 123 45 678"
+        },
+        "lookingFor": {
+          "label": "Are you looking for...",
+          "placeholder": "Select an option",
+          "options": {
+            "businessGift": "Business Gift?",
+            "fineArtPrint": "Fine Art Print for Interiors?",
+            "customPhotography": "Custom Photography for Interior Design Elements"
+          }
+        },
+        "photographyStyle": {
+          "label": "What style of photography do you like?",
+          "placeholder": "Select a style",
+          "options": {
+            "landscape": "Landscape",
+            "architecture": "Architecture",
+            "nature": "Nature themes",
+            "impressions": "Impressions",
+            "other": "Other"
+          }
+        }
+      },
+      "submit": "Send",
+      "success": "Thank you for your submission. We will contact you within 48 hours to schedule a call...",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "phoneMin": "Phone number must be at least 8 digits",
+        "required": "This field is required"
+      }
+    }
+  },
   "contact": {
     "name": "Contact",
     "title": "Get in Touch",
-    "intro": "I am Loubna, a passionate photographer based in Oslo, Norway. With a keen eye for detail and a love for capturing moments, I specialize in portrait and landscape photography. Through my lens, I strive to tell stories and evoke emotions that last a lifetime."
+    "intro": "I am Loubna, a passionate photographer based in Oslo, Norway. With a keen eye for detail and a love for capturing moments, I specialize in portrait and landscape photography. Through my lens, I strive to tell stories and evoke emotions that last a lifetime.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your{'@'}email.com"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us about your project or inquiry..."
+        }
+      },
+      "submit": "Send Message",
+      "success": "Thank you for your message. We'll get back to you soon!",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "messageMin": "Message must be at least 10 characters",
+        "required": "This field is required"
+      }
+    }
   },
   "footer": {
     "tagline": "🇳🇴 Handcrafted in Norway.",
