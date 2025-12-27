@@ -1,33 +1,64 @@
 <template>
   <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; {{ currentYear }} Loubna Photography. All rights reserved.</p>
+    <div class="footer__container">
+      <p class="footer__tagline">{{ $t('footer.tagline') }}</p>
+
+      <div class="footer__contact">
+        <a :href="`mailto:${$t('footer.email')}`" class="footer__contact-link">
+          {{ $t('footer.email') }}
+        </a>
+        <a :href="`tel:${$t('footer.phone')}`" class="footer__contact-link">
+          {{ $t('footer.phone') }}
+        </a>
+      </div>
+
+      <nav class="footer__social" aria-label="Social media links">
+        <a
+          href="https://facebook.com/loubnaphoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-link"
+          :aria-label="$t('footer.social.facebook')"
+        >
+          {{ $t('footer.social.facebook') }}
+        </a>
+        <a
+          href="https://youtube.com/@loubnaphoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-link"
+          :aria-label="$t('footer.social.youtube')"
+        >
+          {{ $t('footer.social.youtube') }}
+        </a>
+        <a
+          href="https://instagram.com/loubnaphoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-link"
+          :aria-label="$t('footer.social.instagram')"
+        >
+          {{ $t('footer.social.instagram') }}
+        </a>
+        <a
+          href="https://x.com/loubnaphoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-link"
+          :aria-label="$t('footer.social.x')"
+        >
+          {{ $t('footer.social.x') }}
+        </a>
+        <a
+          href="https://linkedin.com/company/loubnaphoto"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer__social-link"
+          :aria-label="$t('footer.social.linkedin')"
+        >
+          {{ $t('footer.social.linkedin') }}
+        </a>
+      </nav>
     </div>
   </footer>
 </template>
-
-<script setup>
-import { computed } from 'vue'
-
-const currentYear = computed(() => new Date().getFullYear())
-</script>
-
-<style scoped>
-.footer {
-  background-color: #f8f9fa;
-  padding: 1rem 0;
-  margin-top: auto;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  color: #6c757d;
-}
-</style>

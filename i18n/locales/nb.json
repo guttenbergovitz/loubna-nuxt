@@ -1,16 +1,223 @@
 {
   "home": {
     "name": "Hjem",
-    "slogan": "Er hjemmet ditt et dårlig bilde?"
+    "hero": {
+      "heading": "Is Your Home Picture - Poor?"
+    },
+    "intro": {
+      "statement": "Interiøret ditt er viktig.*",
+      "footnote": "* Akkurat som de 101 andre tingene på lista di..."
+    },
+    "howToGet": {
+      "line1": "Så,",
+      "line2": "hvordan får",
+      "line3": "du",
+      "line4": "de",
+      "line5": "riktige bildene",
+      "question": "?"
+    },
+    "options": {
+      "stock": {
+        "title": "Kjøpe et tilfeldig bilde fra bilde banken?",
+        "description": "Hvis du er komfortabel med sterkt brukte stock bilder og å holde styr på lisensen, er det ikke noe problem... Men hvis interiøret ditt er unikt, trenger det en personlig touch."
+      },
+      "studio": {
+        "title": "Hyre et fotostudio?",
+        "description": "Mange fotografer henger seg på trender og bruker mye digital redigering og AI. Trender skifter raskt, og plutselig ser interiøret ditt smakløst ut."
+      },
+      "scout": {
+        "title": "Bli en kunst speider?",
+        "description": "Dette krever tid og innsats for å fordype seg i kunstbransjen. Høres ikke særlig produktivt ut, ikke sant?"
+      }
+    },
+    "alternative": {
+      "or": "eller ...",
+      "youCanOwn": "Du kan eie",
+      "photography": "fotografi",
+      "thatIsReally": "som virkelig er",
+      "handcrafted": "håndlaget."
+    },
+    "whatMakesDifferent": "OK... Men hva skiller deg ut?",
+    "features": {
+      "local": {
+        "title": "Lokal.",
+        "description": "Jeg tar bilder her i nabolaget. Bare ta kontakt når du trenger meg."
+      },
+      "madeToOrder": {
+        "title": "Laget på bestilling.",
+        "description": "Pek på ditt favorittsted på kartet, så drar jeg og tar et bilde. Liker du det? Supert! Hvis ikke – helt greit... Men jeg tror du blir glad for at du ga meg en sjanse."
+      },
+      "noAI": {
+        "title": "Ingen Photoshop & ingen AI.",
+        "description": "Hvert fotografi er håndverk."
+      },
+      "certified": {
+        "title": "Kvalitetssikret.",
+        "description": "Fotografiene er trykket i et begrenset og sertifisert opplag, i henhold til museale standarder. Dette er ikke bare bilder – de er samleobjekter."
+      }
+    },
+    "cta": {
+      "heading": "Ta kontakt for en gratis foto konsultasjon.",
+      "button": "Jeg vil ha det!"
+    }
   },
   "about": {
     "name": "Om",
     "title": "Vil du bli kjent med meg?",
-    "content": "Mitt navn er **Loubna Aleksandra Kubiak**, og jeg er en fotoartist med polske røtter, basert i Norge og arbeider over hele verden. Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeromsteknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimediekommunikasjon. \n\n Som frilanser har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har drevet med mine egne kunstneriske prosjekter. \n\n Jeg har ledet fotoworkshops i samarbeid med lokale myndigheter og kulturhus over hele Europa. \n\n Som koordinator og leder i kultursektoren har jeg jobbet med internasjonalt anerkjente kunstnere som Peter Greenaway, Zbig Rybczynski, Wojciech Fangor og Leon Tarasewicz. "
+    "greeting": "Hei! Salam! Peace!",
+    "bio": {
+      "intro": "Mitt navn er Loubna Aleksandra Kubiak, og jeg er en fotokunstner med polske røtter, bosatt i Norge og arbeidende internasjonalt. Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeroms teknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimedie kommunikasjon. Som fotograf har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har utviklet mine egne kunstneriske prosjekter.",
+      "workshops": "Som fotoinstruktør har jeg samarbeidet med myndigheter og kulturinstitusjoner i Polen, Tyskland og Norge.",
+      "collaborations": "I Norge har jeg samarbeidet med Kulturtanken, Rogaland Kunstsenter, Jærmuseet, Sandnes og Stavanger kommuner.",
+      "coordination": "Som erfaren koordinator og leder i kultursektoren har jeg arbeidet med internasjonalt anerkjente kunstnere som Peter Greenaway, Zbig Rybczynski, Voy Fangor og Leon Tarasewicz."
+    },
+    "challenge": {
+      "heading": "Utfordre meg!",
+      "text": "Velg et sted, så tar jeg et bilde der.*",
+      "footnote": "* bare når det fenger meg."
+    }
+  },
+  "workshop": {
+    "name": "Workshop",
+    "title": "Photo Workshops",
+    "intro": {
+      "question": "Do you work in the cultural sector and need a fresh, exciting workshop for your program?",
+      "alternative": "Or just bored and want to try something new, fun, and hands-on?"
+    },
+    "video": {
+      "intro": "Workshop NB",
+      "youtubeId": "6tsqc690s9k"
+    },
+    "whatsOn": {
+      "heading": "What's On",
+      "activity": "Building a gigantic camera. Camera Obscura."
+    }
+  },
+  "bio": {
+    "name": "Bio",
+    "title": "Høydepunkter",
+    "highlightsTitle": "Høydepunkter",
+    "educationTitle": "Utdanning",
+    "highlights": [
+      {
+        "date": "01-03-2006",
+        "title": "Loubna Photo",
+        "role": "Fotograf",
+        "description": "Frilanser som arbeider over hele verden."
+      },
+      {
+        "date": "01-07-2015",
+        "title": "Foto Workshop for Sandnes Kommune",
+        "role": "Foto Instruktør",
+        "location": "Varatun Gård, Sandnes, Norge.",
+        "description": "Treårig samarbeid fokusert på å gjennomføre workshops om bygging av Camera Obscura, Pinhole Cameras og mørkeromsteknikker på Varatun Gård."
+      },
+      {
+        "date": "12-01-2015",
+        "title": "Følg Solen.",
+        "location": "Cafe Sting, Stavanger, Norge.",
+        "description": "Solo fotoutstilling sponset av Stavanger Kommune."
+      },
+      {
+        "date": "15-06-2013",
+        "title": "Nyt turen!",
+        "location": "Vandreutstilling, Polen.",
+        "description": "Hovedutstillinger på Kana Theater i Stettin og VI International Fair Show i Poznań."
+      },
+      {
+        "date": "12-04-2013",
+        "title": "Mitt sted.",
+        "role": "Videoinstallasjon",
+        "location": "Festival of Art 'poMorze Sztuki proForma', Polen.",
+        "description": "Verk skapt for en kunstfestival og utstilt under en turné i Szczecin, Gdańsk og Zielona Góra."
+      },
+      {
+        "date": "16-03-2012",
+        "title": "n.i.t.c.",
+        "role": "Prosjekt i urbant rom",
+        "location": "Festival of Art 'poMorze Sztuki przeZtwory'. Polen.",
+        "description": "Verk utstilt under en turné i Szczecin og Gdańsk."
+      },
+      {
+        "date": "10-10-2010",
+        "title": "Magnetisme.",
+        "role": "Video Skulptur",
+        "location": "Festival of New Art lAbiRynT (Frankfurt); Trans:motion - Gruppeutstilling (Szczecin)",
+        "description": "Prosjekt utstilt under en turné i Frankfurt og Szczecin."
+      },
+      {
+        "date": "28-10-2011",
+        "title": "Itsaso.",
+        "location": "The Gate Jazz Cafe, Stettin, Polen",
+        "description": "Solo fotoutstilling"
+      },
+      {
+        "date": "01-08-2011",
+        "title": "Initiativtaker og koordinator",
+        "organization": "Trans:motion Prosjekt",
+        "description": "Et seks måneder langt polsk-tysk samarbeidsprosjekt, hvor kunstnere fra begge land ble invitert til å skape verk fokusert på stedets identitet. Szczecin, Polen; Berlin, Tyskland"
+      },
+      {
+        "date": "01-01-2011",
+        "title": "President og medgründer",
+        "organization": "Kulturforening Aloha Szczecin!",
+        "description": "Over tre år arrangerte foreningen mange kulturelle og sportlige arrangementer, sammen med workshops som involverte barn og ungdom."
+      },
+      {
+        "date": "19-03-2009",
+        "title": "home_less",
+        "role": "Videoinstallasjon i urbant rom.",
+        "description": "Prosjekt skapt som en kunstnerisk debut for 5. internasjonale festival for visuell kunst \"inSpiracje: Space\", Szczecin, Polen."
+      },
+      {
+        "date": "01-03-2008",
+        "title": "Prosjektleder",
+        "organization": "5. internasjonale festival for visuell kunst inSpiracje",
+        "description": "Min oppgave var å lede arbeidet knyttet til utstillinger og å overvåke besøkene til 63 kunstnere fra hele verden, som presenterte arbeidet sitt både i gallerier og i offentlige urbane rom."
+      },
+      {
+        "date": "01-01-2007",
+        "title": "Galleri Kuratorassistent",
+        "organization": "Kommunal Kunstgalleri",
+        "description": "Jeg organiserte og koordinerte utstillinger og show med inviterte kunstnere som Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska og Marek Targoński."
+      }
+    ],
+    "education": [
+      {
+        "date": "08-06-2013",
+        "title": "University of the Arts Poznan Faculty of Multimedia Communications",
+        "field": "Kunst av bilderegistrering med hovedfag i fotografi",
+        "degree": "Bachelor"
+      },
+      {
+        "date": "30-06-2008",
+        "title": "European Academy of Photography",
+        "location": "Warszawa, Polen",
+        "degree": "Håndverkssertifikat"
+      },
+      {
+        "date": "07-06-2004",
+        "title": "Landbruksuniversitetet i Stettin",
+        "field": "Fakultet for Menneskelig Ernæringsfysiologi",
+        "degree": "Sivilingeniør"
+      }
+    ]
   },
   "contact": {
     "name": "Kontakt",
     "title": "Ta kontakt",
     "intro": "Jeg er Loubna, en lidenskapelig fotograf basert i Oslo, Norge. Med et skarpt øye for detaljer og en kjærlighet for å fange øyeblikk, spesialiserer jeg meg på portrett- og landskapsfotografering. Gjennom linsen min streber jeg etter å fortelle historier og fremkalle følelser som varer livet ut."
+  },
+  "footer": {
+    "tagline": "🇳🇴 Håndlaget i Norge.",
+    "email": "info{'@'}loubnaphoto.no",
+    "phone": "+47 967 25 275",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "x": "X",
+      "linkedin": "LinkedIn"
+    }
   }
 }

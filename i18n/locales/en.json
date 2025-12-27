@@ -1,16 +1,224 @@
 {
   "home": {
     "name": "Home",
-    "slogan": "Is Your Home Picture—Poor?"
+    "hero": {
+      "heading": "Is Your Home Picture—Poor?"
+    },
+    "intro": {
+      "statement": "Your interior is important.*",
+      "footnote": "*Like 101 other things on your to - do list..."
+    },
+    "howToGet": {
+      "line1": "So,",
+      "line2": "how",
+      "line3": "do you",
+      "line4": "get",
+      "line5": "the",
+      "line6": "right pictures",
+      "question": "?"
+    },
+    "options": {
+      "stock": {
+        "title": "Buy a Random Pic on The Stock?",
+        "description": "If you're okay with heavily used snapshots and managing the license, it's no problem... However, if your interior is unique, it needs a personal touch."
+      },
+      "studio": {
+        "title": "Hire a Photographic Studio?",
+        "description": "Popular photographers follow trends, relying heavily on digital editing and AI. Trends change quickly, making your interior look tacky."
+      },
+      "scout": {
+        "title": "Become an Art Scout?",
+        "description": "This needs time and effort to immerse yourself in the art biz. Doesn't sound very productive, does it?"
+      }
+    },
+    "alternative": {
+      "or": "or...",
+      "youCanOwn": "You Can Own",
+      "photography": "Photography",
+      "thatIsReally": "that is really",
+      "handcrafted": "Handcrafted."
+    },
+    "whatMakesDifferent": "\"OK... But What Makes You Different?\"",
+    "features": {
+      "local": {
+        "title": "Local",
+        "description": "I am taking pictures right here in our neighbourhood. You can easily reach me whenever you need."
+      },
+      "madeToOrder": {
+        "title": "Made—to—Order",
+        "description": "Point to your favourite spot on the map, and I'll go take a picture. Like it? Great! If not, no worries... But I think you'll be glad you gave me a shot."
+      },
+      "noAI": {
+        "title": "No AI, No Photoshop",
+        "description": "Each photograph is a piece of craftsmanship."
+      },
+      "certified": {
+        "title": "Certified Quality",
+        "description": "Photographs are printed in limited editions, following museum standards. These aren't just pictures – they're collector's items."
+      }
+    },
+    "cta": {
+      "heading": "Contact me for a free photo consultation.",
+      "button": "I want that!"
+    }
   },
   "about": {
     "name": "About",
-    "title": "Want to Get to Know Me?",
-    "content": "My name is **Loubna Aleksandra Kubiak**, and I am a photo artist with Polish roots, based in Norway and working worldwide. I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication. \n\n As a freelancer, I have worked with magazines, advertising agencies, and private clients, all while pursuing my own artistic projects. \n\n I have led photography workshops in collaboration with local authorities and cultural centers across Europe. \n\n As a coordinator and manager in the cultural sector, I have worked with internationally renowned artists such as Peter Greenaway, Zbig Rybczynski, Wojciech Fangor, and Leon Tarasewicz. "
+    "title": "Want to know me?",
+    "greeting": "Hi! Salam! Peace!",
+    "bio": {
+      "intro": "My name is Loubna Aleksandra Kubiak, and I am a photo artist with Polish roots, based in Norway and working worldwide. I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication.",
+      "freelance": "As a freelancer, I have worked with magazines, advertising agencies, and private clients, all while pursuing my own artistic projects.",
+      "workshops": "I have led photography workshops in collaboration with local authorities and cultural centers across Europe.",
+      "coordination": "As a coordinator and manager in the cultural sector, I have worked with internationally renowned artists such as Peter Greenaway, Zbig Rybczynski, Wojciech Fangor, and Leon Tarasewicz."
+    },
+    "challenge": {
+      "heading": "Challenge me!",
+      "text": "Pick up a location and I will take a photo there. *",
+      "footnote": "*only when it hooks me."
+    }
+  },
+  "workshop": {
+    "name": "Workshop",
+    "title": "Photo Workshops",
+    "intro": {
+      "question": "Do you work in the cultural sector and need a fresh, exciting workshop for your program?",
+      "alternative": "Or just bored and want to try something new, fun, and hands-on?"
+    },
+    "video": {
+      "intro": "Watch this video – in just 1 minute, you'll see what you gain by joining our workshop family!",
+      "youtubeId": "6tsqc690s9k"
+    },
+    "whatsOn": {
+      "heading": "What's On",
+      "activity": "Building a gigantic camera. Camera Obscura."
+    }
+  },
+  "bio": {
+    "name": "Bio",
+    "title": "Highlights",
+    "highlightsTitle": "Highlights",
+    "educationTitle": "Education",
+    "highlights": [
+      {
+        "date": "01-03-2006",
+        "title": "Loubna Photo",
+        "role": "Photographer",
+        "description": "Freelancer working worldwide."
+      },
+      {
+        "date": "01-07-2015",
+        "title": "Photo Workshops for Sandnes Municipality",
+        "role": "Photo Instructor",
+        "location": "Varatun Gård, Sandnes, Norway.",
+        "description": "Three-year collaboration focused on conducting workshops on building Camera Obscura, Pinhole Cameras, and darkroom techniques at Varatun Gård."
+      },
+      {
+        "date": "12-01-2015",
+        "title": "Follow the Sun.",
+        "location": "Cafe Sting, Stavanger, Norway.",
+        "description": "Solo Photo Exhibition sponsored by Stavanger Municipality."
+      },
+      {
+        "date": "15-06-2013",
+        "title": "Enjoy the Ride!",
+        "location": "Solo traveling photography exhibition, Poland.",
+        "description": "Major shows at Kana Theater in Stettin and the VI International Fair Show in Poznań."
+      },
+      {
+        "date": "12-04-2013",
+        "title": "My Place.",
+        "role": "Video Installation",
+        "location": "Festival of Art 'poMorze Sztuki proForma', Poland.",
+        "description": "Work created for an art festival and exhibited during a touring show in Szczecin, Gdańsk and Zielona Góra."
+      },
+      {
+        "date": "16-03-2012",
+        "title": "n.i.t.c.",
+        "role": "Project in Urban Space",
+        "location": "Festival of Art 'poMorze Sztuki przeZtwory'.  Poland.",
+        "description": "Work exhibited during a touring show in Szczecin and Gdańsk."
+      },
+      {
+        "date": "10-10-2010",
+        "title": "Magnetism.",
+        "role": "Video Sculpture",
+        "location": "Festival of New Art  lAbiRynT (Frankfurt); Trans:motion - Group Exhibition (Szczecin)",
+        "description": "Project exhibited  during a touring show in Frankfurt and Szczecin."
+      },
+      {
+        "date": "28-10-2011",
+        "title": "Itsaso.",
+        "location": "The Gate Jazz Cafe, Stettin, Poland",
+        "description": "Solo Photo Exhibition"
+      },
+      {
+        "date": "01-08-2011",
+        "title": "Originator and Coordinator",
+        "organization": "Trans:motion Project",
+        "description": "A six-month Polish-German collaboration project, where artists from both countries were invited to create works focused on the identity of place. Szczecin, Poland; Berlin, Germany"
+      },
+      {
+        "date": "01-01-2011",
+        "title": "President and Co-founder",
+        "organization": "Cultural Association Aloha Szczecin!",
+        "description": "Over three years, the association hosted lots of cultural and sports events, along with workshops that got kids and teenagers involved."
+      },
+      {
+        "date": "19-03-2009",
+        "title": "home_less",
+        "role": "Video installation in Urban Space.",
+        "description": "Project created as an artistic debut for the 5th International Festival of Visual Arts \"inSpiracje: Space\", Szczecin, Poland."
+      },
+      {
+        "date": "01-03-2008",
+        "title": "Project menager",
+        "organization": "5th Internasional Festival of Visual Arts inSpiracje",
+        "description": "My task was to manage the work related to exhibitions and to oversee the visits of 63 artists from around the world, who presented their work both in galleries and in public urban spaces."
+      },
+      {
+        "date": "01-01-2007",
+        "title": "Gallery Curatorial Assistant",
+        "organization": "Municipal Art Gallery",
+        "description": "I organized and coordinated exhibitions and shows with invited artists such as Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska and Marek Targoński."
+      }
+    ],
+    "education": [
+      {
+        "date": "08-06-2013",
+        "title": "University of the Arts Poznan Faculty of Multimedia Communications",
+        "field": "Art Of Image Registration with major in Photography",
+        "degree": "Bachelor"
+      },
+      {
+        "date": "30-06-2008",
+        "title": "European Academy of Photography",
+        "location": "Warsaw, Poland",
+        "degree": "Craft Certificate"
+      },
+      {
+        "date": "07-06-2004",
+        "title": "Agricultural University  in Stettin",
+        "field": "Faculty of Human Nutrition Physiology",
+        "degree": "Master Engineer"
+      }
+    ]
   },
   "contact": {
     "name": "Contact",
     "title": "Get in Touch",
     "intro": "I am Loubna, a passionate photographer based in Oslo, Norway. With a keen eye for detail and a love for capturing moments, I specialize in portrait and landscape photography. Through my lens, I strive to tell stories and evoke emotions that last a lifetime."
+  },
+  "footer": {
+    "tagline": "🇳🇴 Handcrafted in Norway.",
+    "email": "info{'@'}loubnaphoto.no",
+    "phone": "+47 967 25 275",
+    "social": {
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "instagram": "Instagram",
+      "x": "X",
+      "linkedin": "LinkedIn"
+    }
   }
 }
