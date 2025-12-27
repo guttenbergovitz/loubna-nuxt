@@ -23,12 +23,11 @@ onUnmounted(() => {
       <template #start>
         <NuxtLink :to="localePath('index')" class="site-header__logo-link">
           <NuxtImg
-            src="/images/logo-main.webp"
+            src="/images/logo-main.png"
             alt="Loubna Photo"
             class="site-header__logo"
-            width="180"
-            height="60"
             loading="eager"
+            fit="contain"
           />
         </NuxtLink>
       </template>
