@@ -8,20 +8,43 @@ defineI18nRoute({
   }
 })
 
-const highlights = computed(() => $tm('bio.highlights'))
-const education = computed(() => $tm('bio.education'))
+const { t } = useI18n()
+
+const highlights = computed(() => {
+  const items = []
+  for (let i = 0; i < 13; i++) {
+    items.push({
+      date: t(`bio.highlights.${i}.date`),
+      title: t(`bio.highlights.${i}.title`),
+      role: t(`bio.highlights.${i}.role`),
+      organization: t(`bio.highlights.${i}.organization`),
+      location: t(`bio.highlights.${i}.location`),
+      description: t(`bio.highlights.${i}.description`)
+    })
+  }
+  return items
+})
+
+const education = computed(() => {
+  const items = []
+  for (let i = 0; i < 3; i++) {
+    items.push({
+      date: t(`bio.education.${i}.date`),
+      title: t(`bio.education.${i}.title`),
+      field: t(`bio.education.${i}.field`),
+      location: t(`bio.education.${i}.location`),
+      degree: t(`bio.education.${i}.degree`)
+    })
+  }
+  return items
+})
 </script>
 
 <template>
   <main class="bio">
-    <!-- Header Section -->
-    <header class="bio__header">
-      <h1 class="bio__title">{{ $t('bio.title') }}</h1>
-    </header>
-
     <!-- Highlights Section -->
     <section class="bio__highlights" aria-label="Professional Highlights">
-      <h2 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h2>
+      <h1 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h1>
       <Timeline :value="highlights" align="alternate" class="bio__timeline">
         <template #content="slotProps">
           <article class="bio__event">
@@ -42,7 +65,7 @@ const education = computed(() => $tm('bio.education'))
 
     <!-- Education Section -->
     <section class="bio__education" aria-label="Education">
-      <h2 class="bio__education-title">{{ $t('bio.educationTitle') }}</h2>
+      <h1 class="bio__education-title">{{ $t('bio.educationTitle') }}</h1>
       <Timeline :value="education" align="alternate" class="bio__timeline">
         <template #content="slotProps">
           <article class="bio__event">
