@@ -1,0 +1,42 @@
+/* ============================================
+   Container Object
+   Centering and max-width wrapper
+   ============================================ */
+
+.o-container {
+  width: 100%;
+  max-width: var(--container-7xl);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .o-container {
+    padding-inline: var(--space-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-container {
+    padding-inline: var(--space-xl);
+  }
+}
+
+/* Container size variants */
+.o-container--xs { max-width: var(--container-xs); }
+.o-container--sm { max-width: var(--container-sm); }
+.o-container--md { max-width: var(--container-md); }
+.o-container--lg { max-width: var(--container-lg); }
+.o-container--xl { max-width: var(--container-xl); }
+.o-container--2xl { max-width: var(--container-2xl); }
+.o-container--3xl { max-width: var(--container-3xl); }
+.o-container--4xl { max-width: var(--container-4xl); }
+.o-container--5xl { max-width: var(--container-5xl); }
+.o-container--6xl { max-width: var(--container-6xl); }
+.o-container--7xl { max-width: var(--container-7xl); }
+.o-container--full { max-width: var(--container-full); }
+
+/* No padding variant */
+.o-container--flush {
+  padding-inline: 0;
+}

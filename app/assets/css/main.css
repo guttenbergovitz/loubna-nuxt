@@ -1,25 +1,24 @@
-:root {
-  --font-base: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  --font-heading: 'Roboto Serif', 'Helvetica', 'Arial', sans-serif;
-}
+/* ============================================
+   Main CSS Entry Point
+   Following Atomic Design / ITCSS principles
+   ============================================ */
 
-body {
-  font-family: var(--font-base);
-}
+/* Settings Layer - Variables and design tokens */
+@import './settings/variables.css';
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 400;
-}
+/* Base Layer - Reset and element styles */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/elements.css';
 
-h1 {
-  font-size: 2.5rem;
-}
+/* Objects Layer - Layout patterns (OOCSS) */
+@import './objects/container.css';
+@import './objects/stack.css';
+@import './objects/cluster.css';
+@import './objects/grid.css';
 
-h2 {
-  font-size: 2rem;
-}
+/* Components Layer - BEM components */
+/* Component imports will be added here as they are created */
 
-h3 {
-  font-size: 1.75rem;
-}
+/* Utilities Layer - Helper classes */
+@import './utilities/helpers.css';

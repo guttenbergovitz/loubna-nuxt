@@ -1,0 +1,89 @@
+/* ============================================
+   Grid Object
+   CSS Grid layouts with auto-fit and responsive columns
+   ============================================ */
+
+.o-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+/* Auto-fit responsive grid with minimum column width */
+.o-grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.o-grid--auto-sm {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+}
+
+.o-grid--auto-lg {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+
+/* Fixed column counts - mobile first */
+.o-grid--2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .o-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.o-grid--3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .o-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.o-grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .o-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .o-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Gap variants */
+.o-grid--gap-3xs { gap: var(--space-3xs); }
+.o-grid--gap-2xs { gap: var(--space-2xs); }
+.o-grid--gap-xs { gap: var(--space-xs); }
+.o-grid--gap-sm { gap: var(--space-sm); }
+.o-grid--gap-md { gap: var(--space-md); }
+.o-grid--gap-lg { gap: var(--space-lg); }
+.o-grid--gap-xl { gap: var(--space-xl); }
+.o-grid--gap-2xl { gap: var(--space-2xl); }
+.o-grid--gap-3xl { gap: var(--space-3xl); }
+
+/* Alignment variants */
+.o-grid--items-start { align-items: start; }
+.o-grid--items-center { align-items: center; }
+.o-grid--items-end { align-items: end; }
+.o-grid--items-stretch { align-items: stretch; }
+
+.o-grid--content-start { justify-content: start; }
+.o-grid--content-center { justify-content: center; }
+.o-grid--content-end { justify-content: end; }
+.o-grid--content-between { justify-content: space-between; }
+.o-grid--content-around { justify-content: space-around; }
+.o-grid--content-evenly { justify-content: space-evenly; }

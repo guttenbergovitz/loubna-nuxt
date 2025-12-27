@@ -1,0 +1,132 @@
+/* ============================================
+   Utility Helper Classes
+   ============================================ */
+
+/* Spacing utilities */
+.u-mt-0 { margin-top: 0 !important; }
+.u-mb-0 { margin-bottom: 0 !important; }
+.u-ml-0 { margin-left: 0 !important; }
+.u-mr-0 { margin-right: 0 !important; }
+.u-m-0 { margin: 0 !important; }
+
+.u-mt-auto { margin-top: auto !important; }
+.u-mb-auto { margin-bottom: auto !important; }
+.u-ml-auto { margin-left: auto !important; }
+.u-mr-auto { margin-right: auto !important; }
+
+/* Display utilities */
+.u-block { display: block !important; }
+.u-inline-block { display: inline-block !important; }
+.u-inline { display: inline !important; }
+.u-flex { display: flex !important; }
+.u-inline-flex { display: inline-flex !important; }
+.u-grid { display: grid !important; }
+.u-hidden { display: none !important; }
+
+/* Visibility utilities */
+.u-invisible { visibility: hidden !important; }
+.u-visible { visibility: visible !important; }
+
+/* Screen reader only */
+.u-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 639px) {
+  .u-hidden\@sm { display: none !important; }
+}
+
+@media (min-width: 640px) {
+  .u-visible\@sm { display: block !important; }
+}
+
+@media (max-width: 767px) {
+  .u-hidden\@md { display: none !important; }
+}
+
+@media (min-width: 768px) {
+  .u-visible\@md { display: block !important; }
+}
+
+@media (max-width: 1023px) {
+  .u-hidden\@lg { display: none !important; }
+}
+
+@media (min-width: 1024px) {
+  .u-visible\@lg { display: block !important; }
+}
+
+/* Overflow utilities */
+.u-overflow-auto { overflow: auto !important; }
+.u-overflow-hidden { overflow: hidden !important; }
+.u-overflow-visible { overflow: visible !important; }
+.u-overflow-scroll { overflow: scroll !important; }
+
+/* Position utilities */
+.u-relative { position: relative !important; }
+.u-absolute { position: absolute !important; }
+.u-fixed { position: fixed !important; }
+.u-sticky { position: sticky !important; }
+
+/* Width utilities */
+.u-w-full { width: 100% !important; }
+.u-w-auto { width: auto !important; }
+.u-h-full { height: 100% !important; }
+.u-h-auto { height: auto !important; }
+
+/* Flexbox utilities */
+.u-flex-1 { flex: 1 1 0% !important; }
+.u-flex-auto { flex: 1 1 auto !important; }
+.u-flex-none { flex: none !important; }
+
+.u-flex-row { flex-direction: row !important; }
+.u-flex-col { flex-direction: column !important; }
+
+.u-flex-wrap { flex-wrap: wrap !important; }
+.u-flex-nowrap { flex-wrap: nowrap !important; }
+
+.u-items-start { align-items: flex-start !important; }
+.u-items-center { align-items: center !important; }
+.u-items-end { align-items: flex-end !important; }
+.u-items-baseline { align-items: baseline !important; }
+.u-items-stretch { align-items: stretch !important; }
+
+.u-justify-start { justify-content: flex-start !important; }
+.u-justify-center { justify-content: center !important; }
+.u-justify-end { justify-content: flex-end !important; }
+.u-justify-between { justify-content: space-between !important; }
+.u-justify-around { justify-content: space-around !important; }
+.u-justify-evenly { justify-content: space-evenly !important; }
+
+/* Grid utilities */
+.u-gap-0 { gap: 0 !important; }
+.u-gap-xs { gap: var(--space-xs) !important; }
+.u-gap-sm { gap: var(--space-sm) !important; }
+.u-gap-md { gap: var(--space-md) !important; }
+.u-gap-lg { gap: var(--space-lg) !important; }
+.u-gap-xl { gap: var(--space-xl) !important; }
+
+/* Opacity utilities */
+.u-opacity-0 { opacity: 0 !important; }
+.u-opacity-25 { opacity: 0.25 !important; }
+.u-opacity-50 { opacity: 0.5 !important; }
+.u-opacity-75 { opacity: 0.75 !important; }
+.u-opacity-100 { opacity: 1 !important; }
+
+/* Pointer events */
+.u-pointer-events-none { pointer-events: none !important; }
+.u-pointer-events-auto { pointer-events: auto !important; }
+
+/* Cursor utilities */
+.u-cursor-pointer { cursor: pointer !important; }
+.u-cursor-default { cursor: default !important; }
+.u-cursor-not-allowed { cursor: not-allowed !important; }

@@ -15,6 +15,11 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@formkit/nuxt'
   ],
+  primevue: {
+    options: {
+      unstyled: true
+    }
+  },
   i18n: {
     locales: [
       { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },

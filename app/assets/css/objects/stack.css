@@ -1,0 +1,35 @@
+/* ============================================
+   Stack Object
+   Vertical spacing between children
+   ============================================ */
+
+.o-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.o-stack > * + * {
+  margin-block-start: var(--space-md);
+}
+
+/* Stack spacing variants */
+.o-stack--3xs > * + * { margin-block-start: var(--space-3xs); }
+.o-stack--2xs > * + * { margin-block-start: var(--space-2xs); }
+.o-stack--xs > * + * { margin-block-start: var(--space-xs); }
+.o-stack--sm > * + * { margin-block-start: var(--space-sm); }
+.o-stack--md > * + * { margin-block-start: var(--space-md); }
+.o-stack--lg > * + * { margin-block-start: var(--space-lg); }
+.o-stack--xl > * + * { margin-block-start: var(--space-xl); }
+.o-stack--2xl > * + * { margin-block-start: var(--space-2xl); }
+.o-stack--3xl > * + * { margin-block-start: var(--space-3xl); }
+.o-stack--4xl > * + * { margin-block-start: var(--space-4xl); }
+.o-stack--5xl > * + * { margin-block-start: var(--space-5xl); }
+
+/* Fluid spacing variants */
+.o-stack--fluid-xs > * + * { margin-block-start: var(--space-fluid-xs); }
+.o-stack--fluid-sm > * + * { margin-block-start: var(--space-fluid-sm); }
+.o-stack--fluid-md > * + * { margin-block-start: var(--space-fluid-md); }
+.o-stack--fluid-lg > * + * { margin-block-start: var(--space-fluid-lg); }
+.o-stack--fluid-xl > * + * { margin-block-start: var(--space-fluid-xl); }
+.o-stack--fluid-2xl > * + * { margin-block-start: var(--space-fluid-2xl); }
+.o-stack--fluid-3xl > * + * { margin-block-start: var(--space-fluid-3xl); }

@@ -1,0 +1,42 @@
+/* ============================================
+   Cluster Object
+   Horizontal and vertical spacing with wrapping
+   ============================================ */
+
+.o-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+/* Cluster gap variants */
+.o-cluster--3xs { gap: var(--space-3xs); }
+.o-cluster--2xs { gap: var(--space-2xs); }
+.o-cluster--xs { gap: var(--space-xs); }
+.o-cluster--sm { gap: var(--space-sm); }
+.o-cluster--md { gap: var(--space-md); }
+.o-cluster--lg { gap: var(--space-lg); }
+.o-cluster--xl { gap: var(--space-xl); }
+.o-cluster--2xl { gap: var(--space-2xl); }
+.o-cluster--3xl { gap: var(--space-3xl); }
+
+/* Alignment variants */
+.o-cluster--start { align-items: flex-start; }
+.o-cluster--center { align-items: center; }
+.o-cluster--end { align-items: flex-end; }
+.o-cluster--baseline { align-items: baseline; }
+.o-cluster--stretch { align-items: stretch; }
+
+/* Justify variants */
+.o-cluster--justify-start { justify-content: flex-start; }
+.o-cluster--justify-center { justify-content: center; }
+.o-cluster--justify-end { justify-content: flex-end; }
+.o-cluster--justify-between { justify-content: space-between; }
+.o-cluster--justify-around { justify-content: space-around; }
+.o-cluster--justify-evenly { justify-content: space-evenly; }
+
+/* No wrap variant */
+.o-cluster--nowrap {
+  flex-wrap: nowrap;
+}
