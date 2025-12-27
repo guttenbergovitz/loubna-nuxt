@@ -15,7 +15,7 @@ defineI18nRoute({
     </header>
 
     <section class="contact__form-section" aria-label="Contact form">
-      <ContactForm />
+      <SimpleContactForm />
     </section>
   </main>
 </template>

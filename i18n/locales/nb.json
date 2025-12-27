@@ -203,10 +203,10 @@
       }
     ]
   },
-  "contact": {
-    "name": "Kontakt",
-    "title": "Ta kontakt",
-    "intro": "Jeg er Loubna, en lidenskapelig fotograf basert i Oslo, Norge. Med et skarpt øye for detaljer og en kjærlighet for å fange øyeblikk, spesialiserer jeg meg på portrett- og landskapsfotografering. Gjennom linsen min streber jeg etter å fortelle historier og fremkalle følelser som varer livet ut.",
+  "bookCall": {
+    "name": "Bestill en samtale",
+    "title": "La oss skape noe vakkert sammen",
+    "intro": "Klar til å forvandle rommet ditt med håndlaget fotografi? Bestill en gratis konsultasjonssamtale og la oss diskutere hvordan vi kan realisere visjonen din. Ingen forpliktelser, bare en samtale om dine unike behov.",
     "form": {
       "fields": {
         "name": {
@@ -244,6 +244,29 @@
       },
       "submit": "Send",
       "success": "Takk for din henvendelse. Vi kontakter deg innen 48 timer for å avtale en samtale..."
+    }
+  },
+  "contact": {
+    "name": "Kontakt",
+    "title": "Ta kontakt",
+    "intro": "Jeg er Loubna, en lidenskapelig fotograf basert i Oslo, Norge. Med et skarpt øye for detaljer og en kjærlighet for å fange øyeblikk, spesialiserer jeg meg på portrett- og landskapsfotografering. Gjennom linsen min streber jeg etter å fortelle historier og fremkalle følelser som varer livet ut.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Navn",
+          "placeholder": "Ditt navn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "din{'@'}email.com"
+        },
+        "message": {
+          "label": "Melding",
+          "placeholder": "Fortell oss om prosjektet ditt eller forespørselen..."
+        }
+      },
+      "submit": "Send melding",
+      "success": "Takk for meldingen din. Vi kommer tilbake til deg snart!"
     }
   },
   "footer": {

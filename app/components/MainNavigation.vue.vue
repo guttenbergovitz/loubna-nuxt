@@ -12,6 +12,7 @@ const navItems = [
   { route: 'about', key: 'about' },
   { route: 'workshop', key: 'workshop' },
   { route: 'bio', key: 'bio' },
+  { route: 'book-a-call', key: 'bookCall' },
   { route: 'contact', key: 'contact' }
 ]
 
