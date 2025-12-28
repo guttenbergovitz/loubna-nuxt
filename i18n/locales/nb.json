@@ -104,92 +104,107 @@
   },
   "bio": {
     "name": "Bio",
-    "title": "Høydepunkter",
+    "title": "Profesjonell erfaring",
     "tagline": "En kronologi over profesjonelle prestasjoner, kunstneriske milepæler og akademiske kvalifikasjoner",
-    "highlightsTitle": "Høydepunkter",
+    "highlightsTitle": "Karrierehøydepunkter",
+    "highlightsIntro": "To tiår med fotografisk kunst, kulturprosjekter og kreativt samarbeid på tvers av Europa.",
     "educationTitle": "Utdanning",
+    "educationIntro": "Formell opplæring innen fotografi, multimedia og vitenskapelig forskning.",
     "highlights": [
       {
         "date": "01-03-2006",
         "title": "Loubna Photo",
         "role": "Fotograf",
-        "description": "Frilanser som arbeider over hele verden."
+        "description": "Frilanser som arbeider over hele verden.",
+        "image": "/images/bio/loubna_photo_workshop.png"
       },
       {
         "date": "01-07-2015",
         "title": "Foto Workshop for Sandnes Kommune",
         "role": "Foto Instruktør",
         "location": "Varatun Gård, Sandnes, Norge.",
-        "description": "Treårig samarbeid fokusert på å gjennomføre workshops om bygging av Camera Obscura, Pinhole Cameras og mørkeromsteknikker på Varatun Gård."
+        "description": "Treårig samarbeid fokusert på å gjennomføre workshops om bygging av Camera Obscura, Pinhole Cameras og mørkeromsteknikker på Varatun Gård.",
+        "image": "/images/bio/varatun_gard_workshop.jpg"
       },
       {
         "date": "12-01-2015",
         "title": "Følg Solen.",
         "location": "Cafe Sting, Stavanger, Norge.",
-        "description": "Solo fotoutstilling sponset av Stavanger Kommune."
+        "description": "Solo fotoutstilling sponset av Stavanger Kommune.",
+        "image": "/images/bio/follow_the_sun_exhibition.jpg"
       },
       {
         "date": "15-06-2013",
         "title": "Nyt turen!",
         "location": "Vandreutstilling, Polen.",
-        "description": "Hovedutstillinger på Kana Theater i Stettin og VI International Fair Show i Poznań."
+        "description": "Hovedutstillinger på Kana Theater i Stettin og VI International Fair Show i Poznań.",
+        "image": "/images/bio/enjoy_the_ride.jpg"
       },
       {
         "date": "12-04-2013",
         "title": "Mitt sted.",
         "role": "Videoinstallasjon",
         "location": "Festival of Art 'poMorze Sztuki proForma', Polen.",
-        "description": "Verk skapt for en kunstfestival og utstilt under en turné i Szczecin, Gdańsk og Zielona Góra."
+        "description": "Verk skapt for en kunstfestival og utstilt under en turné i Szczecin, Gdańsk og Zielona Góra.",
+        "image": "/images/bio/my_place_installation.png"
       },
       {
         "date": "16-03-2012",
         "title": "n.i.t.c.",
         "role": "Prosjekt i urbant rom",
         "location": "Festival of Art 'poMorze Sztuki przeZtwory'. Polen.",
-        "description": "Verk utstilt under en turné i Szczecin og Gdańsk."
+        "description": "Verk utstilt under en turné i Szczecin og Gdańsk.",
+        "image": "/images/bio/nitc_project.png"
       },
       {
         "date": "10-10-2010",
         "title": "Magnetisme.",
         "role": "Video Skulptur",
         "location": "Festival of New Art lAbiRynT (Frankfurt); Trans:motion - Gruppeutstilling (Szczecin)",
-        "description": "Prosjekt utstilt under en turné i Frankfurt og Szczecin."
+        "description": "Prosjekt utstilt under en turné i Frankfurt og Szczecin.",
+        "image": "/images/bio/magnetism_sculpture.png"
       },
       {
         "date": "28-10-2011",
         "title": "Itsaso.",
         "location": "The Gate Jazz Cafe, Stettin, Polen",
-        "description": "Solo fotoutstilling"
+        "description": "Solo fotoutstilling",
+        "image": "/images/bio/itsaso_exhibition.png"
       },
       {
         "date": "01-08-2011",
         "title": "Initiativtaker og koordinator",
         "organization": "Trans:motion Prosjekt",
-        "description": "Et seks måneder langt polsk-tysk samarbeidsprosjekt, hvor kunstnere fra begge land ble invitert til å skape verk fokusert på stedets identitet. Szczecin, Polen; Berlin, Tyskland"
+        "description": "Et seks måneder langt polsk-tysk samarbeidsprosjekt, hvor kunstnere fra begge land ble invitert til å skape verk fokusert på stedets identitet. Szczecin, Polen; Berlin, Tyskland",
+        "image": "/images/bio/transmotion_project.png"
       },
       {
         "date": "01-01-2011",
         "title": "President og medgründer",
         "organization": "Kulturforening Aloha Szczecin!",
-        "description": "Over tre år arrangerte foreningen mange kulturelle og sportlige arrangementer, sammen med workshops som involverte barn og ungdom."
+        "description": "Over tre år arrangerte foreningen mange kulturelle og sportlige arrangementer, sammen med workshops som involverte barn og ungdom.",
+        "image": "/images/bio/aloha_szczecin.png"
       },
       {
         "date": "19-03-2009",
         "title": "home_less",
         "role": "Videoinstallasjon i urbant rom.",
-        "description": "Prosjekt skapt som en kunstnerisk debut for 5. internasjonale festival for visuell kunst \"inSpiracje: Space\", Szczecin, Polen."
+        "description": "Prosjekt skapt som en kunstnerisk debut for 5. internasjonale festival for visuell kunst \"inSpiracje: Space\", Szczecin, Polen.",
+        "image": "/images/bio/homeless_installation.png"
       },
       {
         "date": "01-03-2008",
         "title": "Prosjektleder",
         "organization": "5. internasjonale festival for visuell kunst inSpiracje",
-        "description": "Min oppgave var å lede arbeidet knyttet til utstillinger og å overvåke besøkene til 63 kunstnere fra hele verden, som presenterte arbeidet sitt både i gallerier og i offentlige urbane rom."
+        "description": "Min oppgave var å lede arbeidet knyttet til utstillinger og å overvåke besøkene til 63 kunstnere fra hele verden, som presenterte arbeidet sitt både i gallerier og i offentlige urbane rom.",
+        "image": "/images/bio/inspiracje_festival.png"
       },
       {
         "date": "01-01-2007",
         "title": "Galleri Kuratorassistent",
         "organization": "Kommunal Kunstgalleri",
-        "description": "Jeg organiserte og koordinerte utstillinger og show med inviterte kunstnere som Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska og Marek Targoński."
+        "description": "Jeg organiserte og koordinerte utstillinger og show med inviterte kunstnere som Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska og Marek Targoński.",
+        "image": "/images/bio/gallery_assistant.png"
       }
     ],
     "education": [

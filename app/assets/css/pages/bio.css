@@ -13,6 +13,10 @@
 
 .bio__education {
   background-color: var(--color-background-secondary);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  margin-top: -5vw;
+  padding-top: calc(var(--space-fluid-2xl) + 5vw);
+  padding-bottom: calc(var(--space-fluid-2xl) + 5vw);
 }
 
 .bio__highlights-title,
@@ -40,228 +44,16 @@
   opacity: 0.3;
 }
 
-/* ============================================
-   Timeline Custom Styling (Unstyled PrimeVue)
-   ============================================ */
-
-/* Timeline container */
-.bio__timeline {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* Main timeline wrapper */
-.bio__timeline :deep(.p-timeline) {
-  padding: var(--space-xl) 0;
-}
-
-/* Individual timeline event - horizontal layout */
-.bio__timeline :deep(.p-timeline-event) {
-  display: grid;
-  grid-template-columns: 1fr 60px 1fr;
-  gap: var(--space-md);
-  margin-bottom: var(--space-2xl);
-  position: relative;
-}
-
-/* Alternate layout - swap columns for even items */
-.bio__timeline :deep(.p-timeline-event:nth-child(even)) {
-  direction: rtl;
-}
-
-.bio__timeline :deep(.p-timeline-event:nth-child(even) > *) {
-  direction: ltr;
-}
-
-/* Left side (opposite) - dates */
-.bio__timeline :deep(.p-timeline-event-opposite) {
-  text-align: right;
-  padding-right: var(--space-md);
-}
-
-.bio__timeline :deep(.p-timeline-event:nth-child(even) .p-timeline-event-opposite) {
-  text-align: left;
-  padding-left: var(--space-md);
-  padding-right: 0;
-}
-
-/* Center separator column */
-.bio__timeline :deep(.p-timeline-event-separator) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-/* Vertical connecting line */
-.bio__timeline :deep(.p-timeline-event-separator)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
-}
-
-/* Hide line before first event */
-.bio__timeline :deep(.p-timeline-event:first-child .p-timeline-event-separator)::before {
-  top: 50%;
-}
-
-/* Hide line after last event */
-.bio__timeline :deep(.p-timeline-event:last-child .p-timeline-event-separator)::before {
-  bottom: 50%;
-}
-
-/* Timeline marker dot */
-.bio__timeline :deep(.p-timeline-event-marker) {
-  width: 24px;
-  height: 24px;
-  border: 3px solid var(--color-text-primary);
-  border-radius: 50%;
-  background-color: var(--color-background-primary);
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s ease;
-  margin: auto 0;
-}
-
-.bio__education :deep(.p-timeline-event-marker) {
-  background-color: var(--color-background-secondary);
-}
-
-/* Hover effect on marker */
-.bio__timeline :deep(.p-timeline-event:hover .p-timeline-event-marker) {
-  transform: scale(1.4);
-  border-color: var(--color-cream);
-  box-shadow: 0 0 0 6px rgba(248, 240, 226, 0.2);
-}
-
-/* Right side (content) - event details */
-.bio__timeline :deep(.p-timeline-event-content) {
-  padding-left: var(--space-md);
-}
-
-.bio__timeline :deep(.p-timeline-event:nth-child(even) .p-timeline-event-content) {
-  padding-right: var(--space-md);
-  padding-left: 0;
-}
-
-/* Connectors - hide them, we use ::before instead */
-.bio__timeline :deep(.p-timeline-event-connector) {
-  display: none;
-}
-
-/* Date styling */
-.bio__event-date {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-  opacity: 0.6;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: var(--space-xs) var(--space-sm);
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: var(--border-radius-sm);
-  display: inline-block;
-}
-
-/* Event card styling */
-.bio__event {
-  background-color: var(--color-white);
-  padding: var(--space-lg);
-  border-radius: var(--border-radius-md);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  position: relative;
-  border-left: 3px solid transparent;
-}
-
-.bio__event:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
-  border-left-color: var(--color-cream);
-}
-
-.bio__event-title {
+.bio__section-intro {
   font-family: var(--font-family-heading);
   font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
-  margin: 0 0 var(--space-sm);
-  line-height: var(--line-height-tight);
-}
-
-.bio__event-role,
-.bio__event-organization,
-.bio__event-field {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-  margin: 0 0 var(--space-xs);
-  font-style: italic;
-  opacity: 0.8;
-}
-
-.bio__event-location {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-primary);
-  margin: 0 0 var(--space-sm);
-  opacity: 0.6;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.bio__event-description,
-.bio__event-degree {
-  font-size: var(--font-size-base);
-  color: var(--color-text-primary);
   line-height: var(--line-height-relaxed);
-  margin: var(--space-sm) 0 0;
-  opacity: 0.9;
-}
-
-.bio__event-degree {
-  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-fluid-xl);
   opacity: 0.8;
+  font-style: italic;
 }
 
-/* ============================================
-   Responsive Adjustments
-   ============================================ */
-
-@media (max-width: 767px) {
-  /* Stack timeline vertically on mobile */
-  :deep(.p-timeline-event-opposite) {
-    display: none;
-  }
-
-  .bio__event-date {
-    display: block;
-    margin-bottom: var(--space-sm);
-    width: fit-content;
-  }
-
-  :deep(.p-timeline-event-content) {
-    padding: 0 var(--space-md);
-  }
-
-  .bio__event {
-    padding: var(--space-md);
-  }
-
-  .bio__event-title {
-    font-size: var(--font-size-md);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  :deep(.p-timeline-event-content),
-  :deep(.p-timeline-event-opposite) {
-    padding: 0 var(--space-md);
-  }
-}
+/* Note: Timeline styling is now in BioTimeline.vue component (scoped styles) */
