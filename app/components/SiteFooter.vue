@@ -33,7 +33,7 @@ const socialLinks = [
   {
     name: 'X',
     url: 'https://x.com/loubnaphoto',
-    icon: 'mdi:twitter',
+    icon: 'simple-icons:x',
     label: 'footer.social.x'
   },
   {
@@ -60,6 +60,7 @@ const socialLinks = [
             />
           </NuxtLink>
           <p class="site-footer__tagline">
+            <Icon name="flag:no-4x3" class="site-footer__tagline-flag" />
             {{ $t('footer.tagline') }}
           </p>
         </div>
@@ -93,23 +94,25 @@ const socialLinks = [
             </a>
           </div>
         </div>
+      </div>
 
-        <!-- Social Section -->
-        <div class="site-footer__social-section">
-          <h2 class="site-footer__social-title">{{ $t('footer.followUs') }}</h2>
-          <div class="site-footer__social">
-            <a
-              v-for="link in socialLinks"
-              :key="link.name"
-              :href="link.url"
-              :aria-label="$t(link.label)"
-              class="site-footer__social-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon :name="link.icon" class="site-footer__social-icon" />
-            </a>
-          </div>
+      <!-- Social Icons Above Divider -->
+      <div class="site-footer__social-wrapper">
+        <div class="site-footer__social">
+          <a
+            v-for="link in socialLinks"
+            :key="link.name"
+            :href="link.url"
+            :aria-label="$t(link.label)"
+            class="site-footer__social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon
+              :name="link.icon"
+              :class="['site-footer__social-icon', { 'site-footer__social-icon--x': link.name === 'X' }]"
+            />
+          </a>
         </div>
       </div>
 

@@ -9,6 +9,7 @@
 }
 
 .home__intro-statement {
+  font-family: var(--font-family-heading);
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: var(--font-weight-bold);
   line-height: 1.1;
@@ -195,4 +196,101 @@
 .home__option-description :deep(em) {
   font-style: italic;
   color: var(--color-text-primary);
+}
+
+/* Differentiation Section */
+.home__differentiation {
+  padding: var(--space-fluid-2xl) 0 var(--space-fluid-xl);
+  border-top: var(--border-width-medium) solid var(--color-border-primary);
+  margin-top: var(--space-fluid-2xl);
+}
+
+.home__differentiation-heading {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  line-height: var(--line-height-tight);
+  margin: 0;
+}
+
+/* Features Section */
+.home__features {
+  padding: var(--space-fluid-2xl) 0;
+}
+
+.home__features .o-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-fluid-2xl);
+}
+
+@media (min-width: 768px) {
+  .home__features .o-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-fluid-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .home__features .o-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-fluid-lg);
+  }
+}
+
+.home__feature {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: var(--space-fluid-md);
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .home__feature:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.home__feature-image {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+  border-radius: var(--border-radius-md);
+}
+
+.home__feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-base);
+}
+
+.home__feature:hover .home__feature-image img {
+  transform: scale(1.05);
+}
+
+.home__feature-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+  line-height: var(--line-height-tight);
+}
+
+.home__feature-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-relaxed);
+}
+
+.home__feature-description :deep(p) {
+  margin: 0;
 }

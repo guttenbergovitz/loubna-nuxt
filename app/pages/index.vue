@@ -39,10 +39,10 @@ const secondaryGalleryImages = [
     <section class="home__question">
       <div class="o-container o-container--4xl">
         <p class="home__question-text">
-          {{ $t('home.howToGet.line1') }} <em>{{ $t('home.howToGet.line2') }}</em> {{ $t('home.howToGet.line3') }}<em> {{ $t('home.howToGet.line4') }}</em>
+          {{ $t('home.howToGet.line1') }} <em>{{ $t('home.howToGet.line2') }}</em> {{ $t('home.howToGet.line3') }} <em>{{ $t('home.howToGet.line4') }}</em>
         </p>
         <p class="home__question-highlight">
-          {{ $t('home.howToGet.line5') }}<strong> {{ $t('home.howToGet.line6') }}</strong>
+          <strong>{{ $t('home.howToGet.line5') }}</strong>
         </p>
         <p class="home__question-mark">{{ $t('home.howToGet.question') }}</p>
       </div>
@@ -108,7 +108,7 @@ const secondaryGalleryImages = [
       <div class="o-container">
         <article class="home__feature">
           <div class="home__feature-image">
-            <!-- Feature image placeholder -->
+            <NuxtImg src="/images/deco/difference/difference1.jpg" alt="Local photography" fit="cover" />
           </div>
           <h3 class="home__feature-title">{{ $t('home.features.local.title') }}</h3>
           <RichText class="home__feature-description" :content="$t('home.features.local.description')" />
@@ -116,7 +116,7 @@ const secondaryGalleryImages = [
 
         <article class="home__feature">
           <div class="home__feature-image">
-            <!-- Feature image placeholder -->
+            <NuxtImg src="/images/deco/difference/difference2.jpg" alt="Made to order" fit="cover" />
           </div>
           <h3 class="home__feature-title">{{ $t('home.features.madeToOrder.title') }}</h3>
           <RichText class="home__feature-description" :content="$t('home.features.madeToOrder.description')" />
@@ -124,7 +124,7 @@ const secondaryGalleryImages = [
 
         <article class="home__feature">
           <div class="home__feature-image">
-            <!-- Feature image placeholder -->
+            <NuxtImg src="/images/deco/difference/difference3.jpg" alt="No AI or Photoshop" fit="cover" />
           </div>
           <h3 class="home__feature-title">{{ $t('home.features.noAI.title') }}</h3>
           <RichText class="home__feature-description" :content="$t('home.features.noAI.description')" />
@@ -132,7 +132,7 @@ const secondaryGalleryImages = [
 
         <article class="home__feature">
           <div class="home__feature-image">
-            <!-- Feature image placeholder -->
+            <NuxtImg src="/images/deco/difference/difference4.jpg" alt="Certified quality" fit="cover" />
           </div>
           <h3 class="home__feature-title">{{ $t('home.features.certified.title') }}</h3>
           <RichText class="home__feature-description" :content="$t('home.features.certified.description')" />

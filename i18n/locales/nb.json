@@ -10,10 +10,11 @@
     },
     "howToGet": {
       "line1": "Så,",
-      "line2": "hvordan får",
-      "line3": "du",
-      "line4": "de",
-      "line5": "riktige bildene",
+      "line2": "hvordan får du",
+      "line3": "de",
+      "line4": "riktige",
+      "line5": "bildene",
+      "line6": "",
       "question": "?"
     },
     "options": {
@@ -282,7 +283,7 @@
     }
   },
   "footer": {
-    "tagline": "🇳🇴 Håndlaget i Norge.",
+    "tagline": "Håndlaget i Norge.",
     "navigation": "Navigasjon",
     "connect": "Kontakt",
     "followUs": "Følg oss",

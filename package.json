@@ -34,6 +34,7 @@
   "devDependencies": {
     "@iconify-json/flag": "^1.2.10",
     "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/simple-icons": "^1.2.63",
     "@primevue/nuxt-module": "^4.5.4",
     "nuxt-easy-lightbox": "^1.1.0"
   }

@@ -10,11 +10,11 @@
     },
     "howToGet": {
       "line1": "So,",
-      "line2": "how",
-      "line3": "do you",
-      "line4": "get",
-      "line5": "the",
-      "line6": "right pictures",
+      "line2": "how do you",
+      "line3": "get",
+      "line4": "the",
+      "line5": "right pictures",
+      "line6": "",
       "question": "?"
     },
     "options": {
@@ -283,7 +283,7 @@
     }
   },
   "footer": {
-    "tagline": "🇳🇴 Handcrafted in Norway.",
+    "tagline": "Handcrafted in Norway.",
     "navigation": "Navigation",
     "connect": "Connect",
     "followUs": "Follow Us",
