@@ -29,6 +29,7 @@
 /* Pages Layer - Page-specific styles */
 @import './pages/home.css';
 @import './pages/about.css';
+@import './pages/bio.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';
