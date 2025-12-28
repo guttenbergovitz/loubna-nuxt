@@ -4,12 +4,43 @@
 
 /* Hero Section */
 .home__hero {
-  padding: var(--space-fluid-3xl) 0 var(--space-fluid-2xl);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: calc(-1 * 70px);
   text-align: center;
+  background-image: url('/images/hero/front-hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.home__hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1;
 }
 
 .home__hero-content {
+  position: sticky;
+  top: 80px;
+  z-index: 2;
   max-width: 100%;
+  padding-left: var(--space-2xl);
 }
 
 .home__hero-heading {
@@ -19,6 +50,39 @@
   line-height: var(--line-height-tight);
   margin: 0;
   letter-spacing: -0.02em;
+  color: var(--color-text-inverse);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.home__hero-heading-line1 {
+  display: block;
+  font-family: var(--font-family-body);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: var(--font-weight-regular);
+  opacity: 0.85;
+  padding-bottom: var(--space-xs);
+  margin-bottom: var(--space-xs);
+  position: relative;
+}
+
+.home__hero-heading-line1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.home__hero-heading-line2 {
+  display: block;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-style: italic;
 }
 
 /* Intro Section - Modernist asymmetric style */
@@ -339,17 +403,18 @@
 
 .home__cta-button {
   display: inline-block;
-  padding: var(--space-md) var(--space-2xl);
-  background-color: var(--color-background-dark);
-  color: var(--color-text-inverse);
+  padding: var(--space-sm) var(--space-lg);
+  background-color: transparent;
+  color: var(--color-text-primary);
   text-decoration: none;
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  border: 1px solid var(--color-text-primary);
   border-radius: var(--border-radius-sm);
   transition: var(--transition-fast);
 }
 
 .home__cta-button:hover {
   background-color: var(--color-text-primary);
-  transform: translateY(-2px);
+  color: var(--color-text-inverse);
 }

@@ -24,7 +24,10 @@ const secondaryGalleryImages = [
     <section class="home__hero" role="banner">
       <div class="o-container">
         <div class="home__hero-content">
-          <h1 class="home__hero-heading">{{ $t('home.hero.heading') }}</h1>
+          <h1 class="home__hero-heading">
+            <span class="home__hero-heading-line1">{{ $t('home.hero.heading.line1') }}</span>
+            <span class="home__hero-heading-line2">{{ $t('home.hero.heading.line2') }}</span>
+          </h1>
         </div>
       </div>
     </section>

@@ -2,7 +2,10 @@
   "home": {
     "name": "Home",
     "hero": {
-      "heading": "Is Your Home Picture—Poor?"
+      "heading": {
+        "line1": "Is Your Home...",
+        "line2": "Picture—Poor?"
+      }
     },
     "intro": {
       "statement": "Your interior is important.*",
@@ -65,7 +68,7 @@
   "about": {
     "name": "About",
     "title": "Want to know me?",
-    "greeting": "Hi! Salam! Peace!",
+    "greeting": "Hi! Salam! Peace! I'm a photo artist with Polish roots, based in Norway, specializing in traditional darkroom techniques and handcrafted fine art prints",
     "bio": {
       "intro": "My name is Loubna Aleksandra Kubiak, and I am a photo artist with Polish roots, based in Norway and working worldwide. I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication.",
       "freelance": "As a freelancer, I have worked with magazines, advertising agencies, and private clients, all while pursuing my own artistic projects.",

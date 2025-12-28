@@ -2,7 +2,10 @@
   "home": {
     "name": "Hjem",
     "hero": {
-      "heading": "Is Your Home Picture - Poor?"
+      "heading": {
+        "line1": "Er Hjemmet Ditt...",
+        "line2": "Bilde-Fattig?"
+      }
     },
     "intro": {
       "statement": "Interiøret ditt er viktig.*",
@@ -65,7 +68,7 @@
   "about": {
     "name": "Om",
     "title": "Vil du bli kjent med meg?",
-    "greeting": "Hei! Salam! Peace!",
+    "greeting": "Hei! Salam! Peace! Jeg er en fotokunstner med polske røtter, bosatt i Norge, spesialisert i tradisjonelle mørkeromsteknikker og håndlagde fine art-trykk",
     "bio": {
       "intro": "Mitt navn er Loubna Aleksandra Kubiak, og jeg er en fotokunstner med polske røtter, bosatt i Norge og arbeidende internasjonalt. Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeroms teknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimedie kommunikasjon. Som fotograf har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har utviklet mine egne kunstneriske prosjekter.",
       "workshops": "Som fotoinstruktør har jeg samarbeidet med myndigheter og kulturinstitusjoner i Polen, Tyskland og Norge.",
