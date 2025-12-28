@@ -20,5 +20,8 @@ defineI18nRoute({
         <SimpleContactForm />
       </div>
     </section>
+
+    <!-- Photography Quote -->
+    <PhotoQuote />
   </main>
 </template>

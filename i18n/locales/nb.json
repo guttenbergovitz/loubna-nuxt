@@ -39,9 +39,13 @@
       "youCanOwn": "Du kan eie",
       "photography": "fotografi",
       "thatIsReally": "som virkelig er",
-      "handcrafted": "håndlaget."
+      "handcrafted": "håndlaget"
     },
-    "whatMakesDifferent": "OK... Men hva skiller deg ut?",
+    "whatMakesDifferent": {
+      "line1": "OK... Men hva",
+      "line2": "skiller deg ut",
+      "line3": "?"
+    },
     "features": {
       "local": {
         "title": "Lokal.",
@@ -302,5 +306,127 @@
       "x": "X",
       "linkedin": "LinkedIn"
     }
-  }
+  },
+  "quotes": [
+    {
+      "text": "Fotografi er en måte å føle på, å berøre, å elske. Det du har fanget på film er fanget for alltid... Det husker små ting, lenge etter at du har glemt alt.",
+      "author": "Aaron Siskind"
+    },
+    {
+      "text": "I fotografi finnes det en virkelighet så subtil at den blir mer virkelig enn virkeligheten.",
+      "author": "Alfred Stieglitz"
+    },
+    {
+      "text": "Et fotografi er en hemmelighet om en hemmelighet. Jo mer det forteller deg, jo mindre vet du.",
+      "author": "Diane Arbus"
+    },
+    {
+      "text": "Kameraet er et instrument som lærer folk hvordan man ser uten kamera.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Fotografi tar et øyeblikk ut av tiden, og endrer livet ved å holde det stille.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Et godt fotografi er et som kommuniserer et faktum, berører hjertet, og etterlater betrakteren som et forandret menneske.",
+      "author": "Irving Penn"
+    },
+    {
+      "text": "Det beste med et bilde er at det aldri endrer seg, selv når menneskene i det gjør det.",
+      "author": "Andy Warhol"
+    },
+    {
+      "text": "Du tar ikke et fotografi, du skaper det.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "Det er alltid to personer i hvert bilde: fotografen og betrakteren.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "Et portrett lages ikke i kameraet, men på begge sider av det.",
+      "author": "Edward Steichen"
+    },
+    {
+      "text": "Hele poenget med å ta bilder er at du ikke trenger å forklare ting med ord.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Fotografi er historien jeg ikke klarer å sette ord på.",
+      "author": "Destin Sparks"
+    },
+    {
+      "text": "Å ta bilder er å nyte livet intenst, hvert hundrede dels sekund.",
+      "author": "Marc Riboud"
+    },
+    {
+      "text": "Kameraet får deg til å glemme at du er der. Det er ikke som om du gjemmer deg, men du glemmer, du bare ser så mye.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Hvis bildene dine ikke er gode nok, er du ikke nærme nok.",
+      "author": "Robert Capa"
+    },
+    {
+      "text": "Fotografi er en kjærlighetsaffære med livet.",
+      "author": "Burk Uzzle"
+    },
+    {
+      "text": "Alle fotografier er der for å minne oss om det vi glemmer.",
+      "author": "John Berger"
+    },
+    {
+      "text": "Bildet du tok med kameraet ditt er fantasien du ønsker å skape med virkeligheten.",
+      "author": "Scott Lorenzo"
+    },
+    {
+      "text": "Dine første 10 000 fotografier er dine verste.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Vi lager fotografier for å forstå hva livene våre betyr for oss.",
+      "author": "Ralph Hattersley"
+    },
+    {
+      "text": "Noe du ser i bildene mine er at jeg ikke var redd for å bli forelsket i disse menneskene.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Fotografi er en umiddelbar reaksjon, tegning er en meditasjon.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Øyet bør lære å lytte før det ser.",
+      "author": "Robert Frank"
+    },
+    {
+      "text": "Et flott fotografi er et fullstendig uttrykk for hva man føler om det som blir fotografert.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "For meg er fotografi en observasjonskunst. Det handler om å finne noe interessant på et vanlig sted.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Lys skaper fotografi. Omfavn lyset. Beundre det. Elsk det. Men fremfor alt, kjenn lyset.",
+      "author": "George Eastman"
+    },
+    {
+      "text": "I fotografi kan den minste tingen være et stort motiv. Den lille menneskelige detaljen kan bli et ledemotiv.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Det jeg liker med fotografier er at de fanger et øyeblikk som er borte for alltid, umulig å reprodusere.",
+      "author": "Karl Lagerfeld"
+    },
+    {
+      "text": "Ønsket om å oppdage, ønsket om å bevege seg, å fange smaken, tre konsepter som beskriver fotografikunsten.",
+      "author": "Helmut Newton"
+    },
+    {
+      "text": "Fotografi er sannhet. Kino er sannhet tjuefire ganger per sekund.",
+      "author": "Jean-Luc Godard"
+    }
+  ]
 }

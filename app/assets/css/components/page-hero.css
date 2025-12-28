@@ -20,6 +20,7 @@
   padding: var(--space-fluid-3xl) 0 var(--space-fluid-2xl);
   margin-top: calc(-1 * var(--space-2xl));
   margin-bottom: var(--space-fluid-2xl);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .page-hero--plain .page-hero__content {
@@ -63,6 +64,7 @@
   background-position: center;
   background-repeat: no-repeat;
   padding: var(--space-fluid-3xl) 0;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .page-hero--banner::before {

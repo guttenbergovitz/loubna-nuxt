@@ -144,8 +144,8 @@ onMounted(() => {
     <!-- Alternative/Solution Section -->
     <section class="home__solution">
       <div class="o-container o-container--3xl">
-        <p class="home__solution-or"><em>{{ $t('home.alternative.or') }}</em></p>
         <p class="home__solution-heading">
+          <span class="home__solution-or"><em>{{ $t('home.alternative.or') }}</em></span>
           {{ $t('home.alternative.youCanOwn') }} <strong>{{ $t('home.alternative.photography') }}</strong>
         </p>
         <p class="home__solution-subtext"><em>{{ $t('home.alternative.thatIsReally') }}</em></p>
@@ -163,7 +163,10 @@ onMounted(() => {
     <!-- What Makes Different Section -->
     <section class="home__differentiation">
       <div class="o-container o-container--4xl">
-        <h2 class="home__differentiation-heading">{{ $t('home.whatMakesDifferent') }}</h2>
+        <h2 class="home__differentiation-heading">
+          {{ $t('home.whatMakesDifferent.line1') }}
+          <strong>{{ $t('home.whatMakesDifferent.line2') }}</strong>{{ $t('home.whatMakesDifferent.line3') }}
+        </h2>
       </div>
     </section>
 
@@ -223,5 +226,8 @@ onMounted(() => {
         </NuxtLink>
       </div>
     </section>
+
+    <!-- Photography Quote -->
+    <PhotoQuote />
   </main>
 </template>

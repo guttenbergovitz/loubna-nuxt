@@ -62,5 +62,8 @@ defineI18nRoute({
         <p class="about__challenge-footnote">{{ $t('about.challenge.footnote') }}</p>
       </div>
     </section>
+
+    <!-- Photography Quote -->
+    <PhotoQuote />
   </main>
 </template>

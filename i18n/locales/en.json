@@ -39,9 +39,13 @@
       "youCanOwn": "You Can Own",
       "photography": "Photography",
       "thatIsReally": "that is really",
-      "handcrafted": "Handcrafted."
+      "handcrafted": "Handcrafted"
     },
-    "whatMakesDifferent": "\"OK... But What Makes You Different?\"",
+    "whatMakesDifferent": {
+      "line1": "\"OK... But What",
+      "line2": "Makes You Different",
+      "line3": "?\""
+    },
     "features": {
       "local": {
         "title": "Local",
@@ -302,5 +306,127 @@
       "x": "X",
       "linkedin": "LinkedIn"
     }
-  }
+  },
+  "quotes": [
+    {
+      "text": "Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... It remembers little things, long after you have forgotten everything.",
+      "author": "Aaron Siskind"
+    },
+    {
+      "text": "In photography there is a reality so subtle that it becomes more real than reality.",
+      "author": "Alfred Stieglitz"
+    },
+    {
+      "text": "A photograph is a secret about a secret. The more it tells you, the less you know.",
+      "author": "Diane Arbus"
+    },
+    {
+      "text": "The camera is an instrument that teaches people how to see without a camera.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Photography takes an instant out of time, altering life by holding it still.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "A good photograph is one that communicates a fact, touches the heart, and leaves the viewer a changed person.",
+      "author": "Irving Penn"
+    },
+    {
+      "text": "The best thing about a picture is that it never changes, even when the people in it do.",
+      "author": "Andy Warhol"
+    },
+    {
+      "text": "You don't take a photograph, you make it.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "There are always two people in every picture: the photographer and the viewer.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "A portrait is not made in the camera but on either side of it.",
+      "author": "Edward Steichen"
+    },
+    {
+      "text": "The whole point of taking pictures is so that you don't have to explain things with words.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Photography is the story I fail to put into words.",
+      "author": "Destin Sparks"
+    },
+    {
+      "text": "Taking pictures is savoring life intensely, every hundredth of a second.",
+      "author": "Marc Riboud"
+    },
+    {
+      "text": "The camera makes you forget you're there. It's not like you are hiding but you forget, you are just looking so much.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "If your pictures aren't good enough, you're not close enough.",
+      "author": "Robert Capa"
+    },
+    {
+      "text": "Photography is a love affair with life.",
+      "author": "Burk Uzzle"
+    },
+    {
+      "text": "All photographs are there to remind us of what we forget.",
+      "author": "John Berger"
+    },
+    {
+      "text": "The picture that you took with your camera is the imagination you want to create with reality.",
+      "author": "Scott Lorenzo"
+    },
+    {
+      "text": "Your first 10,000 photographs are your worst.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "We are making photographs to understand what our lives mean to us.",
+      "author": "Ralph Hattersley"
+    },
+    {
+      "text": "A thing that you see in my pictures is that I was not afraid to fall in love with these people.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Photography is an immediate reaction, drawing is a meditation.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "The eye should learn to listen before it looks.",
+      "author": "Robert Frank"
+    },
+    {
+      "text": "A great photograph is a full expression of what one feels about what is being photographed.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "To me, photography is an art of observation. It's about finding something interesting in an ordinary place.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Light makes photography. Embrace light. Admire it. Love it. But above all, know light.",
+      "author": "George Eastman"
+    },
+    {
+      "text": "In photography, the smallest thing can be a great subject. The little human detail can become a leitmotiv.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "What I like about photographs is that they capture a moment that's gone forever, impossible to reproduce.",
+      "author": "Karl Lagerfeld"
+    },
+    {
+      "text": "The desire to discover, the desire to move, to capture the flavor, three concepts that describe the art of photography.",
+      "author": "Helmut Newton"
+    },
+    {
+      "text": "Photography is truth. The cinema is truth twenty-four times per second.",
+      "author": "Jean-Luc Godard"
+    }
+  ]
 }

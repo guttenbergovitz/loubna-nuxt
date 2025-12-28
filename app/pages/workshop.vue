@@ -42,5 +42,8 @@ defineI18nRoute({
         <p class="workshop__whats-on-activity">{{ $t('workshop.whatsOn.activity') }}</p>
       </div>
     </section>
+
+    <!-- Photography Quote -->
+    <PhotoQuote />
   </main>
 </template>

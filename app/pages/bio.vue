@@ -92,5 +92,8 @@ const education = computed(() => {
         </Timeline>
       </div>
     </section>
+
+    <!-- Photography Quote -->
+    <PhotoQuote />
   </main>
 </template>
