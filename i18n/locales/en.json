@@ -81,6 +81,7 @@
   "workshop": {
     "name": "Workshop",
     "title": "Photo Workshops",
+    "tagline": "Immersive hands-on creative experiences designed for cultural programs and curious minds alike",
     "intro": {
       "question": "Do you work in the cultural sector and need a fresh, exciting workshop for your program?",
       "alternative": "Or just bored and want to try something new, fun, and hands-on?"
@@ -97,6 +98,7 @@
   "bio": {
     "name": "Bio",
     "title": "Highlights",
+    "tagline": "A chronicle of professional achievements, artistic milestones, and academic credentials",
     "highlightsTitle": "Highlights",
     "educationTitle": "Education",
     "highlights": [

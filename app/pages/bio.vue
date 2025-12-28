@@ -42,10 +42,16 @@ const education = computed(() => {
 
 <template>
   <main class="bio">
+    <PageHero
+      variant="plain"
+      :headline="$t('bio.title')"
+      :tagline="$t('bio.tagline')"
+    />
+
     <!-- Highlights Section -->
     <section class="bio__highlights" aria-label="Professional Highlights">
       <div class="o-container">
-        <h1 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h1>
+        <h2 class="bio__highlights-title">{{ $t('bio.highlightsTitle') }}</h2>
         <Timeline :value="highlights" align="alternate" class="bio__timeline">
           <template #content="slotProps">
             <article class="bio__event">
@@ -68,7 +74,7 @@ const education = computed(() => {
     <!-- Education Section -->
     <section class="bio__education" aria-label="Education">
       <div class="o-container">
-        <h1 class="bio__education-title">{{ $t('bio.educationTitle') }}</h1>
+        <h2 class="bio__education-title">{{ $t('bio.educationTitle') }}</h2>
         <Timeline :value="education" align="alternate" class="bio__timeline">
           <template #content="slotProps">
             <article class="bio__event">

@@ -1,0 +1,115 @@
+/* ============================================
+   About Page Styles
+   ============================================ */
+
+/* Header Section */
+.about__header {
+  padding: var(--space-fluid-2xl) 0 var(--space-fluid-xl);
+  text-align: center;
+}
+
+.about__title {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.about__greeting {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-primary);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Bio Section with side-by-side layout */
+.about__bio {
+  padding: var(--space-fluid-xl) 0;
+}
+
+.about__bio-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-fluid-xl);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .about__bio-content {
+    grid-template-columns: 400px 1fr;
+    gap: var(--space-fluid-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__bio-content {
+    grid-template-columns: 450px 1fr;
+  }
+}
+
+.about__bio-image {
+  width: 100%;
+}
+
+.about__bio-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: var(--shadow-lg);
+}
+
+.about__bio-text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+.about__bio-text :deep(p) {
+  margin-bottom: var(--space-lg);
+}
+
+.about__bio-text :deep(p:last-child) {
+  margin-bottom: 0;
+}
+
+.about__bio-intro,
+.about__bio-freelance,
+.about__bio-workshops,
+.about__bio-collaborations,
+.about__bio-coordination {
+  margin-bottom: var(--space-lg);
+}
+
+/* Challenge Section */
+.about__challenge {
+  padding: var(--space-fluid-2xl) 0;
+  background-color: var(--color-background-secondary);
+  margin-top: var(--space-fluid-2xl);
+  text-align: center;
+}
+
+.about__challenge-heading {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.02em;
+}
+
+.about__challenge-text {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary);
+}
+
+.about__challenge-footnote {
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-text-primary);
+  margin: 0;
+  opacity: 0.8;
+}

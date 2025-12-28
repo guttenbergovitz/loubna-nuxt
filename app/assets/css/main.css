@@ -23,9 +23,11 @@
 @import './components/main-navigation.css';
 @import './components/language-switcher.css';
 @import './components/photo-gallery.css';
+@import './components/page-hero.css';
 
 /* Pages Layer - Page-specific styles */
 @import './pages/home.css';
+@import './pages/about.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';

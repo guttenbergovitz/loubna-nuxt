@@ -47,57 +47,45 @@ const socialLinks = [
 
 <template>
   <footer class="site-footer">
-    <div class="o-container">
-      <div class="site-footer__content">
-        <!-- Brand Section -->
-        <div class="site-footer__brand">
-          <NuxtLink :to="localePath('index')" class="site-footer__logo-link">
-            <NuxtImg
-              src="/images/logo-main.png"
-              alt="Loubna Photo"
-              class="site-footer__logo"
-              fit="contain"
-            />
-          </NuxtLink>
-          <p class="site-footer__tagline">
-            <Icon name="flag:no-4x3" class="site-footer__tagline-flag" />
-            {{ $t('footer.tagline') }}
-          </p>
+    <div class="o-container o-container--7xl">
+      <!-- Main Content -->
+      <div class="site-footer__main">
+        <div class="site-footer__nav-wrapper">
+          <nav class="site-footer__nav" aria-label="Footer navigation">
+            <NuxtLink
+              v-for="item in navItems"
+              :key="item.route"
+              :to="localePath(item.route)"
+              class="site-footer__nav-link"
+            >
+              {{ $t(`${item.key}.name`) }}
+            </NuxtLink>
+          </nav>
+          <LanguageSwitcher />
         </div>
 
-        <!-- Navigation Section -->
-        <nav class="site-footer__nav" aria-label="Footer navigation">
-          <h2 class="site-footer__nav-title">{{ $t('footer.navigation') }}</h2>
-          <ul class="site-footer__nav-list">
-            <li v-for="item in navItems" :key="item.route" class="site-footer__nav-item">
-              <NuxtLink
-                :to="localePath(item.route)"
-                class="site-footer__nav-link"
-              >
-                {{ $t(`${item.key}.name`) }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- Contact Section -->
-        <div class="site-footer__contact">
-          <h2 class="site-footer__contact-title">{{ $t('footer.connect') }}</h2>
-          <div class="site-footer__contact-info">
+        <div class="site-footer__left">
+          <div class="site-footer__contact">
             <a :href="`mailto:${$t('footer.email')}`" class="site-footer__contact-link">
-              <Icon name="mdi:email" class="site-footer__contact-icon" />
               {{ $t('footer.email') }}
             </a>
             <a :href="`tel:${$t('footer.phone')}`" class="site-footer__contact-link">
-              <Icon name="mdi:phone" class="site-footer__contact-icon" />
               {{ $t('footer.phone') }}
             </a>
           </div>
+
+          <p class="site-footer__statement">
+            {{ $t('footer.tagline') }}
+          </p>
         </div>
       </div>
 
-      <!-- Social Icons Above Divider -->
-      <div class="site-footer__social-wrapper">
+      <!-- Bottom Section -->
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright">
+          &copy; {{ currentYear }} Loubna Photo
+        </p>
+
         <div class="site-footer__social">
           <a
             v-for="link in socialLinks"
@@ -108,20 +96,9 @@ const socialLinks = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon
-              :name="link.icon"
-              :class="['site-footer__social-icon', { 'site-footer__social-icon--x': link.name === 'X' }]"
-            />
+            <Icon :name="link.icon" />
           </a>
         </div>
-      </div>
-
-      <!-- Bottom Bar -->
-      <div class="site-footer__bottom">
-        <p class="site-footer__copyright">
-          &copy; {{ currentYear }} Loubna Photo. {{ $t('footer.rights') }}
-        </p>
-        <LanguageSwitcher />
       </div>
     </div>
   </footer>

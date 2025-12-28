@@ -9,12 +9,11 @@ defineI18nRoute({
 
 <template>
   <main class="contact">
-    <header class="contact__header">
-      <div class="o-container o-container--3xl">
-        <h1 class="contact__title">{{ $t('contact.title') }}</h1>
-        <p class="contact__intro">{{ $t('contact.intro') }}</p>
-      </div>
-    </header>
+    <PageHero
+      variant="plain"
+      :headline="$t('contact.title')"
+      :tagline="$t('contact.intro')"
+    />
 
     <section class="contact__form-section" aria-label="Contact form">
       <div class="o-container o-container--3xl">

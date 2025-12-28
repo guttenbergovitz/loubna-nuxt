@@ -9,12 +9,11 @@ defineI18nRoute({
 
 <template>
   <main class="workshop">
-    <!-- Header Section -->
-    <header class="workshop__header">
-      <div class="o-container o-container--4xl">
-        <h1 class="workshop__title">{{ $t('workshop.title') }}</h1>
-      </div>
-    </header>
+    <PageHero
+      variant="plain"
+      :headline="$t('workshop.title')"
+      :tagline="$t('workshop.tagline')"
+    />
 
     <!-- Intro Section -->
     <section class="workshop__intro">

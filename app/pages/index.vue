@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localePath = useLocalePath()
+
 // Gallery images
 const homeGalleryImages = [
   { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Photography by Loubna Photo' },
@@ -151,13 +153,12 @@ const secondaryGalleryImages = [
     <section class="home__cta">
       <div class="o-container o-container--4xl">
         <h2 class="home__cta-heading">{{ $t('home.cta.heading') }}</h2>
-        <a
+        <NuxtLink
+          :to="localePath('book-a-call')"
           class="home__cta-button"
-          :href="`/${$i18n.locale}/book-a-call`"
-          role="button"
         >
           {{ $t('home.cta.button') }}
-        </a>
+        </NuxtLink>
       </div>
     </section>
   </main>

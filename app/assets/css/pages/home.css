@@ -2,6 +2,25 @@
    Home Page Styles
    ============================================ */
 
+/* Hero Section */
+.home__hero {
+  padding: var(--space-fluid-3xl) 0 var(--space-fluid-2xl);
+  text-align: center;
+}
+
+.home__hero-content {
+  max-width: 100%;
+}
+
+.home__hero-heading {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
 /* Intro Section - Modernist asymmetric style */
 .home__intro {
   padding: var(--space-fluid-xl) 0 var(--space-fluid-lg);
@@ -293,4 +312,44 @@
 
 .home__feature-description :deep(p) {
   margin: 0;
+}
+
+/* Gallery Sections */
+.home__gallery,
+.home__gallery-secondary {
+  padding: var(--space-fluid-2xl) 0;
+}
+
+/* CTA Section */
+.home__cta {
+  padding: var(--space-fluid-3xl) 0;
+  text-align: center;
+  background-color: var(--color-background-secondary);
+}
+
+.home__cta-heading {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-xl);
+  letter-spacing: -0.02em;
+}
+
+.home__cta-button {
+  display: inline-block;
+  padding: var(--space-md) var(--space-2xl);
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-fast);
+}
+
+.home__cta-button:hover {
+  background-color: var(--color-text-primary);
+  transform: translateY(-2px);
 }

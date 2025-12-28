@@ -12,33 +12,45 @@ defineI18nRoute({
 <template>
   <main class="about">
     <!-- Header Section -->
-    <header class="about__header">
-      <div class="o-container o-container--4xl">
-        <h1 class="about__title">{{ $t('about.title') }}</h1>
-        <p class="about__greeting">{{ $t('about.greeting') }}</p>
-      </div>
-    </header>
+    <PageHero
+      variant="plain"
+      :headline="$t('about.title')"
+      :tagline="$t('about.greeting')"
+    />
 
     <!-- Bio Section -->
     <section class="about__bio" aria-label="Biography">
-      <div class="o-container o-container--3xl">
-        <RichText class="about__bio-intro" :content="$t('about.bio.intro')" />
+      <div class="o-container o-container--5xl">
+        <div class="about__bio-content">
+          <div class="about__bio-image">
+            <NuxtImg
+              src="/images/deco/about/about_loubna.jpg"
+              alt="Loubna Aleksandra Kubiak"
+              class="about__bio-photo"
+              fit="cover"
+            />
+          </div>
 
-        <RichText
-          v-if="$t('about.bio.freelance')"
-          class="about__bio-freelance"
-          :content="$t('about.bio.freelance')"
-        />
+          <div class="about__bio-text">
+            <RichText class="about__bio-intro" :content="$t('about.bio.intro')" />
 
-        <RichText class="about__bio-workshops" :content="$t('about.bio.workshops')" />
+            <RichText
+              v-if="$t('about.bio.freelance')"
+              class="about__bio-freelance"
+              :content="$t('about.bio.freelance')"
+            />
 
-        <RichText
-          v-if="$t('about.bio.collaborations')"
-          class="about__bio-collaborations"
-          :content="$t('about.bio.collaborations')"
-        />
+            <RichText class="about__bio-workshops" :content="$t('about.bio.workshops')" />
 
-        <RichText class="about__bio-coordination" :content="$t('about.bio.coordination')" />
+            <RichText
+              v-if="$t('about.bio.collaborations')"
+              class="about__bio-collaborations"
+              :content="$t('about.bio.collaborations')"
+            />
+
+            <RichText class="about__bio-coordination" :content="$t('about.bio.coordination')" />
+          </div>
+        </div>
       </div>
     </section>
 

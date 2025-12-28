@@ -24,10 +24,12 @@ html {
 
 /* Set core body defaults */
 body {
-  min-height: 100%;
+  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding-top: 70px; /* Account for fixed header */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Make images easier to work with */
@@ -100,4 +102,13 @@ h6 {
 /* Create a root stacking context */
 #__nuxt {
   isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+}
+
+/* Ensure main content takes available space */
+main {
+  flex: 1;
 }

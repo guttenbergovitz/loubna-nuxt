@@ -1,0 +1,97 @@
+/* ============================================
+   Page Hero Component
+   ============================================ */
+
+/* Base Hero Styles */
+.page-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Plain Text Variant */
+.page-hero--plain {
+  background-color: var(--color-cream);
+  padding: var(--space-fluid-3xl) 0 var(--space-fluid-2xl);
+  margin-top: calc(-1 * var(--space-2xl));
+  margin-bottom: var(--space-fluid-2xl);
+}
+
+.page-hero--plain .page-hero__content {
+  text-align: left;
+}
+
+.page-hero--plain .page-hero__headline {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.05;
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-xl) 0;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  max-width: 20ch;
+}
+
+.page-hero--plain .page-hero__tagline {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-base);
+  font-style: italic;
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-primary);
+  opacity: 0.7;
+  margin: 0;
+  max-width: 50ch;
+  line-height: var(--line-height-relaxed);
+  padding-top: var(--space-md);
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  text-wrap: balance;
+}
+
+/* Banner Variant */
+.page-hero--banner {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--space-fluid-3xl) 0;
+}
+
+.page-hero--banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)
+  );
+  z-index: 1;
+}
+
+.page-hero--banner .page-hero__content {
+  color: var(--color-text-inverse);
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .page-hero--banner {
+    min-height: 50vh;
+  }
+
+  .page-hero--plain .page-hero__headline {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+}

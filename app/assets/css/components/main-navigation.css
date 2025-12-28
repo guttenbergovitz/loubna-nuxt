@@ -18,17 +18,50 @@
 .main-navigation__link {
   display: inline-block;
   padding: var(--space-xs) var(--space-sm);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
-  transition: var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
   border-radius: var(--border-radius-sm);
   position: relative;
 }
 
+/* Hover underline animation */
+.main-navigation__link::before {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: var(--space-sm);
+  right: var(--space-sm);
+  height: 1px;
+  background-color: var(--color-cream);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
 .main-navigation__link:hover {
   color: var(--color-cream);
+  opacity: 1;
+}
+
+.main-navigation__link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hide hover underline on active links */
+.main-navigation__link.router-link-active::before {
+  display: none;
+}
+
+/* Active links at full opacity */
+.main-navigation__link.router-link-active {
+  opacity: 1;
 }
 
 .main-navigation__link:focus-visible {
@@ -44,10 +77,10 @@
 .main-navigation__link.router-link-active::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: var(--space-sm);
   right: var(--space-sm);
-  height: 2px;
+  height: 1px;
   background-color: var(--color-cream);
 }
 
