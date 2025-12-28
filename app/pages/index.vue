@@ -16,6 +16,59 @@ const secondaryGalleryImages = [
   { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Photography by Loubna Photo' },
   { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Photography by Loubna Photo' }
 ]
+
+// Scroll reveal
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible')
+        }
+      })
+    },
+    {
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
+    }
+  )
+
+  // Observe elements
+  const elements = document.querySelectorAll('.home__question-content')
+  elements.forEach((el) => observer.observe(el))
+
+  // Equal heights for option titles
+  const equalizeHeights = () => {
+    const titles = document.querySelectorAll('.home__option-title')
+    if (titles.length === 0) return
+
+    // Reset heights
+    titles.forEach(title => {
+      title.style.height = 'auto'
+    })
+
+    // Get max height
+    let maxHeight = 0
+    titles.forEach(title => {
+      const height = title.offsetHeight
+      if (height > maxHeight) maxHeight = height
+    })
+
+    // Set all to max height
+    titles.forEach(title => {
+      title.style.height = `${maxHeight}px`
+    })
+  }
+
+  equalizeHeights()
+  window.addEventListener('resize', equalizeHeights)
+
+  // Cleanup
+  onUnmounted(() => {
+    elements.forEach((el) => observer.unobserve(el))
+    window.removeEventListener('resize', equalizeHeights)
+  })
+})
 </script>
 
 <template>
@@ -32,26 +85,32 @@ const secondaryGalleryImages = [
       </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="home__intro">
-      <div class="o-container o-container--3xl">
-        <p class="home__intro-statement"><strong>{{ $t('home.intro.statement') }}</strong></p>
-        <p class="home__intro-footnote"><em>{{ $t('home.intro.footnote') }}</em></p>
-      </div>
-    </section>
+    <!-- Intro & Question Wrapper -->
+    <div class="home__intro-question-wrapper">
+      <!-- Intro Section -->
+      <section class="home__intro">
+        <div class="o-container o-container--3xl">
+          <p class="home__intro-statement"><strong>{{ $t('home.intro.statement') }}</strong></p>
+          <p class="home__intro-footnote"><em>{{ $t('home.intro.footnote') }}</em></p>
+        </div>
+      </section>
 
-    <!-- How to Get Pictures Section -->
-    <section class="home__question">
-      <div class="o-container o-container--4xl">
-        <p class="home__question-text">
-          {{ $t('home.howToGet.line1') }} <em>{{ $t('home.howToGet.line2') }}</em> {{ $t('home.howToGet.line3') }} <em>{{ $t('home.howToGet.line4') }}</em>
-        </p>
-        <p class="home__question-highlight">
-          <strong>{{ $t('home.howToGet.line5') }}</strong>
-        </p>
-        <p class="home__question-mark">{{ $t('home.howToGet.question') }}</p>
-      </div>
-    </section>
+      <!-- How to Get Pictures Section -->
+      <section class="home__question">
+        <div class="o-container o-container--3xl">
+          <div class="home__question-content">
+            <p class="home__question-line1">
+              {{ $t('home.howToGet.line1') }} <em>{{ $t('home.howToGet.line2') }}</em> {{ $t('home.howToGet.line3') }}
+            </p>
+            <p class="home__question-line2">
+              <span class="home__question-the"><em>{{ $t('home.howToGet.line4') }}</em></span>
+              <span class="home__question-emphasis"><strong>{{ $t('home.howToGet.line5') }}</strong></span>
+              <span class="home__question-mark-inline">{{ $t('home.howToGet.question') }}</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- Options Section -->
     <section class="home__options" aria-label="Photography options">
