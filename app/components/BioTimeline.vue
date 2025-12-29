@@ -265,26 +265,62 @@ onMounted(() => {
 
 /* Responsive */
 @media (max-width: 767px) {
+  .bio-timeline {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* Move timeline line to the left */
+  .bio-timeline::before {
+    left: 20px;
+  }
+
   .bio-timeline__event {
     grid-template-columns: 40px 1fr;
     gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
   }
 
+  /* Show date above content, hide image */
   .bio-timeline__date-column {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: start;
+    align-items: flex-start;
+    margin-bottom: var(--space-sm);
+  }
+
+  .bio-timeline__event--even .bio-timeline__date-column {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .bio-timeline__image {
     display: none;
+  }
+
+  .bio-timeline__date {
+    font-size: var(--font-size-xs);
+    padding: var(--space-2xs) var(--space-xs);
   }
 
   .bio-timeline__separator {
     grid-column: 1;
+    grid-row: 1 / 3;
   }
 
   .bio-timeline__content {
     grid-column: 2;
-    padding: var(--space-md);
+    grid-row: 2;
+    padding: var(--space-sm) 0 0 0;
+    border-top: none;
   }
 
   .bio-timeline__event--even .bio-timeline__content {
     grid-column: 2;
+  }
+
+  .bio-timeline__title {
+    font-size: var(--font-size-base);
   }
 }
 </style>

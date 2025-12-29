@@ -557,3 +557,60 @@
   background-color: var(--color-text-primary);
   transform: scale(1.02);
 }
+
+/* ============================================
+   Mobile Responsive Adjustments
+   ============================================ */
+
+@media (max-width: 767px) {
+  /* Hero - disable fixed background on mobile for performance */
+  .home__hero {
+    background-attachment: scroll;
+    min-height: 100svh;
+    margin-top: calc(-1 * 56px);
+  }
+
+  .home__hero-content {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+    top: 60px;
+  }
+
+  /* Intro section - reduce padding */
+  .home__intro {
+    padding: var(--space-fluid-lg) 0 var(--space-fluid-md);
+  }
+
+  .home__intro-statement,
+  .home__intro-footnote {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  /* Question section */
+  .home__question {
+    padding: var(--space-fluid-lg) 0;
+  }
+
+  /* Options - stack on mobile */
+  .home__options .o-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* Features - 2 column on mobile */
+  .home__features .o-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  /* Solution section */
+  .home__solution {
+    padding: var(--space-fluid-lg) 0;
+  }
+
+  /* CTA section */
+  .home__cta {
+    padding: var(--space-fluid-lg) 0;
+  }
+}
