@@ -1,17 +1,33 @@
 <script setup lang="ts">
-import { YoutubeVue3 } from 'youtube-vue3'
-
 const props = defineProps<{
   videoId: string
   title?: string
 }>()
+
+const embedUrl = computed(() => {
+  const params = new URLSearchParams({
+    autoplay: '0',
+    rel: '0',
+    modestbranding: '1',
+    controls: '1',
+    fs: '1',
+    playsinline: '1',
+    vq: 'hd1080',
+    hd: '1'
+  })
+  return `https://www.youtube-nocookie.com/embed/${props.videoId}?${params.toString()}`
+})
 </script>
 
 <template>
   <div class="youtube-video">
-    <YoutubeVue3
-      :videoid="props.videoId"
-      ref="youtube"
+    <iframe
+      :src="embedUrl"
+      :title="title || 'YouTube video player'"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
     />
   </div>
 </template>

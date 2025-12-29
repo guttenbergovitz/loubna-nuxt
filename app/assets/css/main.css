@@ -30,6 +30,7 @@
 @import './pages/home.css';
 @import './pages/about.css';
 @import './pages/bio.css';
+@import './pages/workshop.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';
