@@ -1,0 +1,291 @@
+/* ============================================
+   Forms Styling
+   ============================================ */
+
+/* Base Form Styles */
+.formkit-form {
+  max-width: 100%;
+}
+
+/* Form Labels */
+.formkit-label {
+  font-family: var(--font-family-heading);
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: var(--font-weight-normal);
+  font-style: italic;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  opacity: 0.75;
+}
+
+/* Ensure label text stays italic even with custom content */
+.formkit-label > *:not(.formkit-icon) {
+  font-style: italic;
+}
+
+.formkit-label .formkit-icon {
+  width: 1rem;
+  height: 1rem;
+  padding: 0.375rem;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  border-radius: 50%;
+  opacity: 0.85;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.formkit-label:hover .formkit-icon {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Text Inputs & Textarea */
+.formkit-input[type="text"],
+.formkit-input[type="email"],
+.formkit-input[type="tel"],
+.formkit-input[type="textarea"],
+.formkit-textarea {
+  width: 100%;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding: var(--space-sm) var(--space-md);
+  transition: all 0.3s ease;
+}
+
+.formkit-input[type="text"]:focus,
+.formkit-input[type="email"]:focus,
+.formkit-input[type="tel"]:focus,
+.formkit-input[type="textarea"]:focus,
+.formkit-textarea:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.formkit-input::placeholder,
+.formkit-textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+.formkit-textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Form Wrapper */
+.formkit-outer {
+  margin-bottom: var(--space-lg);
+}
+
+/* Validation Messages */
+.formkit-messages {
+  margin-top: var(--space-xs);
+}
+
+.formkit-message {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  color: #b91c1c;
+  font-style: italic;
+  margin-top: var(--space-2xs);
+}
+
+/* Submit Button */
+.formkit-input[type="submit"] {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  border: none;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  margin-top: var(--space-xl);
+  min-width: 200px;
+}
+
+.formkit-input[type="submit"]:hover {
+  background-color: var(--color-text-primary);
+  transform: scale(1.02);
+}
+
+.formkit-input[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+/* Radio Button Groups (Card Style) */
+.formkit-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.formkit-legend {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: var(--font-weight-semibold);
+  font-style: normal;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  margin-top: var(--space-2xl);
+  padding-bottom: var(--space-sm);
+  opacity: 0.9;
+  position: relative;
+}
+
+.formkit-legend::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  opacity: 0.3;
+}
+
+.formkit-fieldset:first-of-type .formkit-legend {
+  margin-top: var(--space-xl);
+}
+
+.formkit-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 640px) {
+  .formkit-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .formkit-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.formkit-option {
+  position: relative;
+}
+
+.formkit-wrapper[data-type="radio"] .formkit-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.formkit-wrapper[data-type="radio"] .formkit-label {
+  display: block;
+  padding: var(--space-md);
+  background-color: var(--color-white);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-sm);
+  opacity: 1;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.formkit-wrapper[data-type="radio"] .formkit-label:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.formkit-wrapper[data-type="radio"] .formkit-input:checked + .formkit-label {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  border-color: var(--color-background-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+.formkit-wrapper[data-type="radio"] .formkit-input:focus + .formkit-label {
+  outline: 2px solid rgba(0, 0, 0, 0.3);
+  outline-offset: 2px;
+}
+
+/* Success Message */
+.contact-form__success,
+.simple-contact-form__success {
+  padding: var(--space-fluid-xl);
+  text-align: center;
+  background-image: url('/images/leather-texture-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form__success::before,
+.simple-contact-form__success::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.contact-form__success p,
+.simple-contact-form__success p {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Form Containers */
+.contact-form,
+.simple-contact-form {
+  padding: 0 0 0 var(--space-2xl);
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: 2px solid var(--color-text-primary);
+  position: relative;
+}
+
+.contact-form::before,
+.simple-contact-form::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 2px;
+  height: 60px;
+  background-color: var(--color-background-dark);
+}
+
+/* Remove default FormKit select styling when using custom radios */
+.formkit-wrapper[data-type="radio"] .formkit-decorator {
+  display: none;
+}

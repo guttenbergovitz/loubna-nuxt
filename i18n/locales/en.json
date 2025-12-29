@@ -243,6 +243,10 @@
     "name": "Book a Call",
     "title": "Let's Create Something Beautiful Together",
     "intro": "Ready to transform your space with handcrafted photography? Book a free consultation call and let's discuss how we can bring your vision to life. No obligations, just a conversation about your unique needs.",
+    "process": {
+      "heading": "How it works",
+      "subtext": "Fill out the form below, and I'll reach out within 48 hours to schedule our free consultation. We'll discuss your space, preferences, and ideas – together we'll find the perfect photography to bring your vision to life."
+    },
     "form": {
       "fields": {
         "name": {
@@ -276,6 +280,10 @@
             "impressions": "Impressions",
             "other": "Other"
           }
+        },
+        "additionalNotes": {
+          "label": "Additional notes",
+          "placeholder": "Any other details or questions you'd like to share..."
         }
       },
       "submit": "Send",
@@ -291,7 +299,11 @@
   "contact": {
     "name": "Contact",
     "title": "Get in Touch",
-    "intro": "I am Loubna, a passionate photographer based in Oslo, Norway. With a keen eye for detail and a love for capturing moments, I specialize in portrait and landscape photography. Through my lens, I strive to tell stories and evoke emotions that last a lifetime.",
+    "intro": "I'd love to hear from you! Whether you have a question about my work, want to discuss a project, or just want to say hello – drop me a message. Every conversation starts with a simple hello, and I'm always excited to connect with fellow art lovers and photography enthusiasts.",
+    "introExtended": {
+      "heading": "Let's talk!",
+      "subtext": "Share your thoughts, ideas, or simply say hi."
+    },
     "form": {
       "fields": {
         "name": {

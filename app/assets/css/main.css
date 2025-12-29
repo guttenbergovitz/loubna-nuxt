@@ -25,12 +25,15 @@
 @import './components/photo-gallery.css';
 @import './components/page-hero.css';
 @import './components/photo-quote.css';
+@import './components/forms.css';
 
 /* Pages Layer - Page-specific styles */
 @import './pages/home.css';
 @import './pages/about.css';
 @import './pages/bio.css';
 @import './pages/workshop.css';
+@import './pages/book-call.css';
+@import './pages/contact.css';
 
 /* Utilities Layer - Helper classes */
 @import './utilities/helpers.css';

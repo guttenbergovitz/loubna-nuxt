@@ -42,27 +42,39 @@ const handleSubmit = async (data: SimpleContactFormData) => {
       <FormKit
         type="text"
         name="name"
-        :label="$t('contact.form.fields.name.label')"
         :placeholder="$t('contact.form.fields.name.placeholder')"
         validation="required"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:account-outline" class="formkit-icon" />
+          {{ $t('contact.form.fields.name.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="email"
         name="email"
-        :label="$t('contact.form.fields.email.label')"
         :placeholder="$t('contact.form.fields.email.placeholder')"
         validation="required|email"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:email-outline" class="formkit-icon" />
+          {{ $t('contact.form.fields.email.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="textarea"
         name="message"
-        :label="$t('contact.form.fields.message.label')"
         :placeholder="$t('contact.form.fields.message.placeholder')"
         validation="required"
         rows="5"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:message-text-outline" class="formkit-icon" />
+          {{ $t('contact.form.fields.message.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="submit"

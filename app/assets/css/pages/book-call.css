@@ -1,0 +1,79 @@
+/* ============================================
+   Book a Call Page Styles
+   ============================================ */
+
+.book-call__intro {
+  padding: var(--space-fluid-2xl) 0 var(--space-fluid-xl);
+  background-color: var(--color-background-primary);
+  text-align: center;
+  position: relative;
+}
+
+.book-call__intro::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.book-call__intro-heading {
+  font-family: var(--font-family-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  margin: 0 auto var(--space-sm);
+  letter-spacing: -0.02em;
+}
+
+.book-call__intro-subtext {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.75;
+  text-wrap: balance;
+}
+
+.book-call__form-section {
+  padding: var(--space-fluid-xl) 0 var(--space-fluid-3xl);
+  background-color: var(--color-background-primary);
+}
+
+.book-call__gallery {
+  padding: var(--space-fluid-2xl) 0;
+  position: relative;
+  background-image: url('/images/leather-texture-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+  margin-top: -4vw;
+  padding-top: calc(var(--space-fluid-2xl) + 4vw);
+  padding-bottom: calc(var(--space-fluid-2xl) + 4vw);
+}
+
+.book-call__gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.book-call__gallery > .o-container {
+  position: relative;
+  z-index: 2;
+}

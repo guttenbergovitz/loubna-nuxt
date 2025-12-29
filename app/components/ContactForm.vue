@@ -52,42 +52,64 @@ const handleSubmit = async (data: ContactFormData) => {
       <FormKit
         type="text"
         name="name"
-        :label="$t('bookCall.form.fields.name.label')"
         :placeholder="$t('bookCall.form.fields.name.placeholder')"
         validation="required"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:account-outline" class="formkit-icon" />
+          {{ $t('bookCall.form.fields.name.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="email"
         name="email"
-        :label="$t('bookCall.form.fields.email.label')"
         :placeholder="$t('bookCall.form.fields.email.placeholder')"
         validation="required|email"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:email-outline" class="formkit-icon" />
+          {{ $t('bookCall.form.fields.email.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="tel"
         name="phone"
-        :label="$t('bookCall.form.fields.phone.label')"
         :placeholder="$t('bookCall.form.fields.phone.placeholder')"
         validation="required"
-      />
+      >
+        <template #label>
+          <Icon name="mdi:phone-outline" class="formkit-icon" />
+          {{ $t('bookCall.form.fields.phone.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
-        type="select"
+        type="radio"
         name="lookingFor"
         :label="$t('bookCall.form.fields.lookingFor.label')"
-        :placeholder="$t('bookCall.form.fields.lookingFor.placeholder')"
         :options="lookingForOptions"
       />
 
       <FormKit
-        type="select"
+        type="radio"
         name="photographyStyle"
         :label="$t('bookCall.form.fields.photographyStyle.label')"
-        :placeholder="$t('bookCall.form.fields.photographyStyle.placeholder')"
         :options="photographyStyleOptions"
       />
+
+      <FormKit
+        type="textarea"
+        name="additionalNotes"
+        :placeholder="$t('bookCall.form.fields.additionalNotes.placeholder')"
+        rows="4"
+      >
+        <template #label>
+          <Icon name="mdi:note-text-outline" class="formkit-icon" />
+          {{ $t('bookCall.form.fields.additionalNotes.label') }}
+        </template>
+      </FormKit>
 
       <FormKit
         type="submit"
