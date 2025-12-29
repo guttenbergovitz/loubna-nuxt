@@ -31,7 +31,7 @@ const secondaryGalleryImages = [
 
     <!-- Form Section -->
     <section class="contact__form-section" aria-label="Contact form">
-      <div class="o-container o-container--3xl">
+      <div class="o-container o-container--4xl">
         <SimpleContactForm />
       </div>
     </section>

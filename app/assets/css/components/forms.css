@@ -7,7 +7,38 @@
   max-width: 100%;
 }
 
-/* Form Labels */
+/* Form Labels - Text Input Fields */
+.formkit-outer[data-type="text"] .formkit-wrapper,
+.formkit-outer[data-type="email"] .formkit-wrapper,
+.formkit-outer[data-type="tel"] .formkit-wrapper,
+.formkit-outer[data-type="textarea"] .formkit-wrapper {
+  font-family: var(--font-family-heading);
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: var(--font-weight-normal);
+  font-style: italic;
+  color: var(--color-text-primary);
+  opacity: 0.75;
+}
+
+/* Icon inline with label text */
+.formkit-outer[data-type="text"] .formkit-wrapper > .formkit-icon,
+.formkit-outer[data-type="email"] .formkit-wrapper > .formkit-icon,
+.formkit-outer[data-type="tel"] .formkit-wrapper > .formkit-icon,
+.formkit-outer[data-type="textarea"] .formkit-wrapper > .formkit-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: var(--space-sm);
+}
+
+/* Input container below label */
+.formkit-outer[data-type="text"] .formkit-inner,
+.formkit-outer[data-type="email"] .formkit-inner,
+.formkit-outer[data-type="tel"] .formkit-inner,
+.formkit-outer[data-type="textarea"] .formkit-inner {
+  margin-top: var(--space-xs);
+}
+
+/* Label in fieldsets (radio buttons) */
 .formkit-label {
   font-family: var(--font-family-heading);
   font-size: clamp(0.875rem, 1.5vw, 1rem);
@@ -26,6 +57,8 @@
   font-style: italic;
 }
 
+/* Icons in labels */
+.formkit-wrapper .formkit-icon,
 .formkit-label .formkit-icon {
   width: 1rem;
   height: 1rem;
@@ -38,6 +71,7 @@
   transition: var(--transition-fast);
 }
 
+.formkit-wrapper:hover .formkit-icon,
 .formkit-label:hover .formkit-icon {
   opacity: 1;
   transform: scale(1.05);
