@@ -8,6 +8,7 @@
   padding: var(--space-fluid-xl) 0 var(--space-fluid-md);
   margin-top: var(--space-fluid-2xl);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  view-transition-name: footer;
 }
 
 /* Main Content Area */
