@@ -41,7 +41,7 @@
 /* Video Section */
 .workshop__video {
   padding: var(--space-fluid-2xl) 0;
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-background-dark);
   clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   margin-top: -3vw;
   padding-top: calc(var(--space-fluid-2xl) + 3vw);
@@ -53,7 +53,7 @@
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   line-height: var(--line-height-relaxed);
   text-align: center;
-  color: var(--color-text-primary);
+  color: var(--color-text-inverse);
   margin-bottom: var(--space-2xl);
   font-style: italic;
   opacity: 0.9;
@@ -107,6 +107,56 @@
   margin: 0 auto;
 }
 
+/* CTA Section */
+.workshop__cta {
+  padding: var(--space-fluid-3xl) 0;
+  text-align: center;
+  background-color: var(--color-background-secondary);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.workshop__cta-heading {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+.workshop__cta-subtext {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  opacity: 0.75;
+  text-wrap: balance;
+}
+
+.workshop__cta-button {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverse);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-fast);
+}
+
+.workshop__cta-button:hover {
+  background-color: var(--color-text-primary);
+  transform: scale(1.02);
+}
+
+.workshop__cta-button:active {
+  transform: scale(0.98);
+}
+
 /* Responsive */
 @media (max-width: 767px) {
   .workshop__intro {
@@ -119,6 +169,10 @@
   }
 
   .workshop__whats-on {
+    padding: var(--space-fluid-2xl) 0;
+  }
+
+  .workshop__cta {
     padding: var(--space-fluid-2xl) 0;
   }
 }

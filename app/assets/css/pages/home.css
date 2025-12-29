@@ -526,8 +526,19 @@
   font-weight: var(--font-weight-bold);
   font-style: italic;
   line-height: var(--line-height-tight);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
   letter-spacing: -0.02em;
+}
+
+.home__cta-subtext {
+  font-family: var(--font-family-heading);
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  opacity: 0.75;
+  text-wrap: balance;
 }
 
 .home__cta-button {

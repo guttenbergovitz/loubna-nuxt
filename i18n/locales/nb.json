@@ -66,6 +66,7 @@
     },
     "cta": {
       "heading": "Ta kontakt for en gratis foto konsultasjon.",
+      "subtext": "Interessert i å bringe unik fotografi til ditt rom eller arrangement? La oss diskutere hvordan vi sammen kan skape noe uforglemmelig.",
       "button": "Jeg vil ha det!"
     }
   },
@@ -112,6 +113,11 @@
     "whatsOn": {
       "heading": "Hva skjer",
       "activity": "Bygge et gigantisk kamera. Camera Obscura."
+    },
+    "consultation": {
+      "heading": "Kontakt meg for en gratis fotokonsultasjon.",
+      "subtext": "Interessert i å bringe en unik fotoworkshop til organisasjonen eller arrangementet ditt? La oss diskutere hvordan vi sammen kan skape en uforglemmelig kreativ opplevelse.",
+      "button": "Ta Kontakt"
     }
   },
   "bio": {

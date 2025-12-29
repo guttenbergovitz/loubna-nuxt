@@ -5,6 +5,8 @@ defineI18nRoute({
     nb: '/workshop-nb'
   }
 })
+
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -40,6 +42,20 @@ defineI18nRoute({
       <div class="o-container o-container--3xl">
         <h2 class="workshop__whats-on-heading">{{ $t('workshop.whatsOn.heading') }}</h2>
         <p class="workshop__whats-on-activity">{{ $t('workshop.whatsOn.activity') }}</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="workshop__cta">
+      <div class="o-container o-container--4xl">
+        <h2 class="workshop__cta-heading">{{ $t('workshop.consultation.heading') }}</h2>
+        <p class="workshop__cta-subtext">{{ $t('workshop.consultation.subtext') }}</p>
+        <NuxtLink
+          :to="localePath('contact')"
+          class="workshop__cta-button"
+        >
+          {{ $t('workshop.consultation.button') }}
+        </NuxtLink>
       </div>
     </section>
 

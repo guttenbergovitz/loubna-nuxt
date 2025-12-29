@@ -218,6 +218,7 @@ onMounted(() => {
     <section class="home__cta">
       <div class="o-container o-container--4xl">
         <h2 class="home__cta-heading">{{ $t('home.cta.heading') }}</h2>
+        <p class="home__cta-subtext">{{ $t('home.cta.subtext') }}</p>
         <NuxtLink
           :to="localePath('book-a-call')"
           class="home__cta-button"

@@ -66,6 +66,7 @@
     },
     "cta": {
       "heading": "Contact me for a free photo consultation.",
+      "subtext": "Interested in bringing unique photography to your space or event? Let's discuss how we can create something unforgettable together.",
       "button": "I want that!"
     }
   },
@@ -111,6 +112,11 @@
     "whatsOn": {
       "heading": "What's On",
       "activity": "Building a gigantic camera. Camera Obscura."
+    },
+    "consultation": {
+      "heading": "Contact me for a free photo consultation.",
+      "subtext": "Interested in bringing a unique photography workshop to your organization or event? Let's discuss how we can create an unforgettable creative experience together.",
+      "button": "Get in Touch"
     }
   },
   "bio": {
