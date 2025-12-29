@@ -69,6 +69,7 @@
     margin-top: -3vw;
     padding-top: calc(var(--space-fluid-lg) + 3vw);
     padding-bottom: calc(var(--space-fluid-lg) + 3vw);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   }
 
   .bio__section-intro {

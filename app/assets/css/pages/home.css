@@ -587,6 +587,11 @@
     padding-right: var(--space-md);
   }
 
+  /* Reduce diagonal clip-paths on mobile */
+  .home__intro-question-wrapper {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+  }
+
   /* Question section */
   .home__question {
     padding: var(--space-fluid-lg) 0;
@@ -607,10 +612,17 @@
   /* Solution section */
   .home__solution {
     padding: var(--space-fluid-lg) 0;
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Gallery section */
+  .home__gallery {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
   }
 
   /* CTA section */
   .home__cta {
     padding: var(--space-fluid-lg) 0;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   }
 }

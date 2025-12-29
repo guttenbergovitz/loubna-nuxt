@@ -157,6 +157,15 @@
   max-width: 400px;
 }
 
+.main-navigation__mobile-footer {
+  margin-top: auto;
+  padding-top: var(--space-2xl);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-navigation__mobile-link {
   font-family: var(--font-family-heading);
   font-size: clamp(1.25rem, 4vw, 1.75rem);

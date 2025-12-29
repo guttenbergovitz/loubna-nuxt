@@ -271,22 +271,23 @@ onMounted(() => {
 
   /* Move timeline line to the left */
   .bio-timeline::before {
-    left: 20px;
+    left: 12px;
   }
 
   .bio-timeline__event {
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 24px 1fr;
     gap: var(--space-md);
     margin-bottom: var(--space-2xl);
   }
 
-  /* Show date above content, hide image */
+  /* Date and image column on mobile */
   .bio-timeline__date-column {
     grid-column: 2;
     grid-row: 1;
     justify-self: start;
     align-items: flex-start;
     margin-bottom: var(--space-sm);
+    gap: var(--space-sm);
   }
 
   .bio-timeline__event--even .bio-timeline__date-column {
@@ -294,8 +295,15 @@ onMounted(() => {
     justify-self: start;
   }
 
+  /* Show small images on mobile */
   .bio-timeline__image {
-    display: none;
+    display: block;
+    max-width: 80px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    opacity: 1;
+    transform: scale(1);
   }
 
   .bio-timeline__date {
@@ -306,6 +314,13 @@ onMounted(() => {
   .bio-timeline__separator {
     grid-column: 1;
     grid-row: 1 / 3;
+    justify-self: center;
+  }
+
+  .bio-timeline__marker {
+    width: 16px;
+    height: 16px;
+    border-width: 2px;
   }
 
   .bio-timeline__content {

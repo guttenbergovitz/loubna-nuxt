@@ -166,6 +166,7 @@
   .workshop__video {
     padding-top: calc(var(--space-fluid-xl) + 3vw);
     padding-bottom: calc(var(--space-fluid-xl) + 3vw);
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
   }
 
   .workshop__whats-on {
@@ -174,5 +175,6 @@
 
   .workshop__cta {
     padding: var(--space-fluid-2xl) 0;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   }
 }

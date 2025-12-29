@@ -77,3 +77,10 @@
   position: relative;
   z-index: 2;
 }
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .contact__gallery {
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+  }
+}
