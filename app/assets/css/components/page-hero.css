@@ -91,6 +91,11 @@
 @media (max-width: 767px) {
   .page-hero--banner {
     min-height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+  }
+
+  .page-hero--plain {
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
   }
 
   .page-hero--plain .page-hero__headline {

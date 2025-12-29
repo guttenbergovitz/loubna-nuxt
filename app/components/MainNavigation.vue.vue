@@ -42,6 +42,9 @@
             >
               {{ $t(`${item.key}.name`) }}
             </NuxtLink>
+            <div class="main-navigation__mobile-footer">
+              <LanguageSwitcher />
+            </div>
           </nav>
         </div>
       </Transition>
@@ -61,15 +64,24 @@ const navItems = [
 
 const localePath = useLocalePath()
 const isMobileMenuOpen = ref(false)
+const scrollPosition = ref(0)
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value
   // Prevent body scroll when menu is open (client-only)
   if (import.meta.client) {
     if (isMobileMenuOpen.value) {
+      scrollPosition.value = window.scrollY
       document.body.style.overflow = 'hidden'
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${scrollPosition.value}px`
+      document.body.style.width = '100%'
     } else {
       document.body.style.overflow = ''
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+      window.scrollTo(0, scrollPosition.value)
     }
   }
 }
@@ -78,6 +90,10 @@ const closeMobileMenu = () => {
   isMobileMenuOpen.value = false
   if (import.meta.client) {
     document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.top = ''
+    document.body.style.width = ''
+    window.scrollTo(0, scrollPosition.value)
   }
 }
 
@@ -91,6 +107,9 @@ watch(() => route.path, () => {
 onUnmounted(() => {
   if (import.meta.client) {
     document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.top = ''
+    document.body.style.width = ''
   }
 })
 </script>

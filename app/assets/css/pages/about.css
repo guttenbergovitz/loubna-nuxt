@@ -379,9 +379,15 @@
     padding: var(--space-fluid-2xl) 0;
   }
 
+  /* Reduce diagonal clip-paths on mobile */
+  .about__collaborations-stripe {
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%);
+  }
+
   .about__challenge {
     padding-top: calc(var(--space-fluid-2xl) + 3vw);
     padding-bottom: calc(var(--space-fluid-2xl) + 3vw);
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
   }
 
   .about__bio-link {

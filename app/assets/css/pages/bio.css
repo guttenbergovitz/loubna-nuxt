@@ -57,3 +57,22 @@
 }
 
 /* Note: Timeline styling is now in BioTimeline.vue component (scoped styles) */
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .bio__highlights,
+  .bio__education {
+    padding: var(--space-fluid-lg) var(--space-md);
+  }
+
+  .bio__education {
+    margin-top: -3vw;
+    padding-top: calc(var(--space-fluid-lg) + 3vw);
+    padding-bottom: calc(var(--space-fluid-lg) + 3vw);
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
+
+  .bio__section-intro {
+    padding: 0 var(--space-md);
+  }
+}
