@@ -71,18 +71,30 @@
   },
   "about": {
     "name": "Om",
+    "intro1": {
+      "prefix": "Mitt navn er",
+      "name": "Loubna Aleksandra Kubiak"
+    },
+    "intro2": "Jeg er en fotokunstner med polske røtter, bosatt i Norge og arbeidende internasjonalt",
     "title": "Vil du bli kjent med meg?",
     "greeting": "Hei! Salam! Peace! Jeg er en fotokunstner med polske røtter, bosatt i Norge, spesialisert i tradisjonelle mørkeromsteknikker og håndlagde fine art-trykk",
     "bio": {
-      "intro": "Mitt navn er Loubna Aleksandra Kubiak, og jeg er en fotokunstner med polske røtter, bosatt i Norge og arbeidende internasjonalt. Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeroms teknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimedie kommunikasjon. Som fotograf har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har utviklet mine egne kunstneriske prosjekter.",
+      "featured": "Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeroms teknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimedie kommunikasjon.",
+      "freelance": "Som frilanser har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har drevet mine egne kunstneriske prosjekter.",
       "workshops": "Som fotoinstruktør har jeg samarbeidet med myndigheter og kulturinstitusjoner i Polen, Tyskland og Norge.",
-      "collaborations": "I Norge har jeg samarbeidet med Kulturtanken, Rogaland Kunstsenter, Jærmuseet, Sandnes og Stavanger kommuner.",
+      "collaborations": "I Norge har jeg samarbeidet med {kulturtanken}, {rogaland}, {jaermuseet}, {sandnes} og {stavanger} kommuner.",
       "coordination": "Som erfaren koordinator og leder i kultursektoren har jeg arbeidet med internasjonalt anerkjente kunstnere som Peter Greenaway, Zbig Rybczynski, Voy Fangor og Leon Tarasewicz."
     },
     "challenge": {
       "heading": "Utfordre meg!",
       "text": "Velg et sted, så tar jeg et bilde der.*",
       "footnote": "* bare når det fenger meg."
+    }
+    ,
+    "bioLink": {
+      "heading": "Nysgjerrig på min reise?",
+      "text": "Utforsk den detaljerte kronologien over min profesjonelle vei, kunstneriske milepæler og samarbeid.",
+      "button": "Se full bio"
     }
   },
   "workshop": {

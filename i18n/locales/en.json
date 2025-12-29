@@ -73,16 +73,27 @@
     "name": "About",
     "title": "Want to know me?",
     "greeting": "Hi! Salam! Peace! I'm a photo artist with Polish roots, based in Norway, specializing in traditional darkroom techniques and handcrafted fine art prints",
+    "intro1": {
+      "prefix": "My name is",
+      "name": "Loubna Aleksandra Kubiak"
+    },
+    "intro2": "I am a photo artist with Polish roots, based in Norway and working worldwide",
     "bio": {
-      "intro": "My name is Loubna Aleksandra Kubiak, and I am a photo artist with Polish roots, based in Norway and working worldwide. I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication.",
+      "featured": "I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication.",
       "freelance": "As a freelancer, I have worked with magazines, advertising agencies, and private clients, all while pursuing my own artistic projects.",
       "workshops": "I have led photography workshops in collaboration with local authorities and cultural centers across Europe.",
+      "collaborations": "In Norway, I have collaborated with {kulturtanken}, {rogaland}, {jaermuseet}, and {sandnes} and {stavanger} municipalities.",
       "coordination": "As a coordinator and manager in the cultural sector, I have worked with internationally renowned artists such as Peter Greenaway, Zbig Rybczynski, Wojciech Fangor, and Leon Tarasewicz."
     },
     "challenge": {
       "heading": "Challenge me!",
       "text": "Pick up a location and I will take a photo there. *",
       "footnote": "*only when it hooks me."
+    },
+    "bioLink": {
+      "heading": "Curious about my journey?",
+      "text": "Explore the detailed chronicle of my professional path, artistic milestones, and collaborations.",
+      "button": "View Full Bio"
     }
   },
   "workshop": {
