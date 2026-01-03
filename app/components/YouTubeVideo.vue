@@ -2,6 +2,7 @@
 const props = defineProps<{
   videoId: string
   title?: string
+  aspectRatio?: 'landscape' | 'portrait' // landscape = 16:9, portrait = 9:16
 }>()
 
 const embedUrl = computed(() => {
@@ -17,10 +18,14 @@ const embedUrl = computed(() => {
   })
   return `https://www.youtube-nocookie.com/embed/${props.videoId}?${params.toString()}`
 })
+
+const aspectRatioClass = computed(() => {
+  return props.aspectRatio === 'portrait' ? 'youtube-video--portrait' : 'youtube-video--landscape'
+})
 </script>
 
 <template>
-  <div class="youtube-video">
+  <div class="youtube-video" :class="aspectRatioClass">
     <iframe
       :src="embedUrl"
       :title="title || 'YouTube video player'"
@@ -35,9 +40,18 @@ const embedUrl = computed(() => {
 <style scoped>
 .youtube-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+}
+
+.youtube-video--landscape {
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.youtube-video--portrait {
+  padding-bottom: 0;
+  aspect-ratio: 9 / 16;
+  height: auto;
 }
 
 .youtube-video :deep(iframe) {

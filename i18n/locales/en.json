@@ -245,6 +245,33 @@
       }
     ]
   },
+  "businessGift": {
+    "name": "Business Gift",
+    "title": "How to find the perfect BUSINESS GIFT in 2 minutes?",
+    "tagline": "Never worry about business gifts again with our practical guide",
+    "intro": {
+      "heading": "Your Very Special Business Gift",
+      "text": "In this short video, you'll get practical tips so you never have to worry about business gifts again."
+    },
+    "video": {
+      "youtubeId": "bnbRxqlcrF0",
+      "intro": "...because your business partners deserve more...",
+      "thumbnail": "/images/deco/gift/biz-gift-deco-en.png"
+    },
+    "benefits": {
+      "heading": "Does this sound interesting?",
+      "item1": "Free consultation within 48 hours",
+      "item2": "No costs, no obligations",
+      "item3": "No pushy sales talk. Guaranteed."
+    },
+    "cta": {
+      "heading": "Book a Free Consultation",
+      "subtext": "Fill out the form and we will contact you within 48 hours to see how we can help.",
+      "promise": "We'll reach out within 48 hours to discuss how we can help you.",
+      "guarantee": "No costs, no obligations, and no pushy sales talk. Guaranteed.",
+      "button": "Book a Call"
+    }
+  },
   "bookCall": {
     "name": "Book a Call",
     "title": "Let's Create Something Beautiful Together",

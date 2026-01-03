@@ -246,6 +246,33 @@
       }
     ]
   },
+  "businessGift": {
+    "name": "Firmagaver",
+    "title": "Hvordan finne den perfekte BUSINESS GAVEN på 2 minutter?",
+    "tagline": "Praktiske tips slik at du aldri trenger å bekymre deg for business gaver igjen",
+    "intro": {
+      "heading": "Din helt spesielle firmagave",
+      "text": "I denne korte videoen får du praktiske tips, slik at du aldri trenger å bekymre deg for business gaver igjen."
+    },
+    "video": {
+      "youtubeId": "bnbRxqlcrF0",
+      "intro": "...fordi dine forretningspartnere fortjener mer...",
+      "thumbnail": "/images/deco/gift/biz-gift-deco-nb.png"
+    },
+    "benefits": {
+      "heading": "Høres dette interessant ut?",
+      "item1": "Gratis konsultasjon innen 48 timer",
+      "item2": "Ingen kostnader, ingen forpliktelser",
+      "item3": "Ingen påtrengende salgsprat. Garantert."
+    },
+    "cta": {
+      "heading": "Bestill en gratis konsultasjon",
+      "subtext": "Fyll ut skjemaet, så vi vil kontakte deg innen 48 timer for å finne ut om vi kan hjelpe deg.",
+      "promise": "Vi kontakter deg innen 48 timer for å diskutere hvordan vi kan hjelpe.",
+      "guarantee": "Ingen kostnader, ingen forpliktelser og ingen påtrengende salgsprat. Garantert.",
+      "button": "Bestill en samtale"
+    }
+  },
   "bookCall": {
     "name": "Bestill en samtale",
     "title": "La oss skape noe vakkert sammen",
