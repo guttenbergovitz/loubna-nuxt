@@ -56,7 +56,6 @@
 const navItems = [
   { route: 'index', key: 'home' },
   { route: 'about', key: 'about' },
-  { route: 'bio', key: 'bio' },
   { route: 'workshop', key: 'workshop' },
   { route: 'business-gift', key: 'businessGift' },
   { route: 'book-a-call', key: 'bookCall' },
