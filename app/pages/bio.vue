@@ -86,6 +86,9 @@ const education = computed(() => {
       </div>
     </section>
 
+    <!-- Partners Gallery -->
+    <PartnersGallery />
+
     <!-- Photography Quote -->
     <PhotoQuote />
   </main>

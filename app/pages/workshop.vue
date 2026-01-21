@@ -59,6 +59,9 @@ const localePath = useLocalePath()
       </div>
     </section>
 
+    <!-- Partners Gallery -->
+    <PartnersGallery />
+
     <!-- Photography Quote -->
     <PhotoQuote />
   </main>

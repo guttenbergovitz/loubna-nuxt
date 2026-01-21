@@ -363,6 +363,9 @@
       }
     }
   },
+  "partners": {
+    "heading": "Samarbeidspartnere"
+  },
   "footer": {
     "tagline": "Håndlaget i Norge.",
     "navigation": "Navigasjon",

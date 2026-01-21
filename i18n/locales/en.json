@@ -362,6 +362,9 @@
       }
     }
   },
+  "partners": {
+    "heading": "Trusted by"
+  },
   "footer": {
     "tagline": "Handcrafted in Norway.",
     "navigation": "Navigation",
