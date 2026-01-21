@@ -207,6 +207,14 @@ onMounted(() => {
       </div>
     </section>
 
+    <!-- Video Section -->
+    <section class="home__video" aria-label="Photography showcase video">
+      <BunnyVideo 
+        landscape-id="57a91730-dd63-4310-af70-1513286bcdc4"
+        portrait-id="d796aa9c-fe0f-405c-b8ea-99713684d658"
+      />
+    </section>
+
     <!-- Gallery 2 -->
     <section class="home__gallery-secondary" aria-label="Additional photography gallery">
       <div class="o-container o-container--full">
