@@ -2,8 +2,9 @@
 import { createZodPlugin } from '@formkit/zod'
 import { createContactFormSchema, type ContactFormData } from '~/schemas/contactForm'
 
-const { t } = useI18n()
-const submitted = ref(false)
+const { t, locale } = useI18n()
+const isLoading = ref(false)
+const error = ref<string | null>(null)
 
 const validationMessages = computed(() => ({
   nameMin: t('bookCall.form.validation.nameMin'),
@@ -30,24 +31,44 @@ const photographyStyleOptions = computed(() => [
 ])
 
 const handleSubmit = async (data: ContactFormData) => {
-  // TODO: Handle form submission (e.g., send to API)
-  console.log('Form submitted:', data)
-  submitted.value = true
+  isLoading.value = true
+  error.value = null
+
+  try {
+    const response = await $fetch('/api/contact/book-call', {
+      method: 'POST',
+      body: {
+        ...data,
+        locale: locale.value
+      }
+    })
+
+    if (response.success && response.redirectUrl) {
+      await navigateTo(response.redirectUrl)
+    } else {
+      error.value = t('form.error.sendFailed')
+    }
+  } catch (err) {
+    console.error('Form submission error:', err)
+    error.value = t('form.error.sendFailed')
+  } finally {
+    isLoading.value = false
+  }
 }
 </script>
 
 <template>
   <div class="contact-form">
-    <div v-if="submitted" class="contact-form__success">
-      <p>{{ $t('bookCall.form.success') }}</p>
+    <div v-if="error" class="contact-form__error">
+      <p>{{ error }}</p>
     </div>
 
     <FormKit
-      v-else
       type="form"
       :plugins="[zodPlugin]"
       @submit="handleSubmit"
       :actions="false"
+      :disabled="isLoading"
     >
       <FormKit
         type="text"
@@ -113,7 +134,8 @@ const handleSubmit = async (data: ContactFormData) => {
 
       <FormKit
         type="submit"
-        :label="$t('bookCall.form.submit')"
+        :label="isLoading ? $t('form.submitting') : $t('bookCall.form.submit')"
+        :disabled="isLoading"
       />
     </FormKit>
   </div>

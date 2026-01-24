@@ -29,8 +29,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@primevue/nuxt-module',
     '@formkit/nuxt',
-    'nuxt-easy-lightbox'
+    'nuxt-easy-lightbox',
+    'nuxt-nodemailer'
   ],
+  nodemailer: {
+    from: process.env.SMTP_FROM,
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT || '465', 10),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS
+    }
+  },
   primevue: {
     options: {
       unstyled: true

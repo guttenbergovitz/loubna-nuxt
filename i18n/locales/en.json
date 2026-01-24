@@ -502,5 +502,25 @@
       "text": "Photography is truth. The cinema is truth twenty-four times per second.",
       "author": "Jean-Luc Godard"
     }
-  ]
+  ],
+  "thankYou": {
+    "bookCall": {
+      "title": "Thank You!",
+      "message": "We've received your consultation request.",
+      "nextSteps": "We'll contact you within 48 hours to schedule your free consultation.",
+      "backHome": "Back to Home"
+    },
+    "contact": {
+      "title": "Message Sent!",
+      "message": "Thank you for reaching out.",
+      "nextSteps": "We'll get back to you as soon as possible.",
+      "backHome": "Back to Home"
+    }
+  },
+  "form": {
+    "submitting": "Sending...",
+    "error": {
+      "sendFailed": "Failed to send. Please try again later."
+    }
+  }
 }

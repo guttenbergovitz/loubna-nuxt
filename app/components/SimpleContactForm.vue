@@ -2,8 +2,9 @@
 import { z } from 'zod'
 import { createZodPlugin } from '@formkit/zod'
 
-const { t } = useI18n()
-const submitted = ref(false)
+const { t, locale } = useI18n()
+const isLoading = ref(false)
+const error = ref<string | null>(null)
 
 const simpleContactSchema = computed(() => z.object({
   name: z.string().min(2, t('contact.form.validation.nameMin')),
@@ -20,24 +21,44 @@ type SimpleContactFormData = {
 const zodPlugin = computed(() => createZodPlugin(simpleContactSchema.value))
 
 const handleSubmit = async (data: SimpleContactFormData) => {
-  // TODO: Handle form submission (e.g., send to API)
-  console.log('Simple contact form submitted:', data)
-  submitted.value = true
+  isLoading.value = true
+  error.value = null
+
+  try {
+    const response = await $fetch('/api/contact/simple', {
+      method: 'POST',
+      body: {
+        ...data,
+        locale: locale.value
+      }
+    })
+
+    if (response.success && response.redirectUrl) {
+      await navigateTo(response.redirectUrl)
+    } else {
+      error.value = t('form.error.sendFailed')
+    }
+  } catch (err) {
+    console.error('Form submission error:', err)
+    error.value = t('form.error.sendFailed')
+  } finally {
+    isLoading.value = false
+  }
 }
 </script>
 
 <template>
   <div class="simple-contact-form">
-    <div v-if="submitted" class="simple-contact-form__success">
-      <p>{{ $t('contact.form.success') }}</p>
+    <div v-if="error" class="simple-contact-form__error">
+      <p>{{ error }}</p>
     </div>
 
     <FormKit
-      v-else
       type="form"
       :plugins="[zodPlugin]"
       @submit="handleSubmit"
       :actions="false"
+      :disabled="isLoading"
     >
       <FormKit
         type="text"
@@ -78,7 +99,8 @@ const handleSubmit = async (data: SimpleContactFormData) => {
 
       <FormKit
         type="submit"
-        :label="$t('contact.form.submit')"
+        :label="isLoading ? $t('form.submitting') : $t('contact.form.submit')"
+        :disabled="isLoading"
       />
     </FormKit>
   </div>

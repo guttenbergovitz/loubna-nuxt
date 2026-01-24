@@ -503,5 +503,25 @@
       "text": "Fotografi er sannhet. Kino er sannhet tjuefire ganger per sekund.",
       "author": "Jean-Luc Godard"
     }
-  ]
+  ],
+  "thankYou": {
+    "bookCall": {
+      "title": "Takk!",
+      "message": "Vi har mottatt din konsultasjonsforespørsel.",
+      "nextSteps": "Vi kontakter deg innen 48 timer for å avtale din gratis konsultasjon.",
+      "backHome": "Tilbake til forsiden"
+    },
+    "contact": {
+      "title": "Melding sendt!",
+      "message": "Takk for at du tok kontakt.",
+      "nextSteps": "Vi svarer deg så snart som mulig.",
+      "backHome": "Tilbake til forsiden"
+    }
+  },
+  "form": {
+    "submitting": "Sender...",
+    "error": {
+      "sendFailed": "Sending mislyktes. Vennligst prøv igjen senere."
+    }
+  }
 }
