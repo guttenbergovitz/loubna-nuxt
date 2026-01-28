@@ -2,10 +2,12 @@
 const localePath = useLocalePath()
 
 // Gallery images
-const homeGalleryImages = [
+const homeGalleryImagesRow1 = [
   { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Photography by Loubna Photo' },
   { src: '/images/gallery/home-gallery/hg2.jpg', alt: 'Photography by Loubna Photo' },
   { src: '/images/gallery/home-gallery/hg3.jpg', alt: 'Photography by Loubna Photo' },
+]
+const homeGalleryImagesRow2 = [
   { src: '/images/gallery/home-gallery/hg4.jpg', alt: 'Photography by Loubna Photo' },
   { src: '/images/gallery/home-gallery/hg5.jpg', alt: 'Photography by Loubna Photo' },
   { src: '/images/gallery/home-gallery/hg6.jpg', alt: 'Photography by Loubna Photo' }
@@ -153,10 +155,38 @@ onMounted(() => {
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section class="home__gallery" aria-label="Photography gallery">
+    <!-- Handcrafted Gallery & Video Section -->
+    <section class="home__handcrafted-gallery">
       <div class="o-container o-container--full">
-        <PhotoGallery :images="homeGalleryImages" :columns="3" />
+        <!-- Video Section for Mobile -->
+        <div class="home__video-two-mobile-wrapper show-on-mobile">
+          <div class="home__video-container">
+            <HomeVideoTwo
+              no-desktop-src="https://player.mediadelivery.net/embed/584298/42e3056b-9532-491a-a7e7-005833992fbe"
+              en-desktop-src="https://player.mediadelivery.net/embed/584298/6ec8223e-1519-4c09-93d2-569bbafd7cd0"
+              no-mobile-src="https://player.mediadelivery.net/embed/584298/84f24ad5-aedb-4db6-8b4a-cb5475c28501"
+              en-mobile-src="https://player.mediadelivery.net/embed/584298/745ccea1-62e6-43b7-ae26-75ca3173c37c"
+            />
+          </div>
+        </div>
+
+        <!-- Gallery Row 1 -->
+        <PhotoGallery :images="homeGalleryImagesRow1" :columns="3" />
+
+        <!-- Video Section for Desktop -->
+        <div class="home__video-two-desktop-wrapper show-on-desktop">
+          <div class="home__video-container">
+            <HomeVideoTwo
+              no-desktop-src="https://player.mediadelivery.net/embed/584298/42e3056b-9532-491a-a7e7-005833992fbe"
+              en-desktop-src="https://player.mediadelivery.net/embed/584298/6ec8223e-1519-4c09-93d2-569bbafd7cd0"
+              no-mobile-src="https://player.mediadelivery.net/embed/584298/84f24ad5-aedb-4db6-8b4a-cb5475c28501"
+              en-mobile-src="https://player.mediadelivery.net/embed/584298/745ccea1-62e6-43b7-ae26-75ca3173c37c"
+            />
+          </div>
+        </div>
+
+        <!-- Gallery Row 2 -->
+        <PhotoGallery :images="homeGalleryImagesRow2" :columns="3" />
       </div>
     </section>
 
@@ -209,7 +239,7 @@ onMounted(() => {
 
     <!-- Video Section -->
     <section class="home__video" aria-label="Photography showcase video">
-      <BunnyVideo 
+      <BunnyVideo
         landscape-id="57a91730-dd63-4310-af70-1513286bcdc4"
         portrait-id="d796aa9c-fe0f-405c-b8ea-99713684d658"
       />
@@ -243,3 +273,72 @@ onMounted(() => {
     <PhotoQuote />
   </main>
 </template>
+
+<style scoped>
+.show-on-desktop {
+  display: none;
+}
+.show-on-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  .show-on-desktop {
+    display: block;
+  }
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+.home__handcrafted-gallery {
+  background-color: #F9F0E2;
+  padding: var(--space-fluid-lg) 0 calc(var(--space-fluid-2xl) + 5vw);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+}
+
+@media (max-width: 767px) {
+  .home__handcrafted-gallery {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+    padding-bottom: calc(var(--space-fluid-2xl) + 2vw);
+  }
+}
+
+.home__video-two-desktop-wrapper,
+.home__video-two-mobile-wrapper {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .home__video-two-desktop-wrapper {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+}
+
+.home__video-container {
+  background-color: var(--color-white);
+  padding: var(--space-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: rotate(-1.5deg);
+  position: relative; /* for the ::after pseudo-element */
+  border-radius: var(--border-radius-md);
+}
+
+.home__video-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 12px, transparent 12px),
+    linear-gradient(-135deg, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 12px, transparent 12px),
+    linear-gradient(45deg, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 12px, transparent 12px),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 12px, transparent 12px);
+  background-size: 20px 20px;
+  background-position: top left, top right, bottom left, bottom right;
+  background-repeat: no-repeat;
+  z-index: 3;
+  border-radius: var(--border-radius-md);
+}
+</style>

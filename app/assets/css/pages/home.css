@@ -505,7 +505,7 @@
 .home__gallery {
   padding: var(--space-fluid-lg) 0 var(--space-fluid-2xl);
   background-color: var(--color-background-secondary);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: none;
 }
 
 /* Video Section */
@@ -625,12 +625,22 @@
 
   /* Gallery section */
   .home__gallery {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+    clip-path: none;
   }
 
   /* CTA section */
   .home__cta {
     padding: var(--space-fluid-lg) 0;
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
+}
+
+/* Gallery 2 with slanted bottom */
+.home__gallery-secondary {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); /* Slanted bottom for desktop */
+}
+@media (max-width: 767px) {
+  .home__gallery-secondary {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%); /* Slanted bottom for mobile */
   }
 }
