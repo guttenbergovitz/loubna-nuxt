@@ -112,12 +112,66 @@
     },
     "whatsOn": {
       "heading": "Hva skjer",
-      "activity": "Bygge et gigantisk kamera. Camera Obscura."
+      "activities": [
+        "Bygging av et gigantisk kamera: Camera Obscura",
+        "Skyggeteater: Fotogrammer i mørkerommet",
+        "Menneske mot AI: Kreativ ingeniørkunst og problemløsning gjennom fotografi (kurs for barn)"
+      ]
     },
-    "consultation": {
-      "heading": "Kontakt meg for en gratis fotokonsultasjon.",
-      "subtext": "Interessert i å bringe en unik fotoworkshop til organisasjonen eller arrangementet ditt? La oss diskutere hvordan vi sammen kan skape en uforglemmelig kreativ opplevelse.",
-      "button": "Ta Kontakt"
+    "form": {
+      "heading": "Meld deg på workshop",
+      "subtext": "Interessert i å bringe en unik fotoworkshop til organisasjonen eller arrangementet ditt? Fyll ut skjemaet, så skaper vi en uforglemmelig kreativ opplevelse sammen.",
+      "fields": {
+        "workshopFor": {
+          "label": "Hvem er workshopen for?",
+          "options": {
+            "yourself": "Kurs for deg selv",
+            "child": "Kurs for barnet ditt",
+            "institution": "Workshop for din institusjon / ditt program"
+          }
+        },
+        "skills": {
+          "label": "Hvilke ferdigheter er du interessert i?",
+          "options": {
+            "engineering": "Praktisk ingeniørkunst og kreativitet gjennom fotografi",
+            "darkroom": "Filmfremkalling og kopiering i mørkerom",
+            "largeFormat": "Storformatfotografering"
+          }
+        },
+        "photographyStyle": {
+          "label": "Hvilken type fotografi liker du?",
+          "options": {
+            "landscape": "Landskap",
+            "architecture": "Arkitektur",
+            "nature": "Naturtemaer",
+            "impressions": "Stemninger",
+            "other": "Annet"
+          }
+        },
+        "name": {
+          "label": "Navn",
+          "placeholder": "Ditt navn"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "din{'@'}email.com"
+        },
+        "preferredDate": {
+          "label": "Ønsket dato / tidsramme",
+          "placeholder": "f.eks. juni 2026, helger, fleksibelt..."
+        },
+        "message": {
+          "label": "Melding",
+          "placeholder": "Andre detaljer eller spørsmål..."
+        }
+      },
+      "submit": "Send",
+      "requiredNote": "Felt merket med stjerne er obligatoriske",
+      "validation": {
+        "nameMin": "Navnet må være minst 2 tegn",
+        "emailInvalid": "Ugyldig e-postadresse",
+        "required": "Dette feltet er påkrevd"
+      }
     }
   },
   "bio": {
@@ -515,6 +569,12 @@
       "title": "Melding sendt!",
       "message": "Takk for at du tok kontakt.",
       "nextSteps": "Vi svarer deg så snart som mulig.",
+      "backHome": "Tilbake til forsiden"
+    },
+    "workshop": {
+      "title": "Takk!",
+      "message": "Vi har mottatt din workshop-forespørsel.",
+      "nextSteps": "Vi kontakter deg innen 48 timer med mer informasjon om workshopen.",
       "backHome": "Tilbake til forsiden"
     }
   },

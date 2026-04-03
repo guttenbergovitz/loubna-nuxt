@@ -323,3 +323,20 @@
 .formkit-wrapper[data-type="radio"] .formkit-decorator {
   display: none;
 }
+
+/* Required field indicator */
+.formkit-required {
+  color: #b91c1c;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Required fields note */
+.contact-form__required-note {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: var(--color-text-primary);
+  opacity: 0.5;
+  margin-top: var(--space-lg);
+}

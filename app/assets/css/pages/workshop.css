@@ -96,26 +96,45 @@
   opacity: 0.3;
 }
 
+.workshop__whats-on-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  text-align: left;
+}
+
 .workshop__whats-on-activity {
   font-family: var(--font-family-heading);
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: var(--line-height-relaxed);
   font-style: italic;
   color: var(--color-text-primary);
   opacity: 0.85;
-  max-width: 800px;
-  margin: 0 auto;
+  padding-left: var(--space-xl);
+  position: relative;
 }
 
-/* CTA Section */
-.workshop__cta {
+.workshop__whats-on-activity::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+}
+
+/* Form Section */
+.workshop__form-section {
   padding: var(--space-fluid-3xl) 0;
-  text-align: center;
+  padding-top: calc(var(--space-fluid-3xl) + 3vw);
+  padding-bottom: calc(var(--space-fluid-3xl) + 3vw);
   background-color: var(--color-background-secondary);
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
-.workshop__cta-heading {
+.workshop__form-heading {
   font-family: var(--font-family-heading);
   font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: var(--font-weight-bold);
@@ -125,7 +144,7 @@
   letter-spacing: -0.02em;
 }
 
-.workshop__cta-subtext {
+.workshop__form-subtext {
   font-family: var(--font-family-heading);
   font-size: clamp(1rem, 1.8vw, 1.25rem);
   line-height: var(--line-height-relaxed);
@@ -134,27 +153,6 @@
   margin: 0 auto var(--space-xl);
   opacity: 0.75;
   text-wrap: balance;
-}
-
-.workshop__cta-button {
-  display: inline-block;
-  padding: var(--space-xs) var(--space-md);
-  background-color: var(--color-background-dark);
-  color: var(--color-text-inverse);
-  text-decoration: none;
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-regular);
-  border-radius: var(--border-radius-sm);
-  transition: var(--transition-fast);
-}
-
-.workshop__cta-button:hover {
-  background-color: var(--color-text-primary);
-  transform: scale(1.02);
-}
-
-.workshop__cta-button:active {
-  transform: scale(0.98);
 }
 
 /* Responsive */
@@ -173,8 +171,9 @@
     padding: var(--space-fluid-2xl) 0;
   }
 
-  .workshop__cta {
-    padding: var(--space-fluid-2xl) 0;
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  .workshop__form-section {
+    padding-top: calc(var(--space-fluid-2xl) + 5vw);
+    padding-bottom: calc(var(--space-fluid-2xl) + 3vw);
+    clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
   }
 }

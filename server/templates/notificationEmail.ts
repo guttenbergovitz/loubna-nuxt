@@ -12,7 +12,7 @@
  */
 
 export type Locale = 'en' | 'nb'
-export type FormType = 'book-call' | 'contact'
+export type FormType = 'book-call' | 'contact' | 'workshop'
 
 export interface NotificationEmailData {
   formType: FormType
@@ -61,6 +61,22 @@ const translations: Record<Locale, Record<FormType, NotificationContent>> = {
         email: 'Email',
         message: 'Message'
       }
+    },
+    'workshop': {
+      subject: 'New Workshop Inquiry',
+      newSubmission: 'New Form Submission',
+      formSource: 'Source: Workshop Form',
+      submittedAt: 'Submitted at',
+      formDataTitle: 'Form Data',
+      fieldLabels: {
+        name: 'Name',
+        email: 'Email',
+        workshopFor: 'Workshop For',
+        skills: 'Skills / Interests',
+        photographyStyle: 'Photography Style',
+        preferredDate: 'Preferred Date',
+        message: 'Message'
+      }
     }
   },
   nb: {
@@ -88,6 +104,22 @@ const translations: Record<Locale, Record<FormType, NotificationContent>> = {
       fieldLabels: {
         name: 'Navn',
         email: 'E-post',
+        message: 'Melding'
+      }
+    },
+    'workshop': {
+      subject: 'Ny workshop-forespørsel',
+      newSubmission: 'Ny skjemainnsending',
+      formSource: 'Kilde: Workshop-skjema',
+      submittedAt: 'Sendt inn',
+      formDataTitle: 'Skjemadata',
+      fieldLabels: {
+        name: 'Navn',
+        email: 'E-post',
+        workshopFor: 'Workshop for',
+        skills: 'Ferdigheter / Interesser',
+        photographyStyle: 'Fotografistil',
+        preferredDate: 'Ønsket dato',
         message: 'Melding'
       }
     }

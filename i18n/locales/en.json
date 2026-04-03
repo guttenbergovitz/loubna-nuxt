@@ -111,12 +111,66 @@
     },
     "whatsOn": {
       "heading": "What's On",
-      "activity": "Building a gigantic camera. Camera Obscura."
+      "activities": [
+        "Building a gigantic camera: Camera Obscura",
+        "Theater of shadows – Photogram in the darkroom",
+        "Human vs AI: Creative Engineering and Problem-Solving through Photography (course for kids)"
+      ]
     },
-    "consultation": {
-      "heading": "Contact me for a free photo consultation.",
-      "subtext": "Interested in bringing a unique photography workshop to your organization or event? Let's discuss how we can create an unforgettable creative experience together.",
-      "button": "Get in Touch"
+    "form": {
+      "heading": "Sign up for a workshop",
+      "subtext": "Interested in bringing a unique photography workshop to your organization or event? Fill out the form and let's create an unforgettable creative experience together.",
+      "fields": {
+        "workshopFor": {
+          "label": "Who is the workshop for?",
+          "options": {
+            "yourself": "Workshop for yourself",
+            "child": "Workshop for your child",
+            "institution": "Workshop for your institution / program"
+          }
+        },
+        "skills": {
+          "label": "What skills are you interested in?",
+          "options": {
+            "engineering": "Practical engineering and creative skills through photography",
+            "darkroom": "Darkroom processing & printing",
+            "largeFormat": "Large format photography"
+          }
+        },
+        "photographyStyle": {
+          "label": "What style of photography do you like?",
+          "options": {
+            "landscape": "Landscape",
+            "architecture": "Architecture",
+            "nature": "Nature themes",
+            "impressions": "Impressions",
+            "other": "Other"
+          }
+        },
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your{'@'}email.com"
+        },
+        "preferredDate": {
+          "label": "Preferred date / timeframe",
+          "placeholder": "e.g. June 2026, weekends, flexible..."
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Any other details or questions..."
+        }
+      },
+      "submit": "Send",
+      "requiredNote": "Fields marked with an asterisk are required",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters",
+        "emailInvalid": "Invalid email address",
+        "required": "This field is required"
+      }
     }
   },
   "bio": {
@@ -514,6 +568,12 @@
       "title": "Message Sent!",
       "message": "Thank you for reaching out.",
       "nextSteps": "We'll get back to you as soon as possible.",
+      "backHome": "Back to Home"
+    },
+    "workshop": {
+      "title": "Thank You!",
+      "message": "We've received your workshop inquiry.",
+      "nextSteps": "We'll contact you within 48 hours with more details about the workshop.",
       "backHome": "Back to Home"
     }
   },

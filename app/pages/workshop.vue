@@ -6,7 +6,6 @@ defineI18nRoute({
   }
 })
 
-const localePath = useLocalePath()
 </script>
 
 <template>
@@ -41,21 +40,24 @@ const localePath = useLocalePath()
     <section class="workshop__whats-on">
       <div class="o-container o-container--3xl">
         <h2 class="workshop__whats-on-heading">{{ $t('workshop.whatsOn.heading') }}</h2>
-        <p class="workshop__whats-on-activity">{{ $t('workshop.whatsOn.activity') }}</p>
+        <ul class="workshop__whats-on-list">
+          <li
+            v-for="(activity, index) in $tm('workshop.whatsOn.activities')"
+            :key="index"
+            class="workshop__whats-on-activity"
+          >
+            {{ $rt(activity) }}
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="workshop__cta">
+    <!-- Form Section -->
+    <section id="workshop-form" class="workshop__form-section">
       <div class="o-container o-container--4xl">
-        <h2 class="workshop__cta-heading">{{ $t('workshop.consultation.heading') }}</h2>
-        <p class="workshop__cta-subtext">{{ $t('workshop.consultation.subtext') }}</p>
-        <NuxtLink
-          :to="localePath('contact')"
-          class="workshop__cta-button"
-        >
-          {{ $t('workshop.consultation.button') }}
-        </NuxtLink>
+        <h2 class="workshop__form-heading">{{ $t('workshop.form.heading') }}</h2>
+        <p class="workshop__form-subtext">{{ $t('workshop.form.subtext') }}</p>
+        <WorkshopForm />
       </div>
     </section>
 

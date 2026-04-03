@@ -11,7 +11,7 @@
  */
 
 export type Locale = 'en' | 'nb'
-export type FormType = 'book-call' | 'contact'
+export type FormType = 'book-call' | 'contact' | 'workshop'
 
 export interface ConfirmationEmailData {
   recipientName: string
@@ -48,6 +48,14 @@ const translations: Record<Locale, Record<FormType, EmailContent>> = {
       nextSteps: 'We will review your message and get back to you as soon as possible. We typically respond within 24-48 hours.',
       closing: 'Thank you for your patience!',
       signature: 'Best regards,\nThe Photography Team'
+    },
+    'workshop': {
+      subject: 'Thank you for your workshop inquiry',
+      greeting: 'Dear',
+      thankYouMessage: 'Thank you for your interest in our photography workshops. We have received your inquiry and are excited to connect with you.',
+      nextSteps: 'We will review your request and contact you within 48 hours with more details about the workshop. In the meantime, feel free to browse our portfolio for inspiration.',
+      closing: 'We look forward to creating something amazing together!',
+      signature: 'Best regards,\nThe Photography Team'
     }
   },
   nb: {
@@ -65,6 +73,14 @@ const translations: Record<Locale, Record<FormType, EmailContent>> = {
       thankYouMessage: 'Takk for at du tok kontakt med oss. Vi har mottatt meldingen din og setter pris på at du tok deg tid til å kontakte oss.',
       nextSteps: 'Vi vil gjennomgå meldingen din og svare deg så snart som mulig. Vi svarer vanligvis innen 24-48 timer.',
       closing: 'Takk for din tålmodighet!',
+      signature: 'Med vennlig hilsen,\nFotografteamet'
+    },
+    'workshop': {
+      subject: 'Takk for din workshop-forespørsel',
+      greeting: 'Kjære',
+      thankYouMessage: 'Takk for din interesse for våre fotoworkshops. Vi har mottatt forespørselen din og gleder oss til å ta kontakt med deg.',
+      nextSteps: 'Vi vil gjennomgå forespørselen din og kontakte deg innen 48 timer med mer informasjon om workshopen. I mellomtiden kan du gjerne se gjennom porteføljen vår for inspirasjon.',
+      closing: 'Vi ser frem til å skape noe fantastisk sammen!',
       signature: 'Med vennlig hilsen,\nFotografteamet'
     }
   }
