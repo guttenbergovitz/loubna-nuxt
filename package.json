@@ -30,7 +30,7 @@
     "nuxt-nodemailer": "^1.1.4",
     "nuxt-schema-org": "^6.0.4",
     "primevue": "^4.5.4",
-    "unhead": "^3.1.0",
+    "unhead": "^2.1.13",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4",
     "youtube-vue3": "^0.1.15",
