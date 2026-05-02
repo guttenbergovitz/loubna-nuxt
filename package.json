@@ -34,7 +34,7 @@
     "vue": "^3.5.26",
     "vue-router": "^4.6.4",
     "youtube-vue3": "^0.1.15",
-    "zod": "^4.2.1"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@iconify-json/flag": "^1.2.10",
