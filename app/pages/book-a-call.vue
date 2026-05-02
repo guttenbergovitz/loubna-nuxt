@@ -6,10 +6,12 @@ defineI18nRoute({
   }
 })
 
+usePageSeo('bookACall')
+
 const secondaryGalleryImages = [
-  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Photography by Loubna Photo' }
+  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
+  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
+  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
 ]
 </script>
 

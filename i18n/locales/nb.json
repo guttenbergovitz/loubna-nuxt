@@ -1,4 +1,51 @@
 {
+  "seo": {
+    "site": {
+      "name": "Loubna Photo",
+      "description": "Håndlaget fotografi av Loubna Aleksandra Kubiak",
+      "ogImage": "/images/og/loubna-photo-og.jpg"
+    },
+    "home": {
+      "title": "Loubna Photo - Håndlaget fotografi i Norge",
+      "description": "Transformer ditt rom med unik, håndlaget fotografi. Lokal kunstner, laget på bestilling, ingen AI eller Photoshop. Museumskvalitet trykk.",
+      "keywords": "håndlaget fotografi, fine art prints, norsk fotograf, tradisjonelt mørkerom, bestillingsarbeid"
+    },
+    "about": {
+      "title": "Om Loubna - Fotokunstner og mørkeromsspesialist",
+      "description": "Møt Loubna Aleksandra Kubiak, en polsk fotokunstner bosatt i Norge som spesialiserer seg på tradisjonelle mørkeroms-teknikker og håndlagde fine art-trykk.",
+      "keywords": "fotokunstner, tradisjonelt mørkerom, fine art fotografi, norsk fotograf, håndlagde trykk"
+    },
+    "bio": {
+      "title": "Lounas profesjonelle erfaring - Fotografi-karriere høydepunkter",
+      "description": "Utforsk to tiår med fotografisk kunstneri, kulturprosjekter og kreativ samarbeid på tvers av Europa. Profesjonell tidslinje og utdanning.",
+      "keywords": "fotografi-karriere, profesjonell erfaring, bio, utstilling-historie, kreativ samarbeid"
+    },
+    "workshop": {
+      "title": "Fotografi-workshop - Camera Obscura & mørkeromsteknikker",
+      "description": "Immersiv hands-on kreativ erfaring. Lær Camera Obscura, fotogram-trykk, kreativ problemløsning gjennom fotografi for alle aldre.",
+      "keywords": "fotografi-workshop, camera obscura, mørkerom-workshop, hands-on fotografi, kreativ utdanning"
+    },
+    "contact": {
+      "title": "Kontakt Loubna Photo - Ta kontakt",
+      "description": "Kontakt oss for å diskutere ditt fotografiprosjekt, stille spørsmål eller utforske tilpassede fotografiløsninger for ditt rom eller arrangement.",
+      "keywords": "kontakt fotografi, tilpasset fotografi, foto-konsultasjon, fotografispørsmål"
+    },
+    "bookACall": {
+      "title": "Book en gratis konsultasjonssamtale - Loubna Photo",
+      "description": "Planlegg en gratis konsultasjon med Loubna for å diskutere dine fotografibehov. Ingen forpliktelser, bare en samtale om din visjon.",
+      "keywords": "konsultasjonssamtale, gratis konsultasjon, foto-konsultasjon, book call"
+    },
+    "businessGift": {
+      "title": "Forretningsgarve-løsninger - Unik fotografi-gave",
+      "description": "Finn den perfekte bedriftsgaven med vår håndlagde fine art fotografi. Profesjonell, minneverdig og virkelig unik.",
+      "keywords": "bedriftsgave, bedriftsgave, fotografi-gave, fine art gave, premium gave"
+    },
+    "thankYou": {
+      "title": "Takk",
+      "description": "Takk for din forespørsel. Vi vil ta kontakt snart.",
+      "keywords": ""
+    }
+  },
   "home": {
     "name": "Hjem",
     "hero": {

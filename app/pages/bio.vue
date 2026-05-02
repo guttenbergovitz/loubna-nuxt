@@ -6,6 +6,8 @@ defineI18nRoute({
   }
 })
 
+usePageSeo('bio')
+
 const { t } = useI18n()
 
 const highlights = computed(() => {

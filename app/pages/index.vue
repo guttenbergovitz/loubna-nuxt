@@ -1,22 +1,24 @@
 <script setup lang="ts">
+usePageSeo('home')
+
 const localePath = useLocalePath()
 
 // Gallery images
 const homeGalleryImagesRow1 = [
-  { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-gallery/hg2.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-gallery/hg3.jpg', alt: 'Photography by Loubna Photo' },
+  { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Fine art handcrafted photograph featuring traditional darkroom processing' },
+  { src: '/images/gallery/home-gallery/hg2.jpg', alt: 'Professional photography print showcasing artistic composition and lighting' },
+  { src: '/images/gallery/home-gallery/hg3.jpg', alt: 'Museum-quality fine art photograph with handcrafted processing techniques' },
 ]
 const homeGalleryImagesRow2 = [
-  { src: '/images/gallery/home-gallery/hg4.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-gallery/hg5.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-gallery/hg6.jpg', alt: 'Photography by Loubna Photo' }
+  { src: '/images/gallery/home-gallery/hg4.jpg', alt: 'Limited edition photograph with artisanal darkroom craftsmanship' },
+  { src: '/images/gallery/home-gallery/hg5.jpg', alt: 'Fine art print demonstrating traditional photography techniques' },
+  { src: '/images/gallery/home-gallery/hg6.jpg', alt: 'Handcrafted photograph showcasing unique artistic perspective' }
 ]
 
 const secondaryGalleryImages = [
-  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Photography by Loubna Photo' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Photography by Loubna Photo' }
+  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
+  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
+  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
 ]
 
 // Scroll reveal

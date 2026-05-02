@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import RichText from "~/components/RichText.vue";
 
+usePageSeo('about')
+
 const localePath = useLocalePath();
 
 defineI18nRoute({

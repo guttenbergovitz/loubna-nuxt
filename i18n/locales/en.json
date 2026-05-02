@@ -1,4 +1,51 @@
 {
+  "seo": {
+    "site": {
+      "name": "Loubna Photo",
+      "description": "Handcrafted Photography by Loubna Aleksandra Kubiak",
+      "ogImage": "/images/og/loubna-photo-og.jpg"
+    },
+    "home": {
+      "title": "Loubna Photo - Handcrafted Photography in Norway",
+      "description": "Transform your space with unique, handcrafted photography. Local artist, made-to-order, no AI or Photoshop. Museum-quality prints.",
+      "keywords": "handcrafted photography, fine art prints, Norway photographer, traditional darkroom, made-to-order prints"
+    },
+    "about": {
+      "title": "About Loubna - Photo Artist & Darkroom Specialist",
+      "description": "Meet Loubna Aleksandra Kubiak, a Polish photo artist based in Norway specializing in traditional darkroom techniques and handcrafted fine art prints.",
+      "keywords": "photo artist, traditional darkroom, fine art photography, Norwegian photographer, handcrafted prints"
+    },
+    "bio": {
+      "title": "Loubna's Professional Experience - Photography Career Highlights",
+      "description": "Explore two decades of photographic artistry, cultural projects, and creative collaborations across Europe. Professional timeline and education.",
+      "keywords": "photography career, professional experience, bio, exhibition history, creative collaboration"
+    },
+    "workshop": {
+      "title": "Photography Workshops - Camera Obscura & Darkroom Techniques",
+      "description": "Immersive hands-on creative experiences. Learn Camera Obscura, photogram printing, creative problem-solving through photography for all ages.",
+      "keywords": "photography workshop, camera obscura, darkroom workshop, hands-on photography, creative education"
+    },
+    "contact": {
+      "title": "Contact Loubna Photo - Get in Touch",
+      "description": "Reach out to discuss your photography project, ask questions, or explore custom photography solutions for your space or event.",
+      "keywords": "contact photography, custom photography, photo consultation, photography inquiry"
+    },
+    "bookACall": {
+      "title": "Book a Free Consultation Call - Loubna Photo",
+      "description": "Schedule a free consultation with Loubna to discuss your photography needs. No obligations, just a conversation about your vision.",
+      "keywords": "consultation call, free consultation, photography consultation, book call"
+    },
+    "businessGift": {
+      "title": "Business Gift Solutions - Unique Photography Gifts",
+      "description": "Find the perfect business gift with our handcrafted fine art photography. Professional, memorable, and truly unique.",
+      "keywords": "business gift, corporate gift, photography gift, fine art gift, premium gift"
+    },
+    "thankYou": {
+      "title": "Thank You",
+      "description": "Thank you for your inquiry. We will be in touch shortly.",
+      "keywords": ""
+    }
+  },
   "home": {
     "name": "Home",
     "hero": {

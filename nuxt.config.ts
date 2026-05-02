@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
+    '@nuxtjs/sitemap',
+    'nuxt-schema-org',
     '@primevue/nuxt-module',
     '@formkit/nuxt',
     'nuxt-easy-lightbox',
@@ -56,5 +58,18 @@ export default defineNuxtConfig({
     langDir: 'locales/',
     strategy: 'prefix'
   },
+
+  site: {
+    url: 'https://loubnaphoto.no',
+    name: 'Loubna Photo',
+    description: 'Handcrafted Photography by Loubna Aleksandra Kubiak'
+  },
+
+  sitemap: {
+    strictNuxtContentPaths: true,
+    autoLastmod: true,
+    exclude: ['/thank-you/**']
+  },
+
   css: ['@/assets/css/main.css']
 })

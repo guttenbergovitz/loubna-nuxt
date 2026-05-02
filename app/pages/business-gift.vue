@@ -6,6 +6,8 @@ defineI18nRoute({
   }
 })
 
+usePageSeo('businessGift')
+
 const localePath = useLocalePath()
 </script>
 

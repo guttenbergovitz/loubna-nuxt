@@ -6,6 +6,8 @@ defineI18nRoute({
   }
 })
 
+usePageSeo('workshop')
+
 </script>
 
 <template>
