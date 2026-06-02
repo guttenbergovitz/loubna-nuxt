@@ -71,6 +71,14 @@
   color: var(--color-text-inverse);
 }
 
+.site-footer__address {
+  margin: var(--space-xs) 0 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  font-style: normal;
+}
+
 /* Navigation Wrapper */
 .site-footer__nav-wrapper {
   display: flex;
