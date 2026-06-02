@@ -72,6 +72,10 @@ const socialLinks = [
             <a :href="`tel:${$t('footer.phone')}`" class="site-footer__contact-link">
               {{ $t('footer.phone') }}
             </a>
+            <address class="site-footer__address">
+              Hovsbruveien 5<br>
+              4325 Sandnes
+            </address>
           </div>
 
           <p class="site-footer__statement">
