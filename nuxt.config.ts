@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
+    '@nuxt/content',
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
@@ -66,7 +67,6 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    strictNuxtContentPaths: true,
     autoLastmod: true,
     exclude: ['/thank-you/**']
   },
