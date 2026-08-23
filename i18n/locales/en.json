@@ -67,20 +67,6 @@
       "line6": "",
       "question": "?"
     },
-    "options": {
-      "stock": {
-        "title": "Buy a Random Pic on The Stock?",
-        "description": "If you're okay with heavily used snapshots and managing the license, it's no problem... However, if your interior is unique, it needs a personal touch."
-      },
-      "studio": {
-        "title": "Hire a Photographic Studio?",
-        "description": "Popular photographers follow trends, relying heavily on digital editing and AI. Trends change quickly, making your interior look tacky."
-      },
-      "scout": {
-        "title": "Become an Art Scout?",
-        "description": "This needs time and effort to immerse yourself in the art biz. Doesn't sound very productive, does it?"
-      }
-    },
     "alternative": {
       "or": "or...",
       "youCanOwn": "You Can Own",
@@ -92,24 +78,6 @@
       "line1": "\"OK... But What",
       "line2": "Makes You Different",
       "line3": "?\""
-    },
-    "features": {
-      "local": {
-        "title": "Local",
-        "description": "I am taking pictures right here in our neighbourhood. You can easily reach me whenever you need."
-      },
-      "madeToOrder": {
-        "title": "Made—to—Order",
-        "description": "Point to your favourite spot on the map, and I'll go take a picture. Like it? Great! If not, no worries... But I think you'll be glad you gave me a shot."
-      },
-      "noAI": {
-        "title": "No AI, No Photoshop",
-        "description": "Each photograph is a piece of craftsmanship."
-      },
-      "certified": {
-        "title": "Certified Quality",
-        "description": "Photographs are printed in limited editions, following museum standards. These aren't just pictures – they're collector's items."
-      }
     },
     "cta": {
       "heading": "Contact me for a free photo consultation.",
@@ -195,12 +163,6 @@
   },
   "bookCall": {
     "name": "Book a Call",
-    "title": "Let's Create Something Beautiful Together",
-    "intro": "Ready to transform your space with handcrafted photography? Book a free consultation call and let's discuss how we can bring your vision to life. No obligations, just a conversation about your unique needs.",
-    "process": {
-      "heading": "How it works",
-      "subtext": "Fill out the form below, and I'll reach out within 48 hours to schedule our free consultation. We'll discuss your space, preferences, and ideas – together we'll find the perfect photography to bring your vision to life."
-    },
     "form": {
       "fields": {
         "name": {
@@ -252,12 +214,6 @@
   },
   "contact": {
     "name": "Contact",
-    "title": "Get in Touch",
-    "intro": "I'd love to hear from you! Whether you have a question about my work, want to discuss a project, or just want to say hello – drop me a message. Every conversation starts with a simple hello, and I'm always excited to connect with fellow art lovers and photography enthusiasts.",
-    "introExtended": {
-      "heading": "Let's talk!",
-      "subtext": "Share your thoughts, ideas, or simply say hi."
-    },
     "form": {
       "fields": {
         "name": {

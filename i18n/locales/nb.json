@@ -67,20 +67,6 @@
       "line6": "",
       "question": "?"
     },
-    "options": {
-      "stock": {
-        "title": "Kjøpe et tilfeldig bilde fra bilde banken?",
-        "description": "Hvis du er komfortabel med sterkt brukte stock bilder og å holde styr på lisensen, er det ikke noe problem... Men hvis interiøret ditt er unikt, trenger det en personlig touch."
-      },
-      "studio": {
-        "title": "Hyre et fotostudio?",
-        "description": "Mange fotografer henger seg på trender og bruker mye digital redigering og AI. Trender skifter raskt, og plutselig ser interiøret ditt smakløst ut."
-      },
-      "scout": {
-        "title": "Bli en kunst speider?",
-        "description": "Dette krever tid og innsats for å fordype seg i kunstbransjen. Høres ikke særlig produktivt ut, ikke sant?"
-      }
-    },
     "alternative": {
       "or": "eller ...",
       "youCanOwn": "Du kan eie",
@@ -92,24 +78,6 @@
       "line1": "OK... Men hva",
       "line2": "skiller deg ut",
       "line3": "?"
-    },
-    "features": {
-      "local": {
-        "title": "Lokal.",
-        "description": "Jeg tar bilder her i nabolaget. Bare ta kontakt når du trenger meg."
-      },
-      "madeToOrder": {
-        "title": "Laget på bestilling.",
-        "description": "Pek på ditt favorittsted på kartet, så drar jeg og tar et bilde. Liker du det? Supert! Hvis ikke – helt greit... Men jeg tror du blir glad for at du ga meg en sjanse."
-      },
-      "noAI": {
-        "title": "Ingen Photoshop & ingen AI.",
-        "description": "Hvert fotografi er håndverk."
-      },
-      "certified": {
-        "title": "Kvalitetssikret.",
-        "description": "Fotografiene er trykket i et begrenset og sertifisert opplag, i henhold til museale standarder. Dette er ikke bare bilder – de er samleobjekter."
-      }
     },
     "cta": {
       "heading": "Ta kontakt for en gratis foto konsultasjon.",
@@ -195,12 +163,6 @@
   },
   "bookCall": {
     "name": "Bestill en samtale",
-    "title": "La oss skape noe vakkert sammen",
-    "intro": "Klar til å forvandle rommet ditt med håndlaget fotografi? Bestill en gratis konsultasjonssamtale og la oss diskutere hvordan vi kan realisere visjonen din. Ingen forpliktelser, bare en samtale om dine unike behov.",
-    "process": {
-      "heading": "Slik fungerer det",
-      "subtext": "Fyll ut skjemaet nedenfor, så tar jeg kontakt innen 48 timer for å avtale vår gratis konsultasjon. Vi vil diskutere ditt rom, preferanser og ideer – sammen finner vi det perfekte fotografiet for å realisere visjonen din."
-    },
     "form": {
       "fields": {
         "name": {
@@ -252,12 +214,6 @@
   },
   "contact": {
     "name": "Kontakt",
-    "title": "Ta kontakt",
-    "intro": "Jeg vil gjerne høre fra deg! Enten du har et spørsmål om arbeidet mitt, ønsker å diskutere et prosjekt, eller bare vil si hei – send meg en melding. Hver samtale starter med en enkel hilsen, og jeg er alltid spent på å komme i kontakt med kunstelskere og fotografi-entusiaster.",
-    "introExtended": {
-      "heading": "La oss snakke!",
-      "subtext": "Del dine tanker, ideer, eller bare si hei."
-    },
     "form": {
       "fields": {
         "name": {
