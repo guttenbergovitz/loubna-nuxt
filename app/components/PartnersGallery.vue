@@ -1,38 +1,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const partners = [
-  {
-    name: 'Kulturtanken',
-    image: '/images/partners/partner-kultur.png',
-    alt: 'Kulturtanken logo'
-  },
-  {
-    name: 'Rogaland Kunstsenter',
-    image: '/images/partners/partner-rogaland.png',
-    alt: 'Rogaland Kunstsenter logo'
-  },
-  {
-    name: 'Jærmuseet',
-    image: '/images/partners/partner-jm.png',
-    alt: 'Jærmuseet logo'
-  },
-  {
-    name: 'DKS',
-    image: '/images/partners/partner-dks.png',
-    alt: 'DKS logo'
-  },
-  {
-    name: 'Tou Scene',
-    image: '/images/partners/partner-tou.png',
-    alt: 'Tou Scene logo'
-  },
-  {
-    name: 'Øyepa',
-    image: '/images/partners/partner--oyepa.jpg',
-    alt: 'Øyepa logo'
-  }
-]
+const { data: partners } = await useAsyncData('partners', () =>
+  queryCollection('partners').order('sort', 'ASC').all()
+)
 
 // Mobile touch support
 const handleClick = (event: Event) => {
