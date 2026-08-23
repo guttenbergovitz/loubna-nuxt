@@ -206,7 +206,7 @@ onMounted(() => {
     <!-- Gallery 2 -->
     <section class="home__gallery-secondary" aria-label="Additional photography gallery">
       <div class="o-container o-container--full">
-        <PhotoGallery :images="secondaryGallery" :columns="3" />
+        <PhotoGallery :images="secondaryGallery ?? []" :columns="3" />
       </div>
     </section>
 
