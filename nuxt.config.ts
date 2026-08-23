@@ -36,6 +36,16 @@ export default defineNuxtConfig({
     'nuxt-nodemailer',
     'nuxt-studio'
   ],
+
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'guttenbergovitz',
+      repo: 'loubna-nuxt',
+      branch: 'main'
+    }
+  },
+
   nodemailer: {
     from: process.env.SMTP_FROM,
     host: process.env.SMTP_HOST,
