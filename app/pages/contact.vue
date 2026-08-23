@@ -8,26 +8,26 @@ defineI18nRoute({
 
 usePageSeo('contact')
 
-const secondaryGalleryImages = [
-  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
-  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
-]
+const singletonsQuery = useContentByLocale('singletons')
+const { data: contact } = await useAsyncData('contact-singleton', () => singletonsQuery.fetchByName('contact'))
+
+const { data: secondaryGallery } = await useAsyncData('contact-gallery', () =>
+  queryCollection('galleryImages').where('group', '=', 'secondary').order('sort', 'ASC').all())
 </script>
 
 <template>
   <main class="contact">
     <PageHero
       variant="plain"
-      :headline="$t('contact.title')"
-      :tagline="$t('contact.intro')"
+      :headline="contact?.title ?? $t('contact.title')"
+      :tagline="contact?.tagline ?? $t('contact.intro')"
     />
 
     <!-- Intro Section -->
     <section class="contact__intro">
       <div class="o-container o-container--3xl">
-        <h2 class="contact__intro-heading">{{ $t('contact.introExtended.heading') }}</h2>
-        <p class="contact__intro-subtext">{{ $t('contact.introExtended.subtext') }}</p>
+        <h2 class="contact__intro-heading">{{ contact?.sections?.intro?.heading ?? $t('contact.introExtended.heading') }}</h2>
+        <p class="contact__intro-subtext">{{ contact?.sections?.intro?.subtext ?? $t('contact.introExtended.subtext') }}</p>
       </div>
     </section>
 
@@ -41,7 +41,7 @@ const secondaryGalleryImages = [
     <!-- Gallery -->
     <section class="contact__gallery" aria-label="Photography gallery">
       <div class="o-container o-container--full">
-        <PhotoGallery :images="secondaryGalleryImages" :columns="3" />
+        <PhotoGallery :images="secondaryGallery ?? []" :columns="3" />
       </div>
     </section>
 
