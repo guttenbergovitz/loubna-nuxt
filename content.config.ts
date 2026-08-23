@@ -51,12 +51,45 @@ export default defineContentConfig({
         alt: z.string()
       })
     }),
+    galleryImages: defineCollection({
+      type: 'data',
+      source: 'gallery/**/*.yml',
+      schema: z.object({
+        sort: z.number().int().positive(),
+        group: z.enum(['home', 'secondary']),
+        src: z.string(),
+        alt: z.string()
+      })
+    }),
+    homeOptions: defineCollection({
+      type: 'data',
+      source: 'home-options/**/*.yml',
+      schema: z.object({
+        locale: z.enum(['en', 'nb']),
+        sort: z.number().int().positive(),
+        icon: z.string(),
+        title: z.string(),
+        description: z.string()
+      })
+    }),
+    homeFeatures: defineCollection({
+      type: 'data',
+      source: 'home-features/**/*.yml',
+      schema: z.object({
+        locale: z.enum(['en', 'nb']),
+        sort: z.number().int().positive(),
+        image: z.string(),
+        alt: z.string(),
+        title: z.string(),
+        description: z.string()
+      })
+    }),
     singletons: defineCollection({
       type: 'data',
       source: 'singletons/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        page: z.enum(['about', 'workshop', 'business-gift']),
+        page: z.enum(['about', 'workshop', 'business-gift', 'contact', 'book-a-call']),
         title: z.string(),
         tagline: z.string().optional(),
         sections: z.record(z.string(), z.any()).default({})
