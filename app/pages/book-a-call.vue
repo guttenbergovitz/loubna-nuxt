@@ -19,15 +19,15 @@ const { data: secondaryGallery } = await useAsyncData('book-call-gallery', () =>
   <main class="book-call">
     <PageHero
       variant="plain"
-      :headline="bookCall?.title ?? $t('bookCall.title')"
-      :tagline="bookCall?.tagline ?? $t('bookCall.intro')"
+      :headline="bookCall?.title ?? ''"
+      :tagline="bookCall?.tagline ?? ''"
     />
 
     <!-- Process Intro Section -->
     <section class="book-call__intro">
       <div class="o-container o-container--3xl">
-        <h2 class="book-call__intro-heading">{{ bookCall?.sections?.process?.heading ?? $t('bookCall.process.heading') }}</h2>
-        <p class="book-call__intro-subtext">{{ bookCall?.sections?.process?.subtext ?? $t('bookCall.process.subtext') }}</p>
+        <h2 class="book-call__intro-heading">{{ bookCall?.sections?.process?.heading ?? '' }}</h2>
+        <p class="book-call__intro-subtext">{{ bookCall?.sections?.process?.subtext ?? '' }}</p>
       </div>
     </section>
 

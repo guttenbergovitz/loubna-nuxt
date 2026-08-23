@@ -19,15 +19,15 @@ const { data: secondaryGallery } = await useAsyncData('contact-gallery', () =>
   <main class="contact">
     <PageHero
       variant="plain"
-      :headline="contact?.title ?? $t('contact.title')"
-      :tagline="contact?.tagline ?? $t('contact.intro')"
+      :headline="contact?.title ?? ''"
+      :tagline="contact?.tagline ?? ''"
     />
 
     <!-- Intro Section -->
     <section class="contact__intro">
       <div class="o-container o-container--3xl">
-        <h2 class="contact__intro-heading">{{ contact?.sections?.intro?.heading ?? $t('contact.introExtended.heading') }}</h2>
-        <p class="contact__intro-subtext">{{ contact?.sections?.intro?.subtext ?? $t('contact.introExtended.subtext') }}</p>
+        <h2 class="contact__intro-heading">{{ contact?.sections?.intro?.heading ?? '' }}</h2>
+        <p class="contact__intro-subtext">{{ contact?.sections?.intro?.subtext ?? '' }}</p>
       </div>
     </section>
 
