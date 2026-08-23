@@ -24,7 +24,7 @@ const dump = (obj, indent = 0) =>
       if (typeof v === 'object') {
         return `${pad}${k}:\n${dump(v, indent + 2)}`
       }
-      return `${pad}${k}: ${yamlString(v)}`
+      return `${pad}${k}: ${typeof v === 'number' ? String(v) : yamlString(v)}`
     })
     .join('\n') + '\n'
 
@@ -62,7 +62,7 @@ for (const [locale, t] of [['en', en], ['nb', nb]]) {
     studio: 'mdi:camera-enhance-outline',
     scout: 'mdi:compass-outline'
   }
-  Object.entries(t.home.options).forEach(([key, item], i) => {
+  Object.entries(t.home.options || {}).forEach(([key, item], i) => {
     write(`home-options/${locale}/${String(i + 1).padStart(2, '0')}-${key}.yml`, {
       locale, sort: i + 1, icon: optionIcons[key], title: item.title, description: item.description
     })
@@ -80,7 +80,7 @@ for (const [locale, t] of [['en', en], ['nb', nb]]) {
     noAI: 'No AI or Photoshop',
     certified: 'Certified quality'
   }
-  Object.entries(t.home.features).forEach(([key, item], i) => {
+  Object.entries(t.home.features || {}).forEach(([key, item], i) => {
     write(`home-features/${locale}/${String(i + 1).padStart(2, '0')}-${key}.yml`, {
       locale, sort: i + 1, image: featureImages[key], alt: featureAlts[key], title: item.title, description: item.description
     })
