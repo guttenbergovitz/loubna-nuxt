@@ -3,8 +3,14 @@ import type { Collections } from '@nuxt/content'
 export const useContentByLocale = <T extends keyof Collections>(collection: T) => {
   const { locale } = useI18n()
 
+  const resolveLocale = (): string => {
+    const first = useRoute().path.split('/')[1]
+    if (first === 'en' || first === 'nb') return first
+    return locale.value as string
+  }
+
   const fetchAll = async () => {
-    const loc = locale.value as string
+    const loc = resolveLocale()
     const items = await queryCollection(collection)
       .where('locale', '=', loc)
       .order('sort', 'ASC')
@@ -18,7 +24,7 @@ export const useContentByLocale = <T extends keyof Collections>(collection: T) =
   }
 
   const fetchByName = async (name: string) => {
-    const loc = locale.value as string
+    const loc = resolveLocale()
     let item = await queryCollection(collection)
       .where('locale', '=', loc)
       .where('page', '=', name)

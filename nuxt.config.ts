@@ -15,7 +15,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    viewTransition: true
+    viewTransition: true,
+    sharedPrerenderData: false
   },
 
   modules: [
