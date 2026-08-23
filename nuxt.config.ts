@@ -16,6 +16,7 @@ export default defineNuxtConfig({
 
   experimental: {
     viewTransition: true,
+    // Avoid cross-locale payload collisions during prerender (i18n prefix strategy reuses the same useAsyncData keys for /en and /nb routes)
     sharedPrerenderData: false
   },
 
