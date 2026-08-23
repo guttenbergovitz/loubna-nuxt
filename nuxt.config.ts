@@ -33,7 +33,8 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@formkit/nuxt',
     'nuxt-easy-lightbox',
-    'nuxt-nodemailer'
+    'nuxt-nodemailer',
+    'nuxt-studio'
   ],
   nodemailer: {
     from: process.env.SMTP_FROM,

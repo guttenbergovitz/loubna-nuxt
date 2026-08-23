@@ -33,6 +33,7 @@
     "nuxt": "^4.2.2",
     "nuxt-nodemailer": "^1.1.4",
     "nuxt-schema-org": "^6.0.4",
+    "nuxt-studio": "^1.7.0",
     "primevue": "^4.5.4",
     "sharp": "^0.33.5",
     "unhead": "^2.1.13",
