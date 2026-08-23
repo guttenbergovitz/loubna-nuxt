@@ -1,0 +1,10 @@
+locale: "en"
+page: "book-a-call"
+title: "Let's Create Something Beautiful Together"
+tagline: "Ready to transform your space with handcrafted photography? Book a free consultation call and let's discuss how we can bring your vision to life. No obligations, just a conversation about your unique needs."
+sections:
+  process:
+    heading: "How it works"
+    subtext: "Fill out the form below, and I'll reach out within 48 hours to schedule our free consultation. We'll discuss your space, preferences, and ideas – together we'll find the perfect photography to bring your vision to life."
+
+

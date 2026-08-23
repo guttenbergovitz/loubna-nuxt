@@ -1,0 +1,10 @@
+locale: "nb"
+page: "contact"
+title: "Ta kontakt"
+tagline: "Jeg vil gjerne høre fra deg! Enten du har et spørsmål om arbeidet mitt, ønsker å diskutere et prosjekt, eller bare vil si hei – send meg en melding. Hver samtale starter med en enkel hilsen, og jeg er alltid spent på å komme i kontakt med kunstelskere og fotografi-entusiaster."
+sections:
+  intro:
+    heading: "La oss snakke!"
+    subtext: "Del dine tanker, ideer, eller bare si hei."
+
+

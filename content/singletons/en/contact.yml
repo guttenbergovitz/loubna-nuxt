@@ -1,0 +1,10 @@
+locale: "en"
+page: "contact"
+title: "Get in Touch"
+tagline: "I'd love to hear from you! Whether you have a question about my work, want to discuss a project, or just want to say hello – drop me a message. Every conversation starts with a simple hello, and I'm always excited to connect with fellow art lovers and photography enthusiasts."
+sections:
+  intro:
+    heading: "Let's talk!"
+    subtext: "Share your thoughts, ideas, or simply say hi."
+
+
