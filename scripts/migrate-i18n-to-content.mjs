@@ -99,7 +99,7 @@ const singletonMaps = {
     tagline: t.businessGift.tagline,
     sections: {
       intro: t.businessGift.intro,
-      video: { youtubeId: t.businessGift.video.youtubeId, thumbnail: t.businessGift.video.thumbnail },
+      video: { intro: t.businessGift.video.intro, youtubeId: t.businessGift.video.youtubeId, thumbnail: t.businessGift.video.thumbnail },
       benefits: { heading: t.businessGift.benefits.heading, items: [t.businessGift.benefits.item1, t.businessGift.benefits.item2, t.businessGift.benefits.item3] },
       cta: t.businessGift.cta
     }
