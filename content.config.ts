@@ -5,7 +5,7 @@ export default defineContentConfig({
   collections: {
     highlights: defineCollection({
       type: 'data',
-      source: 'highlights/**.yml',
+      source: 'highlights/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
         sort: z.number().int().positive(),
@@ -20,7 +20,7 @@ export default defineContentConfig({
     }),
     education: defineCollection({
       type: 'data',
-      source: 'education/**.yml',
+      source: 'education/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
         sort: z.number().int().positive(),
@@ -33,7 +33,7 @@ export default defineContentConfig({
     }),
     quotes: defineCollection({
       type: 'data',
-      source: 'quotes/**.yml',
+      source: 'quotes/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
         sort: z.number().int().positive(),
@@ -43,7 +43,7 @@ export default defineContentConfig({
     }),
     partners: defineCollection({
       type: 'data',
-      source: 'partners/**.yml',
+      source: 'partners/**/*.yml',
       schema: z.object({
         sort: z.number().int().positive(),
         name: z.string(),
@@ -53,7 +53,7 @@ export default defineContentConfig({
     }),
     singletons: defineCollection({
       type: 'data',
-      source: 'singletons/**.yml',
+      source: 'singletons/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
         page: z.enum(['about', 'workshop', 'business-gift']),
