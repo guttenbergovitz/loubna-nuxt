@@ -3,23 +3,19 @@ usePageSeo('home')
 
 const localePath = useLocalePath()
 
-// Gallery images
-const homeGalleryImagesRow1 = [
-  { src: '/images/gallery/home-gallery/hg1.jpg', alt: 'Fine art handcrafted photograph featuring traditional darkroom processing' },
-  { src: '/images/gallery/home-gallery/hg2.jpg', alt: 'Professional photography print showcasing artistic composition and lighting' },
-  { src: '/images/gallery/home-gallery/hg3.jpg', alt: 'Museum-quality fine art photograph with handcrafted processing techniques' },
-]
-const homeGalleryImagesRow2 = [
-  { src: '/images/gallery/home-gallery/hg4.jpg', alt: 'Limited edition photograph with artisanal darkroom craftsmanship' },
-  { src: '/images/gallery/home-gallery/hg5.jpg', alt: 'Fine art print demonstrating traditional photography techniques' },
-  { src: '/images/gallery/home-gallery/hg6.jpg', alt: 'Handcrafted photograph showcasing unique artistic perspective' }
-]
+const { data: homeGallery } = await useAsyncData('home-gallery', () =>
+  queryCollection('galleryImages').where('group', '=', 'home').order('sort', 'ASC').all())
+const { data: secondaryGallery } = await useAsyncData('home-secondary-gallery', () =>
+  queryCollection('galleryImages').where('group', '=', 'secondary').order('sort', 'ASC').all())
 
-const secondaryGalleryImages = [
-  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
-  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
-]
+const homeGalleryImagesRow1 = computed(() => homeGallery.value?.slice(0, 3) ?? [])
+const homeGalleryImagesRow2 = computed(() => homeGallery.value?.slice(3) ?? [])
+
+const optionsQuery = useContentByLocale('homeOptions')
+const { data: options } = await useAsyncData('home-options', () => optionsQuery.fetchAll())
+
+const featuresQuery = useContentByLocale('homeFeatures')
+const { data: features } = await useAsyncData('home-features', () => featuresQuery.fetchAll())
 
 // Scroll reveal
 onMounted(() => {
@@ -119,28 +115,12 @@ onMounted(() => {
     <!-- Options Section -->
     <section class="home__options" aria-label="Photography options">
       <div class="o-container">
-        <article class="home__option">
+        <article v-for="option in (options ?? [])" :key="option.sort" class="home__option">
           <div class="home__option-icon">
-            <Icon name="mdi:image-multiple-outline" />
+            <Icon :name="option.icon" />
           </div>
-          <h3 class="home__option-title">{{ $t('home.options.stock.title') }}</h3>
-          <RichText class="home__option-description" :content="$t('home.options.stock.description')" />
-        </article>
-
-        <article class="home__option">
-          <div class="home__option-icon">
-            <Icon name="mdi:camera-enhance-outline" />
-          </div>
-          <h3 class="home__option-title">{{ $t('home.options.studio.title') }}</h3>
-          <RichText class="home__option-description" :content="$t('home.options.studio.description')" />
-        </article>
-
-        <article class="home__option">
-          <div class="home__option-icon">
-            <Icon name="mdi:compass-outline" />
-          </div>
-          <h3 class="home__option-title">{{ $t('home.options.scout.title') }}</h3>
-          <RichText class="home__option-description" :content="$t('home.options.scout.description')" />
+          <h3 class="home__option-title">{{ option.title }}</h3>
+          <RichText class="home__option-description" :content="option.description" />
         </article>
       </div>
     </section>
@@ -205,36 +185,12 @@ onMounted(() => {
     <!-- Features Section -->
     <section class="home__features" aria-label="Key features">
       <div class="o-container">
-        <article class="home__feature">
+        <article v-for="feature in (features ?? [])" :key="feature.sort" class="home__feature">
           <div class="home__feature-image">
-            <NuxtImg src="/images/deco/difference/difference1.jpg" alt="Local photography" fit="cover" />
+            <NuxtImg :src="feature.image" :alt="feature.alt" fit="cover" />
           </div>
-          <h3 class="home__feature-title">{{ $t('home.features.local.title') }}</h3>
-          <RichText class="home__feature-description" :content="$t('home.features.local.description')" />
-        </article>
-
-        <article class="home__feature">
-          <div class="home__feature-image">
-            <NuxtImg src="/images/deco/difference/difference2.jpg" alt="Made to order" fit="cover" />
-          </div>
-          <h3 class="home__feature-title">{{ $t('home.features.madeToOrder.title') }}</h3>
-          <RichText class="home__feature-description" :content="$t('home.features.madeToOrder.description')" />
-        </article>
-
-        <article class="home__feature">
-          <div class="home__feature-image">
-            <NuxtImg src="/images/deco/difference/difference3.jpg" alt="No AI or Photoshop" fit="cover" />
-          </div>
-          <h3 class="home__feature-title">{{ $t('home.features.noAI.title') }}</h3>
-          <RichText class="home__feature-description" :content="$t('home.features.noAI.description')" />
-        </article>
-
-        <article class="home__feature">
-          <div class="home__feature-image">
-            <NuxtImg src="/images/deco/difference/difference4.jpg" alt="Certified quality" fit="cover" />
-          </div>
-          <h3 class="home__feature-title">{{ $t('home.features.certified.title') }}</h3>
-          <RichText class="home__feature-description" :content="$t('home.features.certified.description')" />
+          <h3 class="home__feature-title">{{ feature.title }}</h3>
+          <RichText class="home__feature-description" :content="feature.description" />
         </article>
       </div>
     </section>
@@ -250,7 +206,7 @@ onMounted(() => {
     <!-- Gallery 2 -->
     <section class="home__gallery-secondary" aria-label="Additional photography gallery">
       <div class="o-container o-container--full">
-        <PhotoGallery :images="secondaryGalleryImages" :columns="3" />
+        <PhotoGallery :images="secondaryGallery" :columns="3" />
       </div>
     </section>
 
