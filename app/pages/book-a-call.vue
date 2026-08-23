@@ -8,26 +8,26 @@ defineI18nRoute({
 
 usePageSeo('bookACall')
 
-const secondaryGalleryImages = [
-  { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
-  { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
-]
+const singletonsQuery = useContentByLocale('singletons')
+const { data: bookCall } = await useAsyncData('book-call-singleton', () => singletonsQuery.fetchByName('book-a-call'))
+
+const { data: secondaryGallery } = await useAsyncData('book-call-gallery', () =>
+  queryCollection('galleryImages').where('group', '=', 'secondary').order('sort', 'ASC').all())
 </script>
 
 <template>
   <main class="book-call">
     <PageHero
       variant="plain"
-      :headline="$t('bookCall.title')"
-      :tagline="$t('bookCall.intro')"
+      :headline="bookCall?.title ?? $t('bookCall.title')"
+      :tagline="bookCall?.tagline ?? $t('bookCall.intro')"
     />
 
     <!-- Process Intro Section -->
     <section class="book-call__intro">
       <div class="o-container o-container--3xl">
-        <h2 class="book-call__intro-heading">{{ $t('bookCall.process.heading') }}</h2>
-        <p class="book-call__intro-subtext">{{ $t('bookCall.process.subtext') }}</p>
+        <h2 class="book-call__intro-heading">{{ bookCall?.sections?.process?.heading ?? $t('bookCall.process.heading') }}</h2>
+        <p class="book-call__intro-subtext">{{ bookCall?.sections?.process?.subtext ?? $t('bookCall.process.subtext') }}</p>
       </div>
     </section>
 
@@ -41,7 +41,7 @@ const secondaryGalleryImages = [
     <!-- Gallery -->
     <section class="book-call__gallery" aria-label="Photography gallery">
       <div class="o-container o-container--full">
-        <PhotoGallery :images="secondaryGalleryImages" :columns="3" />
+        <PhotoGallery :images="secondaryGallery ?? []" :columns="3" />
       </div>
     </section>
 
