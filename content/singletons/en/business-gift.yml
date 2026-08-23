@@ -1,0 +1,28 @@
+locale: "en"
+page: "business-gift"
+title: "How to find the perfect BUSINESS GIFT in 2 minutes?"
+tagline: "Never worry about business gifts again with our practical guide"
+sections:
+  intro:
+    heading: "Your Very Special Business Gift"
+    text: "In this short video, you'll get practical tips so you never have to worry about business gifts again."
+
+  video:
+    youtubeId: "bnbRxqlcrF0"
+    thumbnail: "/images/deco/gift/biz-gift-deco-en.png"
+
+  benefits:
+    heading: "Does this sound interesting?"
+    items:
+      - "Free consultation within 48 hours"
+      - "No costs, no obligations"
+      - "No pushy sales talk. Guaranteed."
+
+  cta:
+    heading: "Book a Free Consultation"
+    subtext: "Fill out the form and we will contact you within 48 hours to see how we can help."
+    promise: "We'll reach out within 48 hours to discuss how we can help you."
+    guarantee: "No costs, no obligations, and no pushy sales talk. Guaranteed."
+    button: "Book a Call"
+
+

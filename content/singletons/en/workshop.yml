@@ -1,0 +1,21 @@
+locale: "en"
+page: "workshop"
+title: "Photo Workshops"
+tagline: "Immersive hands-on creative experiences designed for cultural programs and curious minds alike"
+sections:
+  intro:
+    question: "Do you work in the cultural sector and need a fresh, exciting workshop for your program?"
+    alternative: "Or just bored and want to try something new, fun, and hands-on?"
+
+  video:
+    intro: "Watch this video – in just 1 minute, you'll see what you gain by joining our workshop family!"
+    youtubeId: "6tsqc690s9k"
+
+  whatsOn:
+    heading: "What's On"
+    activities:
+      - "Building a gigantic camera: Camera Obscura"
+      - "Theater of shadows – Photogram in the darkroom"
+      - "Human vs AI: Creative Engineering and Problem-Solving through Photography (course for kids)"
+
+

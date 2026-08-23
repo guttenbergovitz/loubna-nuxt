@@ -1,0 +1,28 @@
+locale: "nb"
+page: "business-gift"
+title: "Hvordan finne den perfekte BUSINESS GAVEN på 2 minutter?"
+tagline: "Praktiske tips slik at du aldri trenger å bekymre deg for business gaver igjen"
+sections:
+  intro:
+    heading: "Din helt spesielle firmagave"
+    text: "I denne korte videoen får du praktiske tips, slik at du aldri trenger å bekymre deg for business gaver igjen."
+
+  video:
+    youtubeId: "bnbRxqlcrF0"
+    thumbnail: "/images/deco/gift/biz-gift-deco-nb.png"
+
+  benefits:
+    heading: "Høres dette interessant ut?"
+    items:
+      - "Gratis konsultasjon innen 48 timer"
+      - "Ingen kostnader, ingen forpliktelser"
+      - "Ingen påtrengende salgsprat. Garantert."
+
+  cta:
+    heading: "Bestill en gratis konsultasjon"
+    subtext: "Fyll ut skjemaet, så vi vil kontakte deg innen 48 timer for å finne ut om vi kan hjelpe deg."
+    promise: "Vi kontakter deg innen 48 timer for å diskutere hvordan vi kan hjelpe."
+    guarantee: "Ingen kostnader, ingen forpliktelser og ingen påtrengende salgsprat. Garantert."
+    button: "Bestill en samtale"
+
+

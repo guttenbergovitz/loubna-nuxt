@@ -1,0 +1,21 @@
+locale: "nb"
+page: "workshop"
+title: "Foto Workshops"
+tagline: "Engasjerende praktiske kreative opplevelser designet for kulturprogrammer og nysgjerrige sinn"
+sections:
+  intro:
+    question: "Jobber du i kultursektoren og trenger en frisk, spennende workshop for programmet ditt?"
+    alternative: "Eller bare kjeder deg og vil prøve noe nytt, morsomt og praktisk?"
+
+  video:
+    intro: "Se denne videoen – på bare 1 minutt vil du se hva du får ved å bli med i vår workshop-familie!"
+    youtubeId: "6tsqc690s9k"
+
+  whatsOn:
+    heading: "Hva skjer"
+    activities:
+      - "Bygging av et gigantisk kamera: Camera Obscura"
+      - "Skyggeteater: Fotogrammer i mørkerommet"
+      - "Menneske mot AI: Kreativ ingeniørkunst og problemløsning gjennom fotografi (kurs for barn)"
+
+
