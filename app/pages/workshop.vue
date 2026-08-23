@@ -47,7 +47,7 @@ const { data: workshop } = await useAsyncData('workshop-singleton', () => single
         <h2 class="workshop__whats-on-heading">{{ workshop?.sections?.whatsOn?.heading ?? '' }}</h2>
         <ul class="workshop__whats-on-list">
           <li
-            v-for="(activity, index) in (workshop?.sections?.whatsOn?.activities ?? $tm('workshop.whatsOn.activities'))"
+            v-for="(activity, index) in (workshop?.sections?.whatsOn?.activities ?? [])"
             :key="index"
             class="workshop__whats-on-activity"
           >
