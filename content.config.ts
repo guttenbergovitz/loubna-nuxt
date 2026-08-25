@@ -8,7 +8,7 @@ export default defineContentConfig({
       source: 'highlights/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         date: z.string(),
         title: z.string(),
         role: z.string().optional(),
@@ -23,7 +23,7 @@ export default defineContentConfig({
       source: 'education/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         date: z.string(),
         title: z.string(),
         field: z.string().optional(),
@@ -36,7 +36,7 @@ export default defineContentConfig({
       source: 'quotes/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         text: z.string(),
         author: z.string()
       })
@@ -45,7 +45,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'partners/**/*.yml',
       schema: z.object({
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         name: z.string(),
         image: z.string(),
         alt: z.string()
@@ -55,7 +55,7 @@ export default defineContentConfig({
       type: 'data',
       source: 'gallery/**/*.yml',
       schema: z.object({
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         group: z.enum(['home', 'secondary']),
         src: z.string(),
         alt: z.string()
@@ -66,7 +66,7 @@ export default defineContentConfig({
       source: 'home-options/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         icon: z.string(),
         title: z.string(),
         description: z.string()
@@ -77,7 +77,7 @@ export default defineContentConfig({
       source: 'home-features/**/*.yml',
       schema: z.object({
         locale: z.enum(['en', 'nb']),
-        sort: z.number().int().positive(),
+        sort: z.string().regex(/^[0-9]{2,}$/),
         image: z.string(),
         alt: z.string(),
         title: z.string(),
