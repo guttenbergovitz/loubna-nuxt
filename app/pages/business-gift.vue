@@ -8,9 +8,6 @@ defineI18nRoute({
 
 usePageSeo('businessGift')
 
-const singletonsQuery = useContentByLocale('singletons')
-const { data: businessGift } = await useAsyncData('business-gift-singleton', () => singletonsQuery.fetchByName('business-gift'))
-
 const localePath = useLocalePath()
 </script>
 
@@ -18,27 +15,27 @@ const localePath = useLocalePath()
   <main class="business-gift">
     <PageHero
       variant="plain"
-      :headline="businessGift?.title ?? ''"
-      :tagline="businessGift?.tagline ?? ''"
+      :headline="$t('businessGift.title')"
+      :tagline="$t('businessGift.tagline')"
     />
 
     <!-- Intro Section -->
     <section class="business-gift__intro">
       <div class="o-container o-container--3xl">
-        <h2 class="business-gift__intro-heading">{{ businessGift?.sections?.intro?.heading ?? '' }}</h2>
-        <p class="business-gift__intro-text">{{ businessGift?.sections?.intro?.text ?? '' }}</p>
+        <h2 class="business-gift__intro-heading">{{ $t('businessGift.intro.heading') }}</h2>
+        <p class="business-gift__intro-text">{{ $t('businessGift.intro.text') }}</p>
       </div>
     </section>
 
     <!-- Video Section -->
     <section class="business-gift__video" aria-label="Business gift video">
       <div class="o-container o-container--4xl">
-        <p class="business-gift__video-intro">{{ businessGift?.sections?.video?.intro ?? '' }}</p>
+        <p class="business-gift__video-intro">{{ $t('businessGift.video.intro') }}</p>
         <div class="business-gift__video-wrapper">
           <YouTubeVideo
             class="business-gift__video-player business-gift__video-player--portrait"
-            :video-id="businessGift?.sections?.video?.youtubeId ?? ''"
-            :title="businessGift?.title ?? ''"
+            :video-id="$t('businessGift.video.youtubeId')"
+            :title="$t('businessGift.title')"
             aspect-ratio="portrait"
           />
         </div>
@@ -48,11 +45,19 @@ const localePath = useLocalePath()
     <!-- Benefits Section -->
     <section class="business-gift__benefits">
       <div class="o-container o-container--3xl">
-        <h2 class="business-gift__benefits-heading">{{ businessGift?.sections?.benefits?.heading ?? '' }}</h2>
+        <h2 class="business-gift__benefits-heading">{{ $t('businessGift.benefits.heading') }}</h2>
         <ul class="business-gift__benefits-list">
-          <li v-for="(item, index) in (businessGift?.sections?.benefits?.items ?? [])" :key="index" class="business-gift__benefit-item">
+          <li class="business-gift__benefit-item">
             <Icon name="mdi:check-circle-outline" class="business-gift__benefit-icon" />
-            <span>{{ typeof item === 'string' ? item : $rt(item) }}</span>
+            <span>{{ $t('businessGift.benefits.item1') }}</span>
+          </li>
+          <li class="business-gift__benefit-item">
+            <Icon name="mdi:check-circle-outline" class="business-gift__benefit-icon" />
+            <span>{{ $t('businessGift.benefits.item2') }}</span>
+          </li>
+          <li class="business-gift__benefit-item">
+            <Icon name="mdi:check-circle-outline" class="business-gift__benefit-icon" />
+            <span>{{ $t('businessGift.benefits.item3') }}</span>
           </li>
         </ul>
       </div>
@@ -65,7 +70,7 @@ const localePath = useLocalePath()
         <div class="business-gift__cta-content">
           <div class="business-gift__cta-image">
             <NuxtImg
-              :src="businessGift?.sections?.video?.thumbnail ?? ''"
+              :src="$t('businessGift.video.thumbnail')"
               alt="Business gift"
               class="business-gift__cta-photo"
               fit="cover"
@@ -73,15 +78,15 @@ const localePath = useLocalePath()
           </div>
 
           <div class="business-gift__cta-text">
-            <h2 class="business-gift__cta-heading">{{ businessGift?.sections?.cta?.heading ?? '' }}</h2>
-            <p class="business-gift__cta-subtext">{{ businessGift?.sections?.cta?.subtext ?? '' }}</p>
-            <p class="business-gift__cta-promise">{{ businessGift?.sections?.cta?.promise ?? '' }}</p>
-            <p class="business-gift__cta-guarantee">{{ businessGift?.sections?.cta?.guarantee ?? '' }}</p>
+            <h2 class="business-gift__cta-heading">{{ $t('businessGift.cta.heading') }}</h2>
+            <p class="business-gift__cta-subtext">{{ $t('businessGift.cta.subtext') }}</p>
+            <p class="business-gift__cta-promise">{{ $t('businessGift.cta.promise') }}</p>
+            <p class="business-gift__cta-guarantee">{{ $t('businessGift.cta.guarantee') }}</p>
             <NuxtLink
               :to="localePath('book-a-call')"
               class="business-gift__cta-button"
             >
-              {{ businessGift?.sections?.cta?.button ?? '' }}
+              {{ $t('businessGift.cta.button') }}
             </NuxtLink>
           </div>
         </div>

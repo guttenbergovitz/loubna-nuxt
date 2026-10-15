@@ -5,9 +5,6 @@ usePageSeo('about')
 
 const localePath = useLocalePath();
 
-const singletonsQuery = useContentByLocale('singletons')
-const { data: about } = await useAsyncData('about-singleton', () => singletonsQuery.fetchByName('about'))
-
 defineI18nRoute({
   paths: {
     en: "/about",
@@ -21,22 +18,22 @@ defineI18nRoute({
     <!-- Header Section -->
     <PageHero
       variant="plain"
-      :headline="about?.title ?? ''"
-      :tagline="about?.tagline ?? ''"
+      :headline="$t('about.title')"
+      :tagline="$t('about.greeting')"
     />
 
     <!-- Introduction 1 -->
     <section class="about__intro1">
       <div class="o-container o-container--3xl">
-        <p class="about__intro1-prefix">{{ about?.sections?.intro1?.prefix ?? '' }}</p>
-        <h2 class="about__intro1-name">{{ about?.sections?.intro1?.name ?? '' }}</h2>
+        <p class="about__intro1-prefix">{{ $t("about.intro1.prefix") }}</p>
+        <h2 class="about__intro1-name">{{ $t("about.intro1.name") }}</h2>
       </div>
     </section>
 
     <!-- Introduction 2 -->
     <section class="about__intro2">
       <div class="o-container o-container--3xl">
-        <p class="about__intro2-text">{{ about?.sections?.intro2 ?? '' }}</p>
+        <p class="about__intro2-text">{{ $t("about.intro2") }}</p>
       </div>
     </section>
 
@@ -54,7 +51,7 @@ defineI18nRoute({
           </div>
 
           <div class="about__featured-text">
-            <p>{{ about?.sections?.bio?.featured ?? '' }}</p>
+            <p>{{ $t("about.bio.featured") }}</p>
           </div>
         </div>
       </div>
@@ -105,19 +102,19 @@ defineI18nRoute({
             <div class="about__column-icon">
               <Icon name="mdi:briefcase-outline" />
             </div>
-            <p>{{ about?.sections?.bio?.freelance ?? '' }}</p>
+            <p>{{ $t("about.bio.freelance") }}</p>
           </div>
           <div class="about__column">
             <div class="about__column-icon">
               <Icon name="mdi:school-outline" />
             </div>
-            <p>{{ about?.sections?.bio?.workshops ?? '' }}</p>
+            <p>{{ $t("about.bio.workshops") }}</p>
           </div>
           <div class="about__column">
             <div class="about__column-icon">
               <Icon name="mdi:account-group-outline" />
             </div>
-            <p>{{ about?.sections?.bio?.coordination ?? '' }}</p>
+            <p>{{ $t("about.bio.coordination") }}</p>
           </div>
         </div>
       </div>
@@ -127,11 +124,11 @@ defineI18nRoute({
     <section class="about__bio-link">
       <div class="o-container o-container--3xl">
         <h2 class="about__bio-link-heading">
-          {{ about?.sections?.bioLink?.heading ?? '' }}
+          {{ $t("about.bioLink.heading") }}
         </h2>
-        <p class="about__bio-link-text">{{ about?.sections?.bioLink?.text ?? '' }}</p>
-        <NuxtLink :to="localePath('bio')" class="about__bio-link-button">
-          {{ about?.sections?.bioLink?.button ?? '' }}
+        <p class="about__bio-link-text">{{ $t("about.bioLink.text") }}</p>
+        <NuxtLink :to="localePath('/bio')" class="about__bio-link-button">
+          {{ $t("about.bioLink.button") }}
         </NuxtLink>
       </div>
     </section>
@@ -140,11 +137,11 @@ defineI18nRoute({
     <section class="about__challenge">
       <div class="o-container o-container--3xl">
         <h2 class="about__challenge-heading">
-          {{ about?.sections?.challenge?.heading ?? '' }}
+          {{ $t("about.challenge.heading") }}
         </h2>
-        <p class="about__challenge-text">{{ about?.sections?.challenge?.text ?? '' }}</p>
+        <p class="about__challenge-text">{{ $t("about.challenge.text") }}</p>
         <p class="about__challenge-footnote">
-          {{ about?.sections?.challenge?.footnote ?? '' }}
+          {{ $t("about.challenge.footnote") }}
         </p>
       </div>
     </section>

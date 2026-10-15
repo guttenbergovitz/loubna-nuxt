@@ -67,6 +67,20 @@
       "line6": "",
       "question": "?"
     },
+    "options": {
+      "stock": {
+        "title": "Buy a Random Pic on The Stock?",
+        "description": "If you're okay with heavily used snapshots and managing the license, it's no problem... However, if your interior is unique, it needs a personal touch."
+      },
+      "studio": {
+        "title": "Hire a Photographic Studio?",
+        "description": "Popular photographers follow trends, relying heavily on digital editing and AI. Trends change quickly, making your interior look tacky."
+      },
+      "scout": {
+        "title": "Become an Art Scout?",
+        "description": "This needs time and effort to immerse yourself in the art biz. Doesn't sound very productive, does it?"
+      }
+    },
     "alternative": {
       "or": "or...",
       "youCanOwn": "You Can Own",
@@ -79,6 +93,24 @@
       "line2": "Makes You Different",
       "line3": "?\""
     },
+    "features": {
+      "local": {
+        "title": "Local",
+        "description": "I am taking pictures right here in our neighbourhood. You can easily reach me whenever you need."
+      },
+      "madeToOrder": {
+        "title": "Made—to—Order",
+        "description": "Point to your favourite spot on the map, and I'll go take a picture. Like it? Great! If not, no worries... But I think you'll be glad you gave me a shot."
+      },
+      "noAI": {
+        "title": "No AI, No Photoshop",
+        "description": "Each photograph is a piece of craftsmanship."
+      },
+      "certified": {
+        "title": "Certified Quality",
+        "description": "Photographs are printed in limited editions, following museum standards. These aren't just pictures – they're collector's items."
+      }
+    },
     "cta": {
       "heading": "Contact me for a free photo consultation.",
       "subtext": "Interested in bringing unique photography to your space or event? Let's discuss how we can create something unforgettable together.",
@@ -87,12 +119,51 @@
   },
   "about": {
     "name": "About",
+    "title": "Want to know me?",
+    "greeting": "Hi! Salam! Peace! I'm a photo artist with Polish roots, based in Norway, specializing in traditional darkroom techniques and handcrafted fine art prints",
+    "intro1": {
+      "prefix": "My name is",
+      "name": "Loubna Aleksandra Kubiak"
+    },
+    "intro2": "I am a photo artist with Polish roots, based in Norway and working worldwide",
     "bio": {
-      "collaborations": "In Norway, I have collaborated with {kulturtanken}, {rogaland}, {jaermuseet}, and {sandnes} and {stavanger} municipalities."
+      "featured": "I run Loubna Photo, which focuses on traditional darkroom techniques and handcrafted fine art prints. I hold a higher education degree in photography and multimedia communication.",
+      "freelance": "As a freelancer, I have worked with magazines, advertising agencies, and private clients, all while pursuing my own artistic projects.",
+      "workshops": "I have led photography workshops in collaboration with local authorities and cultural centers across Europe.",
+      "collaborations": "In Norway, I have collaborated with {kulturtanken}, {rogaland}, {jaermuseet}, and {sandnes} and {stavanger} municipalities.",
+      "coordination": "As a coordinator and manager in the cultural sector, I have worked with internationally renowned artists such as Peter Greenaway, Zbig Rybczynski, Wojciech Fangor, and Leon Tarasewicz."
+    },
+    "challenge": {
+      "heading": "Challenge me!",
+      "text": "Pick up a location and I will take a photo there. *",
+      "footnote": "*only when it hooks me."
+    },
+    "bioLink": {
+      "heading": "Curious about my journey?",
+      "text": "Explore the detailed chronicle of my professional path, artistic milestones, and collaborations.",
+      "button": "View Full Bio"
     }
   },
   "workshop": {
     "name": "Workshop",
+    "title": "Photo Workshops",
+    "tagline": "Immersive hands-on creative experiences designed for cultural programs and curious minds alike",
+    "intro": {
+      "question": "Do you work in the cultural sector and need a fresh, exciting workshop for your program?",
+      "alternative": "Or just bored and want to try something new, fun, and hands-on?"
+    },
+    "video": {
+      "intro": "Watch this video – in just 1 minute, you'll see what you gain by joining our workshop family!",
+      "youtubeId": "6tsqc690s9k"
+    },
+    "whatsOn": {
+      "heading": "What's On",
+      "activities": [
+        "Building a gigantic camera: Camera Obscura",
+        "Theater of shadows – Photogram in the darkroom",
+        "Human vs AI: Creative Engineering and Problem-Solving through Photography (course for kids)"
+      ]
+    },
     "form": {
       "heading": "Sign up for a workshop",
       "subtext": "Interested in bringing a unique photography workshop to your organization or event? Fill out the form and let's create an unforgettable creative experience together.",
@@ -156,13 +227,160 @@
     "highlightsTitle": "Career Highlights",
     "highlightsIntro": "Two decades of photographic artistry, cultural projects, and creative collaboration across Europe.",
     "educationTitle": "Education",
-    "educationIntro": "Formal training in photography, multimedia, and scientific research."
+    "educationIntro": "Formal training in photography, multimedia, and scientific research.",
+    "highlights": [
+      {
+        "date": "01-03-2006",
+        "title": "Loubna Photo",
+        "role": "Photographer",
+        "description": "Freelancer working worldwide.",
+        "image": "/images/bio/loubna_photo_workshop.png"
+      },
+      {
+        "date": "01-07-2015",
+        "title": "Photo Workshops for Sandnes Municipality",
+        "role": "Photo Instructor",
+        "location": "Varatun Gård, Sandnes, Norway.",
+        "description": "Three-year collaboration focused on conducting workshops on building Camera Obscura, Pinhole Cameras, and darkroom techniques at Varatun Gård.",
+        "image": "/images/bio/varatun_gard_workshop.jpg"
+      },
+      {
+        "date": "12-01-2015",
+        "title": "Follow the Sun.",
+        "location": "Cafe Sting, Stavanger, Norway.",
+        "description": "Solo Photo Exhibition sponsored by Stavanger Municipality.",
+        "image": "/images/bio/follow_the_sun_exhibition.jpg"
+      },
+      {
+        "date": "15-06-2013",
+        "title": "Enjoy the Ride!",
+        "location": "Solo traveling photography exhibition, Poland.",
+        "description": "Major shows at Kana Theater in Stettin and the VI International Fair Show in Poznań.",
+        "image": "/images/bio/enjoy_the_ride.jpg"
+      },
+      {
+        "date": "12-04-2013",
+        "title": "My Place.",
+        "role": "Video Installation",
+        "location": "Festival of Art 'poMorze Sztuki proForma', Poland.",
+        "description": "Work created for an art festival and exhibited during a touring show in Szczecin, Gdańsk and Zielona Góra.",
+        "image": "/images/bio/my_place_installation.png"
+      },
+      {
+        "date": "16-03-2012",
+        "title": "n.i.t.c.",
+        "role": "Project in Urban Space",
+        "location": "Festival of Art 'poMorze Sztuki przeZtwory'.  Poland.",
+        "description": "Work exhibited during a touring show in Szczecin and Gdańsk.",
+        "image": "/images/bio/nitc_project.png"
+      },
+      {
+        "date": "10-10-2010",
+        "title": "Magnetism.",
+        "role": "Video Sculpture",
+        "location": "Festival of New Art  lAbiRynT (Frankfurt); Trans:motion - Group Exhibition (Szczecin)",
+        "description": "Project exhibited  during a touring show in Frankfurt and Szczecin.",
+        "image": "/images/bio/magnetism_sculpture.png"
+      },
+      {
+        "date": "28-10-2011",
+        "title": "Itsaso.",
+        "location": "The Gate Jazz Cafe, Stettin, Poland",
+        "description": "Solo Photo Exhibition",
+        "image": "/images/bio/itsaso_exhibition.png"
+      },
+      {
+        "date": "01-08-2011",
+        "title": "Originator and Coordinator",
+        "organization": "Trans:motion Project",
+        "description": "A six-month Polish-German collaboration project, where artists from both countries were invited to create works focused on the identity of place. Szczecin, Poland; Berlin, Germany",
+        "image": "/images/bio/transmotion_project.png"
+      },
+      {
+        "date": "01-01-2011",
+        "title": "President and Co-founder",
+        "organization": "Cultural Association Aloha Szczecin!",
+        "description": "Over three years, the association hosted lots of cultural and sports events, along with workshops that got kids and teenagers involved.",
+        "image": "/images/bio/aloha_szczecin.png"
+      },
+      {
+        "date": "19-03-2009",
+        "title": "home_less",
+        "role": "Video installation in Urban Space.",
+        "description": "Project created as an artistic debut for the 5th International Festival of Visual Arts \"inSpiracje: Space\", Szczecin, Poland.",
+        "image": "/images/bio/homeless_installation.png"
+      },
+      {
+        "date": "01-03-2008",
+        "title": "Project menager",
+        "organization": "5th Internasional Festival of Visual Arts inSpiracje",
+        "description": "My task was to manage the work related to exhibitions and to oversee the visits of 63 artists from around the world, who presented their work both in galleries and in public urban spaces.",
+        "image": "/images/bio/inspiracje_festival.png"
+      },
+      {
+        "date": "01-01-2007",
+        "title": "Gallery Curatorial Assistant",
+        "organization": "Municipal Art Gallery",
+        "description": "I organized and coordinated exhibitions and shows with invited artists such as Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska and Marek Targoński.",
+        "image": "/images/bio/gallery_assistant.png"
+      }
+    ],
+    "education": [
+      {
+        "date": "08-06-2013",
+        "title": "University of the Arts Poznan Faculty of Multimedia Communications",
+        "field": "Art Of Image Registration with major in Photography",
+        "degree": "Bachelor"
+      },
+      {
+        "date": "30-06-2008",
+        "title": "European Academy of Photography",
+        "location": "Warsaw, Poland",
+        "degree": "Craft Certificate"
+      },
+      {
+        "date": "07-06-2004",
+        "title": "Agricultural University  in Stettin",
+        "field": "Faculty of Human Nutrition Physiology",
+        "degree": "Master Engineer"
+      }
+    ]
   },
   "businessGift": {
-    "name": "Business Gift"
+    "name": "Business Gift",
+    "title": "How to find the perfect BUSINESS GIFT in 2 minutes?",
+    "tagline": "Never worry about business gifts again with our practical guide",
+    "intro": {
+      "heading": "Your Very Special Business Gift",
+      "text": "In this short video, you'll get practical tips so you never have to worry about business gifts again."
+    },
+    "video": {
+      "youtubeId": "bnbRxqlcrF0",
+      "intro": "...because your business partners deserve more...",
+      "thumbnail": "/images/deco/gift/biz-gift-deco-en.png"
+    },
+    "benefits": {
+      "heading": "Does this sound interesting?",
+      "item1": "Free consultation within 48 hours",
+      "item2": "No costs, no obligations",
+      "item3": "No pushy sales talk. Guaranteed."
+    },
+    "cta": {
+      "heading": "Book a Free Consultation",
+      "subtext": "Fill out the form and we will contact you within 48 hours to see how we can help.",
+      "promise": "We'll reach out within 48 hours to discuss how we can help you.",
+      "guarantee": "No costs, no obligations, and no pushy sales talk. Guaranteed.",
+      "button": "Book a Call"
+    }
   },
   "bookCall": {
     "name": "Book a Call",
+    "title": "Let's Create Something Beautiful Together",
+    "intro": "Ready to transform your space with handcrafted photography? Book a free consultation call and let's discuss how we can bring your vision to life. No obligations, just a conversation about your unique needs.",
+    "process": {
+      "heading": "How it works",
+      "subtext": "Fill out the form below, and I'll reach out within 48 hours to schedule our free consultation. We'll discuss your space, preferences, and ideas – together we'll find the perfect photography to bring your vision to life."
+    },
     "form": {
       "fields": {
         "name": {
@@ -214,6 +432,12 @@
   },
   "contact": {
     "name": "Contact",
+    "title": "Get in Touch",
+    "intro": "I'd love to hear from you! Whether you have a question about my work, want to discuss a project, or just want to say hello – drop me a message. Every conversation starts with a simple hello, and I'm always excited to connect with fellow art lovers and photography enthusiasts.",
+    "introExtended": {
+      "heading": "Let's talk!",
+      "subtext": "Share your thoughts, ideas, or simply say hi."
+    },
     "form": {
       "fields": {
         "name": {
@@ -258,6 +482,128 @@
       "linkedin": "LinkedIn"
     }
   },
+  "quotes": [
+    {
+      "text": "Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... It remembers little things, long after you have forgotten everything.",
+      "author": "Aaron Siskind"
+    },
+    {
+      "text": "In photography there is a reality so subtle that it becomes more real than reality.",
+      "author": "Alfred Stieglitz"
+    },
+    {
+      "text": "A photograph is a secret about a secret. The more it tells you, the less you know.",
+      "author": "Diane Arbus"
+    },
+    {
+      "text": "The camera is an instrument that teaches people how to see without a camera.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Photography takes an instant out of time, altering life by holding it still.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "A good photograph is one that communicates a fact, touches the heart, and leaves the viewer a changed person.",
+      "author": "Irving Penn"
+    },
+    {
+      "text": "The best thing about a picture is that it never changes, even when the people in it do.",
+      "author": "Andy Warhol"
+    },
+    {
+      "text": "You don't take a photograph, you make it.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "There are always two people in every picture: the photographer and the viewer.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "A portrait is not made in the camera but on either side of it.",
+      "author": "Edward Steichen"
+    },
+    {
+      "text": "The whole point of taking pictures is so that you don't have to explain things with words.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Photography is the story I fail to put into words.",
+      "author": "Destin Sparks"
+    },
+    {
+      "text": "Taking pictures is savoring life intensely, every hundredth of a second.",
+      "author": "Marc Riboud"
+    },
+    {
+      "text": "The camera makes you forget you're there. It's not like you are hiding but you forget, you are just looking so much.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "If your pictures aren't good enough, you're not close enough.",
+      "author": "Robert Capa"
+    },
+    {
+      "text": "Photography is a love affair with life.",
+      "author": "Burk Uzzle"
+    },
+    {
+      "text": "All photographs are there to remind us of what we forget.",
+      "author": "John Berger"
+    },
+    {
+      "text": "The picture that you took with your camera is the imagination you want to create with reality.",
+      "author": "Scott Lorenzo"
+    },
+    {
+      "text": "Your first 10,000 photographs are your worst.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "We are making photographs to understand what our lives mean to us.",
+      "author": "Ralph Hattersley"
+    },
+    {
+      "text": "A thing that you see in my pictures is that I was not afraid to fall in love with these people.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Photography is an immediate reaction, drawing is a meditation.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "The eye should learn to listen before it looks.",
+      "author": "Robert Frank"
+    },
+    {
+      "text": "A great photograph is a full expression of what one feels about what is being photographed.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "To me, photography is an art of observation. It's about finding something interesting in an ordinary place.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Light makes photography. Embrace light. Admire it. Love it. But above all, know light.",
+      "author": "George Eastman"
+    },
+    {
+      "text": "In photography, the smallest thing can be a great subject. The little human detail can become a leitmotiv.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "What I like about photographs is that they capture a moment that's gone forever, impossible to reproduce.",
+      "author": "Karl Lagerfeld"
+    },
+    {
+      "text": "The desire to discover, the desire to move, to capture the flavor, three concepts that describe the art of photography.",
+      "author": "Helmut Newton"
+    },
+    {
+      "text": "Photography is truth. The cinema is truth twenty-four times per second.",
+      "author": "Jean-Luc Godard"
+    }
+  ],
   "thankYou": {
     "bookCall": {
       "title": "Thank You!",

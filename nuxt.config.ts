@@ -15,9 +15,7 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    viewTransition: true,
-    // Avoid cross-locale payload collisions during prerender (i18n prefix strategy reuses the same useAsyncData keys for /en and /nb routes)
-    sharedPrerenderData: false
+    viewTransition: true
   },
 
   modules: [
@@ -27,7 +25,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/content',
     '@nuxt/test-utils',
     '@nuxtjs/i18n',
     '@nuxtjs/sitemap',
@@ -35,19 +32,8 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@formkit/nuxt',
     'nuxt-easy-lightbox',
-    'nuxt-nodemailer',
-    'nuxt-studio'
+    'nuxt-nodemailer'
   ],
-
-  studio: {
-    repository: {
-      provider: 'github',
-      owner: 'guttenbergovitz',
-      repo: 'loubna-nuxt',
-      branch: 'main'
-    }
-  },
-
   nodemailer: {
     from: process.env.SMTP_FROM,
     host: process.env.SMTP_HOST,
@@ -80,6 +66,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
+    strictNuxtContentPaths: true,
     autoLastmod: true,
     exclude: ['/thank-you/**']
   },

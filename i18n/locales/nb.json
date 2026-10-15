@@ -67,6 +67,20 @@
       "line6": "",
       "question": "?"
     },
+    "options": {
+      "stock": {
+        "title": "Kjøpe et tilfeldig bilde fra bilde banken?",
+        "description": "Hvis du er komfortabel med sterkt brukte stock bilder og å holde styr på lisensen, er det ikke noe problem... Men hvis interiøret ditt er unikt, trenger det en personlig touch."
+      },
+      "studio": {
+        "title": "Hyre et fotostudio?",
+        "description": "Mange fotografer henger seg på trender og bruker mye digital redigering og AI. Trender skifter raskt, og plutselig ser interiøret ditt smakløst ut."
+      },
+      "scout": {
+        "title": "Bli en kunst speider?",
+        "description": "Dette krever tid og innsats for å fordype seg i kunstbransjen. Høres ikke særlig produktivt ut, ikke sant?"
+      }
+    },
     "alternative": {
       "or": "eller ...",
       "youCanOwn": "Du kan eie",
@@ -79,6 +93,24 @@
       "line2": "skiller deg ut",
       "line3": "?"
     },
+    "features": {
+      "local": {
+        "title": "Lokal.",
+        "description": "Jeg tar bilder her i nabolaget. Bare ta kontakt når du trenger meg."
+      },
+      "madeToOrder": {
+        "title": "Laget på bestilling.",
+        "description": "Pek på ditt favorittsted på kartet, så drar jeg og tar et bilde. Liker du det? Supert! Hvis ikke – helt greit... Men jeg tror du blir glad for at du ga meg en sjanse."
+      },
+      "noAI": {
+        "title": "Ingen Photoshop & ingen AI.",
+        "description": "Hvert fotografi er håndverk."
+      },
+      "certified": {
+        "title": "Kvalitetssikret.",
+        "description": "Fotografiene er trykket i et begrenset og sertifisert opplag, i henhold til museale standarder. Dette er ikke bare bilder – de er samleobjekter."
+      }
+    },
     "cta": {
       "heading": "Ta kontakt for en gratis foto konsultasjon.",
       "subtext": "Interessert i å bringe unik fotografi til ditt rom eller arrangement? La oss diskutere hvordan vi sammen kan skape noe uforglemmelig.",
@@ -87,12 +119,52 @@
   },
   "about": {
     "name": "Om",
+    "intro1": {
+      "prefix": "Mitt navn er",
+      "name": "Loubna Aleksandra Kubiak"
+    },
+    "intro2": "Jeg er en fotokunstner med polske røtter, bosatt i Norge og arbeidende internasjonalt",
+    "title": "Vil du bli kjent med meg?",
+    "greeting": "Hei! Salam! Peace! Jeg er en fotokunstner med polske røtter, bosatt i Norge, spesialisert i tradisjonelle mørkeromsteknikker og håndlagde fine art-trykk",
     "bio": {
-      "collaborations": "I Norge har jeg samarbeidet med {kulturtanken}, {rogaland}, {jaermuseet}, {sandnes} og {stavanger} kommuner."
+      "featured": "Jeg driver Loubna Photo, som fokuserer på tradisjonelle mørkeroms teknikker og håndlagde fine art-trykk. Jeg har høyere utdanning innen fotografi og multimedie kommunikasjon.",
+      "freelance": "Som frilanser har jeg jobbet med magasiner, reklamebyråer og private kunder, samtidig som jeg har drevet mine egne kunstneriske prosjekter.",
+      "workshops": "Som fotoinstruktør har jeg samarbeidet med myndigheter og kulturinstitusjoner i Polen, Tyskland og Norge.",
+      "collaborations": "I Norge har jeg samarbeidet med {kulturtanken}, {rogaland}, {jaermuseet}, {sandnes} og {stavanger} kommuner.",
+      "coordination": "Som erfaren koordinator og leder i kultursektoren har jeg arbeidet med internasjonalt anerkjente kunstnere som Peter Greenaway, Zbig Rybczynski, Voy Fangor og Leon Tarasewicz."
+    },
+    "challenge": {
+      "heading": "Utfordre meg!",
+      "text": "Velg et sted, så tar jeg et bilde der.*",
+      "footnote": "* bare når det fenger meg."
+    }
+    ,
+    "bioLink": {
+      "heading": "Nysgjerrig på min reise?",
+      "text": "Utforsk den detaljerte kronologien over min profesjonelle vei, kunstneriske milepæler og samarbeid.",
+      "button": "Se full bio"
     }
   },
   "workshop": {
     "name": "Workshop",
+    "title": "Foto Workshops",
+    "tagline": "Engasjerende praktiske kreative opplevelser designet for kulturprogrammer og nysgjerrige sinn",
+    "intro": {
+      "question": "Jobber du i kultursektoren og trenger en frisk, spennende workshop for programmet ditt?",
+      "alternative": "Eller bare kjeder deg og vil prøve noe nytt, morsomt og praktisk?"
+    },
+    "video": {
+      "intro": "Se denne videoen – på bare 1 minutt vil du se hva du får ved å bli med i vår workshop-familie!",
+      "youtubeId": "6tsqc690s9k"
+    },
+    "whatsOn": {
+      "heading": "Hva skjer",
+      "activities": [
+        "Bygging av et gigantisk kamera: Camera Obscura",
+        "Skyggeteater: Fotogrammer i mørkerommet",
+        "Menneske mot AI: Kreativ ingeniørkunst og problemløsning gjennom fotografi (kurs for barn)"
+      ]
+    },
     "form": {
       "heading": "Meld deg på workshop",
       "subtext": "Interessert i å bringe en unik fotoworkshop til organisasjonen eller arrangementet ditt? Fyll ut skjemaet, så skaper vi en uforglemmelig kreativ opplevelse sammen.",
@@ -156,13 +228,160 @@
     "highlightsTitle": "Karrierehøydepunkter",
     "highlightsIntro": "To tiår med fotografisk kunst, kulturprosjekter og kreativt samarbeid på tvers av Europa.",
     "educationTitle": "Utdanning",
-    "educationIntro": "Formell opplæring innen fotografi, multimedia og vitenskapelig forskning."
+    "educationIntro": "Formell opplæring innen fotografi, multimedia og vitenskapelig forskning.",
+    "highlights": [
+      {
+        "date": "01-03-2006",
+        "title": "Loubna Photo",
+        "role": "Fotograf",
+        "description": "Frilanser som arbeider over hele verden.",
+        "image": "/images/bio/loubna_photo_workshop.png"
+      },
+      {
+        "date": "01-07-2015",
+        "title": "Foto Workshop for Sandnes Kommune",
+        "role": "Foto Instruktør",
+        "location": "Varatun Gård, Sandnes, Norge.",
+        "description": "Treårig samarbeid fokusert på å gjennomføre workshops om bygging av Camera Obscura, Pinhole Cameras og mørkeromsteknikker på Varatun Gård.",
+        "image": "/images/bio/varatun_gard_workshop.jpg"
+      },
+      {
+        "date": "12-01-2015",
+        "title": "Følg Solen.",
+        "location": "Cafe Sting, Stavanger, Norge.",
+        "description": "Solo fotoutstilling sponset av Stavanger Kommune.",
+        "image": "/images/bio/follow_the_sun_exhibition.jpg"
+      },
+      {
+        "date": "15-06-2013",
+        "title": "Nyt turen!",
+        "location": "Vandreutstilling, Polen.",
+        "description": "Hovedutstillinger på Kana Theater i Stettin og VI International Fair Show i Poznań.",
+        "image": "/images/bio/enjoy_the_ride.jpg"
+      },
+      {
+        "date": "12-04-2013",
+        "title": "Mitt sted.",
+        "role": "Videoinstallasjon",
+        "location": "Festival of Art 'poMorze Sztuki proForma', Polen.",
+        "description": "Verk skapt for en kunstfestival og utstilt under en turné i Szczecin, Gdańsk og Zielona Góra.",
+        "image": "/images/bio/my_place_installation.png"
+      },
+      {
+        "date": "16-03-2012",
+        "title": "n.i.t.c.",
+        "role": "Prosjekt i urbant rom",
+        "location": "Festival of Art 'poMorze Sztuki przeZtwory'. Polen.",
+        "description": "Verk utstilt under en turné i Szczecin og Gdańsk.",
+        "image": "/images/bio/nitc_project.png"
+      },
+      {
+        "date": "10-10-2010",
+        "title": "Magnetisme.",
+        "role": "Video Skulptur",
+        "location": "Festival of New Art lAbiRynT (Frankfurt); Trans:motion - Gruppeutstilling (Szczecin)",
+        "description": "Prosjekt utstilt under en turné i Frankfurt og Szczecin.",
+        "image": "/images/bio/magnetism_sculpture.png"
+      },
+      {
+        "date": "28-10-2011",
+        "title": "Itsaso.",
+        "location": "The Gate Jazz Cafe, Stettin, Polen",
+        "description": "Solo fotoutstilling",
+        "image": "/images/bio/itsaso_exhibition.png"
+      },
+      {
+        "date": "01-08-2011",
+        "title": "Initiativtaker og koordinator",
+        "organization": "Trans:motion Prosjekt",
+        "description": "Et seks måneder langt polsk-tysk samarbeidsprosjekt, hvor kunstnere fra begge land ble invitert til å skape verk fokusert på stedets identitet. Szczecin, Polen; Berlin, Tyskland",
+        "image": "/images/bio/transmotion_project.png"
+      },
+      {
+        "date": "01-01-2011",
+        "title": "President og medgründer",
+        "organization": "Kulturforening Aloha Szczecin!",
+        "description": "Over tre år arrangerte foreningen mange kulturelle og sportlige arrangementer, sammen med workshops som involverte barn og ungdom.",
+        "image": "/images/bio/aloha_szczecin.png"
+      },
+      {
+        "date": "19-03-2009",
+        "title": "home_less",
+        "role": "Videoinstallasjon i urbant rom.",
+        "description": "Prosjekt skapt som en kunstnerisk debut for 5. internasjonale festival for visuell kunst \"inSpiracje: Space\", Szczecin, Polen.",
+        "image": "/images/bio/homeless_installation.png"
+      },
+      {
+        "date": "01-03-2008",
+        "title": "Prosjektleder",
+        "organization": "5. internasjonale festival for visuell kunst inSpiracje",
+        "description": "Min oppgave var å lede arbeidet knyttet til utstillinger og å overvåke besøkene til 63 kunstnere fra hele verden, som presenterte arbeidet sitt både i gallerier og i offentlige urbane rom.",
+        "image": "/images/bio/inspiracje_festival.png"
+      },
+      {
+        "date": "01-01-2007",
+        "title": "Galleri Kuratorassistent",
+        "organization": "Kommunal Kunstgalleri",
+        "description": "Jeg organiserte og koordinerte utstillinger og show med inviterte kunstnere som Piotr Kurka, Sławomir Brzoska, Leszek Knaflewski, Aleksandra Ska og Marek Targoński.",
+        "image": "/images/bio/gallery_assistant.png"
+      }
+    ],
+    "education": [
+      {
+        "date": "08-06-2013",
+        "title": "University of the Arts Poznan Faculty of Multimedia Communications",
+        "field": "Kunst av bilderegistrering med hovedfag i fotografi",
+        "degree": "Bachelor"
+      },
+      {
+        "date": "30-06-2008",
+        "title": "European Academy of Photography",
+        "location": "Warszawa, Polen",
+        "degree": "Håndverkssertifikat"
+      },
+      {
+        "date": "07-06-2004",
+        "title": "Landbruksuniversitetet i Stettin",
+        "field": "Fakultet for Menneskelig Ernæringsfysiologi",
+        "degree": "Sivilingeniør"
+      }
+    ]
   },
   "businessGift": {
-    "name": "Firmagaver"
+    "name": "Firmagaver",
+    "title": "Hvordan finne den perfekte BUSINESS GAVEN på 2 minutter?",
+    "tagline": "Praktiske tips slik at du aldri trenger å bekymre deg for business gaver igjen",
+    "intro": {
+      "heading": "Din helt spesielle firmagave",
+      "text": "I denne korte videoen får du praktiske tips, slik at du aldri trenger å bekymre deg for business gaver igjen."
+    },
+    "video": {
+      "youtubeId": "bnbRxqlcrF0",
+      "intro": "...fordi dine forretningspartnere fortjener mer...",
+      "thumbnail": "/images/deco/gift/biz-gift-deco-nb.png"
+    },
+    "benefits": {
+      "heading": "Høres dette interessant ut?",
+      "item1": "Gratis konsultasjon innen 48 timer",
+      "item2": "Ingen kostnader, ingen forpliktelser",
+      "item3": "Ingen påtrengende salgsprat. Garantert."
+    },
+    "cta": {
+      "heading": "Bestill en gratis konsultasjon",
+      "subtext": "Fyll ut skjemaet, så vi vil kontakte deg innen 48 timer for å finne ut om vi kan hjelpe deg.",
+      "promise": "Vi kontakter deg innen 48 timer for å diskutere hvordan vi kan hjelpe.",
+      "guarantee": "Ingen kostnader, ingen forpliktelser og ingen påtrengende salgsprat. Garantert.",
+      "button": "Bestill en samtale"
+    }
   },
   "bookCall": {
     "name": "Bestill en samtale",
+    "title": "La oss skape noe vakkert sammen",
+    "intro": "Klar til å forvandle rommet ditt med håndlaget fotografi? Bestill en gratis konsultasjonssamtale og la oss diskutere hvordan vi kan realisere visjonen din. Ingen forpliktelser, bare en samtale om dine unike behov.",
+    "process": {
+      "heading": "Slik fungerer det",
+      "subtext": "Fyll ut skjemaet nedenfor, så tar jeg kontakt innen 48 timer for å avtale vår gratis konsultasjon. Vi vil diskutere ditt rom, preferanser og ideer – sammen finner vi det perfekte fotografiet for å realisere visjonen din."
+    },
     "form": {
       "fields": {
         "name": {
@@ -214,6 +433,12 @@
   },
   "contact": {
     "name": "Kontakt",
+    "title": "Ta kontakt",
+    "intro": "Jeg vil gjerne høre fra deg! Enten du har et spørsmål om arbeidet mitt, ønsker å diskutere et prosjekt, eller bare vil si hei – send meg en melding. Hver samtale starter med en enkel hilsen, og jeg er alltid spent på å komme i kontakt med kunstelskere og fotografi-entusiaster.",
+    "introExtended": {
+      "heading": "La oss snakke!",
+      "subtext": "Del dine tanker, ideer, eller bare si hei."
+    },
     "form": {
       "fields": {
         "name": {
@@ -258,6 +483,128 @@
       "linkedin": "LinkedIn"
     }
   },
+  "quotes": [
+    {
+      "text": "Fotografi er en måte å føle på, å berøre, å elske. Det du har fanget på film er fanget for alltid... Det husker små ting, lenge etter at du har glemt alt.",
+      "author": "Aaron Siskind"
+    },
+    {
+      "text": "I fotografi finnes det en virkelighet så subtil at den blir mer virkelig enn virkeligheten.",
+      "author": "Alfred Stieglitz"
+    },
+    {
+      "text": "Et fotografi er en hemmelighet om en hemmelighet. Jo mer det forteller deg, jo mindre vet du.",
+      "author": "Diane Arbus"
+    },
+    {
+      "text": "Kameraet er et instrument som lærer folk hvordan man ser uten kamera.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Fotografi tar et øyeblikk ut av tiden, og endrer livet ved å holde det stille.",
+      "author": "Dorothea Lange"
+    },
+    {
+      "text": "Et godt fotografi er et som kommuniserer et faktum, berører hjertet, og etterlater betrakteren som et forandret menneske.",
+      "author": "Irving Penn"
+    },
+    {
+      "text": "Det beste med et bilde er at det aldri endrer seg, selv når menneskene i det gjør det.",
+      "author": "Andy Warhol"
+    },
+    {
+      "text": "Du tar ikke et fotografi, du skaper det.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "Det er alltid to personer i hvert bilde: fotografen og betrakteren.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "Et portrett lages ikke i kameraet, men på begge sider av det.",
+      "author": "Edward Steichen"
+    },
+    {
+      "text": "Hele poenget med å ta bilder er at du ikke trenger å forklare ting med ord.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Fotografi er historien jeg ikke klarer å sette ord på.",
+      "author": "Destin Sparks"
+    },
+    {
+      "text": "Å ta bilder er å nyte livet intenst, hvert hundrede dels sekund.",
+      "author": "Marc Riboud"
+    },
+    {
+      "text": "Kameraet får deg til å glemme at du er der. Det er ikke som om du gjemmer deg, men du glemmer, du bare ser så mye.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Hvis bildene dine ikke er gode nok, er du ikke nærme nok.",
+      "author": "Robert Capa"
+    },
+    {
+      "text": "Fotografi er en kjærlighetsaffære med livet.",
+      "author": "Burk Uzzle"
+    },
+    {
+      "text": "Alle fotografier er der for å minne oss om det vi glemmer.",
+      "author": "John Berger"
+    },
+    {
+      "text": "Bildet du tok med kameraet ditt er fantasien du ønsker å skape med virkeligheten.",
+      "author": "Scott Lorenzo"
+    },
+    {
+      "text": "Dine første 10 000 fotografier er dine verste.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Vi lager fotografier for å forstå hva livene våre betyr for oss.",
+      "author": "Ralph Hattersley"
+    },
+    {
+      "text": "Noe du ser i bildene mine er at jeg ikke var redd for å bli forelsket i disse menneskene.",
+      "author": "Annie Leibovitz"
+    },
+    {
+      "text": "Fotografi er en umiddelbar reaksjon, tegning er en meditasjon.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Øyet bør lære å lytte før det ser.",
+      "author": "Robert Frank"
+    },
+    {
+      "text": "Et flott fotografi er et fullstendig uttrykk for hva man føler om det som blir fotografert.",
+      "author": "Ansel Adams"
+    },
+    {
+      "text": "For meg er fotografi en observasjonskunst. Det handler om å finne noe interessant på et vanlig sted.",
+      "author": "Elliott Erwitt"
+    },
+    {
+      "text": "Lys skaper fotografi. Omfavn lyset. Beundre det. Elsk det. Men fremfor alt, kjenn lyset.",
+      "author": "George Eastman"
+    },
+    {
+      "text": "I fotografi kan den minste tingen være et stort motiv. Den lille menneskelige detaljen kan bli et ledemotiv.",
+      "author": "Henri Cartier-Bresson"
+    },
+    {
+      "text": "Det jeg liker med fotografier er at de fanger et øyeblikk som er borte for alltid, umulig å reprodusere.",
+      "author": "Karl Lagerfeld"
+    },
+    {
+      "text": "Ønsket om å oppdage, ønsket om å bevege seg, å fange smaken, tre konsepter som beskriver fotografikunsten.",
+      "author": "Helmut Newton"
+    },
+    {
+      "text": "Fotografi er sannhet. Kino er sannhet tjuefire ganger per sekund.",
+      "author": "Jean-Luc Godard"
+    }
+  ],
   "thankYou": {
     "bookCall": {
       "title": "Takk!",

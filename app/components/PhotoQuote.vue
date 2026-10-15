@@ -1,18 +1,16 @@
 <script setup lang="ts">
-const quotesQuery = useContentByLocale('quotes')
+const { t } = useI18n()
 
-const { data: quotes } = await useAsyncData('quotes', () => quotesQuery.fetchAll())
-
-const randomIndex = ref(0)
-
-const quote = computed(() => quotes.value?.[randomIndex.value]?.text ?? '')
-const author = computed(() => quotes.value?.[randomIndex.value]?.author ?? '')
+// Get random quote on component mount
+const randomQuoteIndex = ref(0)
 
 onMounted(() => {
-  if (quotes.value?.length) {
-    randomIndex.value = Math.floor(Math.random() * quotes.value.length)
-  }
+  // Generate random number between 0 and 29 (30 quotes)
+  randomQuoteIndex.value = Math.floor(Math.random() * 30)
 })
+
+const quote = computed(() => t(`quotes.${randomQuoteIndex.value}.text`))
+const author = computed(() => t(`quotes.${randomQuoteIndex.value}.author`))
 </script>
 
 <template>

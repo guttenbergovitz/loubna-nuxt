@@ -8,35 +8,32 @@ defineI18nRoute({
 
 usePageSeo('workshop')
 
-const singletonsQuery = useContentByLocale('singletons')
-const { data: workshop } = await useAsyncData('workshop-singleton', () => singletonsQuery.fetchByName('workshop'))
-
 </script>
 
 <template>
   <main class="workshop">
     <PageHero
       variant="plain"
-      :headline="workshop?.title ?? ''"
-      :tagline="workshop?.tagline ?? ''"
+      :headline="$t('workshop.title')"
+      :tagline="$t('workshop.tagline')"
     />
 
     <!-- Intro Section -->
     <section class="workshop__intro">
       <div class="o-container o-container--3xl">
-        <p class="workshop__intro-question">{{ workshop?.sections?.intro?.question ?? '' }}</p>
-        <p class="workshop__intro-alternative">{{ workshop?.sections?.intro?.alternative ?? '' }}</p>
+        <p class="workshop__intro-question">{{ $t('workshop.intro.question') }}</p>
+        <p class="workshop__intro-alternative">{{ $t('workshop.intro.alternative') }}</p>
       </div>
     </section>
 
     <!-- Video Section -->
     <section class="workshop__video" aria-label="Workshop video">
       <div class="o-container o-container--4xl">
-        <p class="workshop__video-intro">{{ workshop?.sections?.video?.intro ?? '' }}</p>
+        <p class="workshop__video-intro">{{ $t('workshop.video.intro') }}</p>
         <YouTubeVideo
           class="workshop__video-player"
-          :video-id="workshop?.sections?.video?.youtubeId ?? ''"
-          :title="workshop?.title ?? ''"
+          :video-id="$t('workshop.video.youtubeId')"
+          :title="$t('workshop.title')"
         />
       </div>
     </section>
@@ -44,14 +41,14 @@ const { data: workshop } = await useAsyncData('workshop-singleton', () => single
     <!-- What's On Section -->
     <section class="workshop__whats-on">
       <div class="o-container o-container--3xl">
-        <h2 class="workshop__whats-on-heading">{{ workshop?.sections?.whatsOn?.heading ?? '' }}</h2>
+        <h2 class="workshop__whats-on-heading">{{ $t('workshop.whatsOn.heading') }}</h2>
         <ul class="workshop__whats-on-list">
           <li
-            v-for="(activity, index) in (workshop?.sections?.whatsOn?.activities ?? [])"
+            v-for="(activity, index) in $tm('workshop.whatsOn.activities')"
             :key="index"
             class="workshop__whats-on-activity"
           >
-            {{ typeof activity === 'string' ? activity : $rt(activity) }}
+            {{ $rt(activity) }}
           </li>
         </ul>
       </div>
