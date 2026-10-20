@@ -43,7 +43,8 @@ const memberships = [
   text-align: center;
   color: var(--color-text-primary);
   opacity: 0.75;
-  margin: 0 0 var(--space-fluid-xl);
+  max-width: none;
+  margin: 0 auto var(--space-fluid-xl);
 }
 
 .membership__list {
@@ -61,8 +62,8 @@ const memberships = [
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 240px;
-  height: 110px;
+  width: 280px;
+  height: 140px;
 }
 
 .membership__logo {
@@ -75,8 +76,8 @@ const memberships = [
 
 @media (max-width: 767px) {
   .membership__item {
-    width: 180px;
-    height: 84px;
+    width: 200px;
+    height: 100px;
   }
 }
 </style>
