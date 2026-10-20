@@ -8,11 +8,11 @@ defineI18nRoute({
 
 usePageSeo('bio')
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 
 const highlights = computed(() => {
   const items = []
-  for (let i = 0; i < 13; i++) {
+  for (let i = 0; i < tm('bio.highlights').length; i++) {
     const item: any = {
       date: t(`bio.highlights.${i}.date`),
       title: t(`bio.highlights.${i}.title`)

@@ -231,6 +231,53 @@
     "educationIntro": "Formell opplæring innen fotografi, multimedia og vitenskapelig forskning.",
     "highlights": [
       {
+        "date": "01-09-2026",
+        "title": "Den kulturelle skolesekken-turné",
+        "organization": "Den kulturelle skolesekken",
+        "location": "Stavanger, Norge",
+        "description": "Bygging av gigantisk kamera / Camera Obscura har fått svært gode tilbakemeldinger fra skolene: 'Elevene opplevde stort læringsutbytte og ble inspirert.' 'Veldig kjekt prosjekt som engasjerte elevene.' 'Veldig spennende å oppleve gammel teknologi. Veldig inspirerende og engasjert formidler.'"
+      },
+      {
+        "date": "01-01-2026",
+        "title": "Fototidsmaskinen",
+        "organization": "Vitenfabrikken, Sandnes",
+        "location": "Sandnes, Norge",
+        "description": "Vinterferieverksted støttet av Sandnes kommune. Familier bygde et gigantisk kamera og lagde fotogrammer i mørkerommet (332 besøkende på 5 dager).",
+        "image": "/images/bio/fototidsmaskinen_vitenfabrikken.webp"
+      },
+      {
+        "date": "01-10-2025",
+        "title": "Bygging av et gigantisk kamera – Camera Obscura",
+        "organization": "Jærmuseet Garborgsenteret",
+        "location": "Bryne, Norge",
+        "description": "Verkstedet ble inkludert i Garborgsenterets høstferieprogram i oktober 2025, og gjennomført for både SFO og det øvrige publikum.",
+        "image": "/images/bio/garborgsenteret_camera_obscura.webp"
+      },
+      {
+        "date": "01-10-2025",
+        "title": "Foto Loft",
+        "organization": "'Alt for barn'-festivalen, Tou",
+        "location": "Stavanger, Norge",
+        "description": "Camera Obscura-utstilling, 'Skyggeteater - fotogramverksted'.",
+        "image": "/images/bio/foto_loft_tou.jpg"
+      },
+      {
+        "date": "01-10-2025",
+        "title": "Bygging av et gigantisk kamera – Camera Obscura",
+        "organization": "Øyepå",
+        "location": "Bergen, Norge",
+        "description": "Verkstedet ble valgt ut av Kulturtanken til nasjonal presentasjon for DKS-koordinatorer, og mottok svært gode tilbakemeldinger fra fagmiljøet.",
+        "image": "/images/bio/oyepa_bergen.jpg"
+      },
+      {
+        "date": "01-06-2025",
+        "title": "Bygging av gigantisk Camera Obscura",
+        "organization": "DKS Lab, Rogaland Kunstsenter",
+        "location": "Stavanger, Norge",
+        "description": "Verkstedet ble valgt ut av Rogaland Kunstsenter til DKS Lab, der det ble videreutviklet for å møte skolenes behov innenfor Den kulturelle skolesekken-rammene.",
+        "image": "/images/bio/dks_lab_camera_obscura.webp"
+      },
+      {
         "date": "01-03-2006",
         "title": "Loubna Photo",
         "role": "Fotograf",
