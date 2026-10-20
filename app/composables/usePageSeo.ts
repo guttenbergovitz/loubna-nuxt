@@ -2,7 +2,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-type PageKey = 'home' | 'about' | 'bio' | 'workshop' | 'contact' | 'bookACall' | 'businessGift' | 'thankYou'
+type PageKey = 'home' | 'about' | 'bio' | 'workshop' | 'contact' | 'bookACall' | 'businessGift' | 'stavanger' | 'thankYou'
 
 export const usePageSeo = (pageKey: PageKey) => {
   const route = useRoute()
@@ -44,6 +44,7 @@ export const usePageSeo = (pageKey: PageKey) => {
       contact: '/images/og/loubna-photo-og.jpg',
       bookACall: '/images/og/loubna-photo-og.jpg',
       businessGift: '/images/og/loubna-photo-og.jpg',
+      stavanger: '/images/og/loubna-photo-og.jpg',
       thankYou: '/images/og/loubna-photo-og.jpg'
     }
     return `${siteUrl}${imageMap[pageKey]}`

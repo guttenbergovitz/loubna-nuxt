@@ -40,6 +40,11 @@
       "description": "Find the perfect business gift with our handcrafted fine art photography. Professional, memorable, and truly unique.",
       "keywords": "business gift, corporate gift, photography gift, fine art gift, premium gift"
     },
+    "stavanger": {
+      "title": "Photographer in Stavanger & Sandnes - Workshops & Handcrafted Photography",
+      "description": "Handcrafted photography and hands-on photo workshops in Stavanger, Sandnes and Rogaland. Projects with schools, municipalities and cultural institutions.",
+      "keywords": "photographer Stavanger, photographer Sandnes, photo workshop Rogaland, Stavanger photo workshop, Sandnes photography"
+    },
     "thankYou": {
       "title": "Thank You",
       "description": "Thank you for your inquiry. We will be in touch shortly.",
@@ -509,6 +514,21 @@
         "required": "This field is required"
       }
     }
+  },
+  "stavanger": {
+    "name": "Stavanger & Sandnes",
+    "title": "Photography Workshops in Stavanger & Sandnes",
+    "tagline": "Handcrafted photography and hands-on workshops across Rogaland",
+    "intro": "Loubna Photo is based in Sandnes, Rogaland, and works with schools, cultural institutions and municipalities across Stavanger and the region.",
+    "projectsHeading": "Recent projects in Rogaland",
+    "projects": [
+      "Vitenfabrikken, Sandnes: winter workshop supported by Sandnes Municipality, with a giant camera and photograms in the darkroom",
+      "DKS Lab, Rogaland Kunstsenter, Stavanger: workshops for schools within Den kulturelle skolesekken",
+      "'Alt for barn'-festivalen, Tou, Stavanger: photography workshop for children and families",
+      "Cafe Sting, Stavanger: solo photo exhibition sponsored by Stavanger Municipality"
+    ],
+    "ctaWorkshop": "See our workshops",
+    "ctaContact": "Get in touch"
   },
   "partners": {
     "heading": "Trusted by"
