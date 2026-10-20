@@ -113,7 +113,7 @@ const galleryImages = [
 
 .stavanger__letter-subline {
   max-width: none;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
   font-family: var(--font-family-heading);
   font-size: var(--font-size-sm);
   font-style: italic;
