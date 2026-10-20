@@ -14,7 +14,7 @@ const navItems = [
 const socialLinks = [
   {
     name: 'Facebook',
-    url: 'https://facebook.com/loubnaphoto',
+    url: 'https://www.facebook.com/LoubnaPhoto.no/',
     icon: 'mdi:facebook',
     label: 'footer.social.facebook'
   },
