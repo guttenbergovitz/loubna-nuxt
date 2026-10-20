@@ -4,11 +4,13 @@ const { t } = useI18n()
 const memberships = [
   {
     name: 'Forbundet Frie Fotografer',
+    href: 'https://www.fffotografer.no/',
     image: '/images/partners/forbundet_frie_fotografer.webp',
     alt: 'Forbundet Frie Fotografer logo'
   },
   {
     name: 'Norges Fotografforbund',
+    href: 'https://fotografforbundet.no/',
     image: '/images/partners/norges_fotografforbund.webp',
     alt: 'Norges Fotografforbund logo'
   }
@@ -21,7 +23,9 @@ const memberships = [
       <p class="membership__heading">{{ t('membership.heading') }}</p>
       <ul class="membership__list">
         <li v-for="org in memberships" :key="org.name" class="membership__item">
-          <NuxtImg :src="org.image" :alt="org.alt" class="membership__logo" loading="lazy" />
+          <a :href="org.href" target="_blank" rel="noopener noreferrer" class="membership__link">
+            <NuxtImg :src="org.image" :alt="org.alt" class="membership__logo" loading="lazy" />
+          </a>
         </li>
       </ul>
     </div>
@@ -64,6 +68,14 @@ const memberships = [
   justify-content: center;
   width: 280px;
   height: 140px;
+}
+
+.membership__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .membership__logo {
