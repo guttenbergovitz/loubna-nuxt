@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
+    head: {
+      meta: [
+        { name: 'google-site-verification', content: 'yd1o3c-DvjFXJa1xhnTn99sJoC5rOMyD-iRr1trRjKw' }
+      ]
+    },
     pageTransition: {
       name: 'page',
       mode: 'out-in'
