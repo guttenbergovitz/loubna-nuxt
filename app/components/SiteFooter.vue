@@ -43,6 +43,28 @@ const socialLinks = [
     label: 'footer.social.linkedin'
   }
 ]
+
+useSchemaOrg([
+  {
+    '@type': 'LocalBusiness',
+    '@id': 'https://loubnaphoto.no/#business',
+    name: 'Loubna Photo',
+    url: 'https://loubnaphoto.no',
+    email: 'info@loubnaphoto.no',
+    telephone: '+4796725275',
+    image: 'https://loubnaphoto.no/images/og/loubna-photo-og.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Hovsbruveien 5',
+      postalCode: '4325',
+      addressLocality: 'Sandnes',
+      addressRegion: 'Rogaland',
+      addressCountry: 'NO'
+    },
+    areaServed: ['Sandnes', 'Stavanger', 'Rogaland', 'Norway'],
+    sameAs: socialLinks.map(link => link.url)
+  }
+])
 </script>
 
 <template>
