@@ -57,15 +57,26 @@ const memberships = [
   padding: 0;
 }
 
+.membership__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 110px;
+}
+
 .membership__logo {
   display: block;
-  height: 72px;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
+  height: auto;
 }
 
 @media (max-width: 767px) {
-  .membership__logo {
-    height: 56px;
+  .membership__item {
+    width: 180px;
+    height: 84px;
   }
 }
 </style>
