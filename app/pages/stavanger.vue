@@ -113,6 +113,17 @@ const galleryImages = [
 
 .stavanger__letter-body p {
   max-width: none;
+  text-wrap: pretty;
+  hyphens: auto;
+}
+
+.stavanger__letter-body > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  font-family: var(--font-family-heading);
+  font-size: 3.6em;
+  line-height: 0.85;
+  font-style: italic;
 }
 
 .stavanger__signature {
