@@ -37,14 +37,13 @@ const memberships = [
 
 .membership__heading {
   font-family: var(--font-family-heading);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: var(--font-weight-normal);
+  font-style: italic;
   text-align: center;
   color: var(--color-text-primary);
-  opacity: 0.7;
-  margin: 0 0 var(--space-lg);
+  opacity: 0.75;
+  margin: 0 0 var(--space-fluid-xl);
 }
 
 .membership__list {
