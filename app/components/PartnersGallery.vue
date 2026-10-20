@@ -31,6 +31,21 @@ const partners = [
     name: 'Øyepa',
     image: '/images/partners/partner--oyepa.jpg',
     alt: 'Øyepa logo'
+  },
+  {
+    name: 'Vitenfabrikken',
+    image: '/images/partners/vitenfabrikken.webp',
+    alt: 'Vitenfabrikken logo'
+  },
+  {
+    name: 'FLAM',
+    image: '/images/partners/flam.webp',
+    alt: 'FLAM logo'
+  },
+  {
+    name: 'Sandnes Kommune',
+    image: '/images/partners/sandnes_kommune.webp',
+    alt: 'Sandnes Kommune logo'
   }
 ]
 
