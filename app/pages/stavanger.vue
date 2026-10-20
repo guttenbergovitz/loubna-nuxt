@@ -9,6 +9,15 @@ defineI18nRoute({
 usePageSeo('stavanger')
 
 const localePath = useLocalePath()
+
+const galleryImages = [
+  { src: '/images/bio/follow_the_sun_exhibition.jpg', alt: 'Follow the Sun exhibition at Cafe Sting, Stavanger' },
+  { src: '/images/bio/foto_loft_tou.jpg', alt: 'Foto Loft at Alt for barn festival, Tou' },
+  { src: '/images/bio/dks_lab_camera_obscura.webp', alt: 'Camera obscura workshop at DKS Lab, Stavanger' },
+  { src: '/images/bio/varatun_gard_workshop.jpg', alt: 'Photo workshop at Varatun Gård, Sandnes' },
+  { src: '/images/bio/fototidsmaskinen_vitenfabrikken.webp', alt: 'Fototidsmaskinen at Vitenfabrikken, Sandnes' },
+  { src: '/images/bio/garborgsenteret_camera_obscura.webp', alt: 'Giant camera at Garborgsenteret, Bryne' }
+]
 </script>
 
 <template>
@@ -19,22 +28,51 @@ const localePath = useLocalePath()
       :tagline="$t('stavanger.tagline')"
     />
 
-    <section class="stavanger__intro">
+    <section class="stavanger__letter">
       <div class="o-container o-container--3xl">
-        <p class="stavanger__intro-text">{{ $t('stavanger.intro') }}</p>
+        <h2 class="stavanger__heading">{{ $t('stavanger.letter.heading') }}</h2>
+        <div class="stavanger__letter-body">
+          <p v-for="(paragraph, index) in $tm('stavanger.letter.paragraphs')" :key="index">
+            {{ $rt(paragraph) }}
+          </p>
+          <p class="stavanger__signature">{{ $t('stavanger.letter.signature') }}</p>
+        </div>
       </div>
     </section>
 
-    <section class="stavanger__projects">
-      <div class="o-container o-container--3xl">
-        <h2 class="stavanger__projects-heading">{{ $t('stavanger.projectsHeading') }}</h2>
-        <ul class="stavanger__projects-list">
+    <section class="stavanger__gallery">
+      <div class="o-container o-container--5xl">
+        <h2 class="stavanger__heading">{{ $t('stavanger.gallery.heading') }}</h2>
+        <ul class="stavanger__gallery-grid">
           <li
-            v-for="(project, index) in $tm('stavanger.projects')"
+            v-for="(caption, index) in $tm('stavanger.gallery.items')"
             :key="index"
-            class="stavanger__projects-item"
+            class="stavanger__gallery-item"
           >
-            {{ $rt(project) }}
+            <figure>
+              <NuxtImg
+                :src="galleryImages[index]?.src"
+                :alt="galleryImages[index]?.alt"
+                class="stavanger__gallery-image"
+                loading="lazy"
+              />
+              <figcaption class="stavanger__gallery-caption">{{ $rt(caption) }}</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stavanger__collaborators">
+      <div class="o-container o-container--3xl">
+        <h2 class="stavanger__heading">{{ $t('stavanger.collaborators.heading') }}</h2>
+        <ul class="stavanger__collaborators-list">
+          <li
+            v-for="(item, index) in $tm('stavanger.collaborators.items')"
+            :key="index"
+            class="stavanger__collaborators-item"
+          >
+            {{ $rt(item) }}
           </li>
         </ul>
         <div class="stavanger__actions">
@@ -53,21 +91,11 @@ const localePath = useLocalePath()
 </template>
 
 <style scoped>
-.stavanger__intro {
-  padding: var(--space-fluid-xl) 0 0;
+.stavanger__letter {
+  padding: var(--space-fluid-2xl) 0 var(--space-fluid-xl);
 }
 
-.stavanger__intro-text {
-  font-size: var(--font-size-md);
-  text-align: center;
-  margin-inline: auto;
-}
-
-.stavanger__projects {
-  padding: var(--space-fluid-xl) 0;
-}
-
-.stavanger__projects-heading {
+.stavanger__heading {
   font-family: var(--font-family-heading);
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-style: italic;
@@ -76,17 +104,74 @@ const localePath = useLocalePath()
   margin-bottom: var(--space-lg);
 }
 
-.stavanger__projects-list {
+.stavanger__letter-body {
+  max-width: 40rem;
+  margin-inline: auto;
+  font-size: var(--font-size-md);
+  line-height: 1.8;
+}
+
+.stavanger__letter-body p {
+  max-width: none;
+}
+
+.stavanger__signature {
+  font-family: var(--font-family-heading);
+  font-style: italic;
+  text-align: right;
+  margin-top: var(--space-lg);
+}
+
+.stavanger__gallery {
+  padding: var(--space-fluid-xl) 0;
+}
+
+.stavanger__gallery-grid {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
 }
 
-.stavanger__projects-item {
-  padding-left: var(--space-md);
-  border-left: 2px solid rgba(0, 0, 0, 0.15);
+.stavanger__gallery-item figure {
+  margin: 0;
+}
+
+.stavanger__gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.stavanger__gallery-caption {
+  margin-top: var(--space-sm);
+  font-size: var(--font-size-sm);
+  opacity: 0.75;
+}
+
+.stavanger__collaborators {
+  padding: var(--space-fluid-xl) 0;
+}
+
+.stavanger__collaborators-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-md);
+}
+
+.stavanger__collaborators-item {
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+  font-size: var(--font-size-sm);
 }
 
 .stavanger__actions {

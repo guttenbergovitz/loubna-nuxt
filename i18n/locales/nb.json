@@ -142,8 +142,7 @@
       "heading": "Utfordre meg!",
       "text": "Velg et sted, så tar jeg et bilde der.*",
       "footnote": "* bare når det fenger meg."
-    }
-    ,
+    },
     "bioLink": {
       "heading": "Nysgjerrig på min reise?",
       "text": "Utforsk den detaljerte kronologien over min profesjonelle vei, kunstneriske milepæler og samarbeid.",
@@ -520,14 +519,41 @@
     "name": "Stavanger og Sandnes",
     "title": "Fotografi-workshops i Stavanger og Sandnes",
     "tagline": "Håndlaget fotografi og praktiske workshops i hele Rogaland",
-    "intro": "Loubna Photo holder til i Sandnes i Rogaland og samarbeider med skoler, kulturinstitusjoner og kommuner i Stavanger-regionen.",
-    "projectsHeading": "Nylige prosjekter i Rogaland",
-    "projects": [
-      "Vitenfabrikken, Sandnes: vinterworkshop støttet av Sandnes kommune, med en gigantisk kamera og fotogrammer i mørkerommet",
-      "DKS Lab, Rogaland Kunstsenter, Stavanger: workshops for skoler innen Den kulturelle skolesekken",
-      "'Alt for barn'-festivalen, Tou, Stavanger: fotoworkshop for barn og familier",
-      "Cafe Sting, Stavanger: soloutstilling støttet av Stavanger kommune"
-    ],
+    "letter": {
+      "heading": "Hvorfor jeg valgte dette stedet",
+      "paragraphs": [
+        "Jeg havnet ikke i Rogaland tilfeldig. Lyset her ber deg om å senke farten og se, og det har jeg aldri klart å motstå.",
+        "Her fant jeg ro: en hverdag med rom til å tenke, skape og gå langs vannet før dagen begynner. Stille, men aldri tom.",
+        "Og jeg fant mennesker. Skoler, museer, festivaler og kommuner åpnet dørene og stolte på meg med barna sine, historiene sine og rommene sine. Noe av arbeidet jeg er mest stolt av, ble laget i disse rommene: et gigantisk kamera bygget sammen med barn, fotogrammer laget av familier i mørkerommet, og et camera obscura vist på en festival.",
+        "Dette er et sted med minne. Håndverket og kulturen lever videre i menneskene som tar vare på dem, og jeg er takknemlig for å få lage bilder i dialog med det."
+      ],
+      "signature": "Loubna"
+    },
+    "collaborators": {
+      "heading": "Jeg har hatt æren av å samarbeide med",
+      "items": [
+        "Den kulturelle skolesekken",
+        "Vitenfabrikken, Sandnes",
+        "Sandnes kommune",
+        "Varatun Gård, Sandnes",
+        "Jærmuseet Garborgsenteret, Bryne",
+        "DKS Lab, Rogaland Kunstsenter",
+        "'Alt for barn'-festivalen, Tou",
+        "Cafe Sting, Stavanger",
+        "Stavanger kommune"
+      ]
+    },
+    "gallery": {
+      "heading": "Fra regionen",
+      "items": [
+        "Follow the Sun, soloutstilling på Cafe Sting, Stavanger",
+        "Foto Loft, 'Alt for barn'-festivalen, Tou",
+        "Camera obscura-workshop, DKS Lab, Stavanger",
+        "Fotoworkshop, Varatun Gård, Sandnes",
+        "Fototidsmaskinen, Vitenfabrikken, Sandnes",
+        "Bygging av gigantisk kamera, Garborgsenteret, Bryne"
+      ]
+    },
     "ctaWorkshop": "Se våre workshops",
     "ctaContact": "Ta kontakt"
   },

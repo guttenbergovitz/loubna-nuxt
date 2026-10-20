@@ -519,14 +519,41 @@
     "name": "Stavanger & Sandnes",
     "title": "Photography Workshops in Stavanger & Sandnes",
     "tagline": "Handcrafted photography and hands-on workshops across Rogaland",
-    "intro": "Loubna Photo is based in Sandnes, Rogaland, and works with schools, cultural institutions and municipalities across Stavanger and the region.",
-    "projectsHeading": "Recent projects in Rogaland",
-    "projects": [
-      "Vitenfabrikken, Sandnes: winter workshop supported by Sandnes Municipality, with a giant camera and photograms in the darkroom",
-      "DKS Lab, Rogaland Kunstsenter, Stavanger: workshops for schools within Den kulturelle skolesekken",
-      "'Alt for barn'-festivalen, Tou, Stavanger: photography workshop for children and families",
-      "Cafe Sting, Stavanger: solo photo exhibition sponsored by Stavanger Municipality"
-    ],
+    "letter": {
+      "heading": "Why I chose this place",
+      "paragraphs": [
+        "I did not end up in Rogaland by accident. The light here asks you to slow down and look, and I have never been able to resist that.",
+        "Here I found calm: a daily rhythm with room to think, to make, and to walk by the water before the day begins. It is quiet, but never empty.",
+        "And I found people. Schools, museums, festivals and municipalities opened their doors and trusted me with their children, their stories and their spaces. Some of the work I am most proud of was made in these rooms: a giant camera built together with children, photograms made by families in the darkroom, a camera obscura shown in a festival.",
+        "This is a place with memory. Its craft and culture live on in the people who look after them, and I am grateful to make photographs in conversation with it."
+      ],
+      "signature": "Loubna"
+    },
+    "collaborators": {
+      "heading": "I have been fortunate to work with",
+      "items": [
+        "Den kulturelle skolesekken",
+        "Vitenfabrikken, Sandnes",
+        "Sandnes Municipality",
+        "Varatun Gård, Sandnes",
+        "Jærmuseet Garborgsenteret, Bryne",
+        "DKS Lab, Rogaland Kunstsenter",
+        "'Alt for barn'-festivalen, Tou",
+        "Cafe Sting, Stavanger",
+        "Stavanger Municipality"
+      ]
+    },
+    "gallery": {
+      "heading": "From the region",
+      "items": [
+        "Follow the Sun, solo exhibition at Cafe Sting, Stavanger",
+        "Foto Loft, 'Alt for barn'-festivalen, Tou",
+        "Camera obscura workshop, DKS Lab, Stavanger",
+        "Photo workshop, Varatun Gård, Sandnes",
+        "Fototidsmaskinen, Vitenfabrikken, Sandnes",
+        "Building a giant camera, Garborgsenteret, Bryne"
+      ]
+    },
     "ctaWorkshop": "See our workshops",
     "ctaContact": "Get in touch"
   },
