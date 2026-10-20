@@ -121,6 +121,16 @@ const galleryImages = [
   opacity: 0.7;
 }
 
+.stavanger__letter-subline::after {
+  content: '';
+  display: block;
+  width: 4rem;
+  height: 1px;
+  margin: var(--space-lg) auto 0;
+  background-color: currentColor;
+  opacity: 0.4;
+}
+
 .stavanger__letter-body {
   max-width: 40rem;
   margin-inline: auto;
