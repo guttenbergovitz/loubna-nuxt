@@ -15,7 +15,6 @@ const galleryImages = [
   { src: '/images/bio/foto_loft_tou.jpg', alt: 'Foto Loft at Alt for barn festival, Tou' },
   { src: '/images/bio/dks_lab_camera_obscura.webp', alt: 'Camera obscura workshop at DKS Lab, Stavanger' },
   { src: '/images/bio/varatun_gard_workshop.jpg', alt: 'Photo workshop at Varatun Gård, Sandnes' },
-  { src: '/images/bio/fototidsmaskinen_vitenfabrikken.webp', alt: 'Fototidsmaskinen at Vitenfabrikken, Sandnes' },
   { src: '/images/bio/garborgsenteret_camera_obscura.webp', alt: 'Giant camera at Garborgsenteret, Bryne' }
 ]
 </script>
@@ -146,9 +145,13 @@ const galleryImages = [
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--space-lg);
+  columns: 2 260px;
+  column-gap: var(--space-lg);
+}
+
+.stavanger__gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--space-lg);
 }
 
 .stavanger__gallery-item figure {
@@ -159,14 +162,14 @@ const galleryImages = [
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
 }
 
 .stavanger__gallery-caption {
-  margin-top: var(--space-sm);
-  font-size: var(--font-size-sm);
-  opacity: 0.75;
+  margin-top: var(--space-xs);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
+  font-style: italic;
+  opacity: 0.6;
 }
 
 .stavanger__collaborators {
