@@ -30,6 +30,7 @@ const galleryImages = [
     <section class="stavanger__letter">
       <div class="o-container o-container--3xl">
         <h2 class="stavanger__heading stavanger__letter-heading">{{ $t('stavanger.letter.heading') }}</h2>
+        <p class="stavanger__letter-subline">{{ $t('stavanger.letter.subline') }}</p>
         <div class="stavanger__letter-body">
           <p v-for="(paragraph, index) in $tm('stavanger.letter.paragraphs')" :key="index">
             {{ $rt(paragraph) }}
@@ -104,8 +105,20 @@ const galleryImages = [
 }
 
 .stavanger__letter-heading {
-  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin-top: calc(-1 * var(--space-lg));
+  margin-bottom: var(--space-xs);
   transform: rotate(-3deg);
+}
+
+.stavanger__letter-subline {
+  max-width: none;
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  text-align: center;
+  opacity: 0.7;
 }
 
 .stavanger__letter-body {
