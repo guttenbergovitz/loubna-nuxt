@@ -78,8 +78,7 @@ export default defineEventHandler(async (event): Promise<ContactResponse> => {
     return { success: false, error: 'email_send_failed' }
   }
 
-  const localePrefix = sanitizedData.locale === 'nb' ? '/nb' : '/en'
-  const redirectUrl = `${localePrefix}/thank-you/workshop`
+  const redirectUrl = sanitizedData.locale === 'nb' ? '/nb/takk/workshop' : '/en/thank-you/workshop'
 
   return { success: true, redirectUrl }
 })

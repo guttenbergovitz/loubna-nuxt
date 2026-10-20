@@ -127,8 +127,7 @@ export default defineEventHandler(async (event): Promise<ContactResponse> => {
   }
 
   // Build redirect URL with locale prefix
-  const localePrefix = sanitizedData.locale === 'nb' ? '/nb' : '/en'
-  const redirectUrl = `${localePrefix}/thank-you/contact`
+  const redirectUrl = sanitizedData.locale === 'nb' ? '/nb/takk/kontakt' : '/en/thank-you/contact'
 
   return {
     success: true,
