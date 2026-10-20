@@ -6,5 +6,6 @@
   <NuxtRouteAnnouncer />
   <SiteHeader />
   <NuxtPage />
+  <MembershipStrip />
   <SiteFooter />
 </template>
