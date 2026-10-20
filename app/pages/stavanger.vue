@@ -30,7 +30,7 @@ const galleryImages = [
 
     <section class="stavanger__letter">
       <div class="o-container o-container--3xl">
-        <h2 class="stavanger__heading">{{ $t('stavanger.letter.heading') }}</h2>
+        <h2 class="stavanger__heading stavanger__letter-heading">{{ $t('stavanger.letter.heading') }}</h2>
         <div class="stavanger__letter-body">
           <p v-for="(paragraph, index) in $tm('stavanger.letter.paragraphs')" :key="index">
             {{ $rt(paragraph) }}
@@ -102,6 +102,11 @@ const galleryImages = [
   font-weight: var(--font-weight-normal);
   text-align: center;
   margin-bottom: var(--space-lg);
+}
+
+.stavanger__letter-heading {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  transform: rotate(-3deg);
 }
 
 .stavanger__letter-body {
