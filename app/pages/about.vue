@@ -127,7 +127,7 @@ defineI18nRoute({
           {{ $t("about.bioLink.heading") }}
         </h2>
         <p class="about__bio-link-text">{{ $t("about.bioLink.text") }}</p>
-        <NuxtLink :to="localePath('/bio')" class="about__bio-link-button">
+        <NuxtLink :to="localePath('bio')" class="about__bio-link-button">
           {{ $t("about.bioLink.button") }}
         </NuxtLink>
       </div>
