@@ -62,6 +62,7 @@ const handleHide = () => {
 
     <ClientOnly>
       <vue-easy-lightbox
+        teleport="body"
         :visible="visibleRef !== null"
         :imgs="imgsRef"
         :index="visibleRef || 0"
