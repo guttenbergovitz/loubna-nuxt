@@ -18,7 +18,11 @@ const homeGalleryImagesRow2 = [
 const secondaryGalleryImages = [
   { src: '/images/gallery/home-small-gallery/hsg1.jpg', alt: 'Gallery detail - fine art photograph portfolio' },
   { src: '/images/gallery/home-small-gallery/hsg2.png', alt: 'Gallery detail - artisanal photography collection' },
-  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' }
+  { src: '/images/gallery/home-small-gallery/hsg3.png', alt: 'Gallery detail - handcrafted print samples' },
+  { src: '/images/gallery/home-small-gallery/mariusz-lilly.webp', alt: 'Gallery detail - Mariusz & Lilly portrait' },
+  { src: '/images/gallery/home-small-gallery/stavanger-najstarszy-dom.webp', alt: 'Gallery detail - oldest house in Stavanger' },
+  { src: '/images/gallery/home-small-gallery/spain-dom-skala.webp', alt: 'Gallery detail - house on the rock in Spain' },
+  { src: '/images/gallery/home-small-gallery/spain-ulica-skaly-bluszcz.webp', alt: 'Gallery detail - ivy-covered rock street in Spain' }
 ]
 
 // Scroll reveal
